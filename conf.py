@@ -3,7 +3,7 @@
 """
 
 # For Maverick
-site_prefix = "/zggsong.github.io/"
+site_prefix = "/wiki/"
 source_dir = "../src/"
 build_dir = "../dist/"
 index_page_size = 10
