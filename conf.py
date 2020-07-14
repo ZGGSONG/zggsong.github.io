@@ -7,7 +7,7 @@ site_prefix = "/wiki/"
 source_dir = "../src/"
 build_dir = "../dist/"
 index_page_size = 10
-archives_page_size = 20
+archives_page_size = 30
 template = {
     "name": "Kepler",
     "type": "git",
