@@ -15,8 +15,8 @@ template = {
     "branch": "latest"
 }
 enable_jsdelivr = {
-    "enabled": true,
-    "repo": "ZGGSONG/wiki@gh-pages"
+    "enabled": "true",
+    "repo": "ZGGSONG/wiki-cdn@gh-pages"
 }
 
 # 站点设置
