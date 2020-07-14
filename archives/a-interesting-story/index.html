@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@gh-pages/0fd1332eeee39591916f60df18f555ef.json"
+            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@gh-pages/8ecbc4cc813a951f6347cc3e8267e4a1.json"
         }
     </script>
     <script>
@@ -32,18 +32,18 @@
         });
     </script>
     
-<title>Java约瑟夫环问题 - 艾芝士</title>
-<meta name="author" content="ZGGSONG" />
-<meta name="description" content="约瑟夫环问题：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。" />
-<meta property="og:title" content="Java约瑟夫环问题 - 艾芝士" />
-<meta property="og:description" content="约瑟夫环问题：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。" />
+<title>安装deb包 - 艾芝士</title>
+<meta name="author" content="SWJ" />
+<meta name="description" content="以manjaro为例" />
+<meta property="og:title" content="安装deb包 - 艾芝士" />
+<meta property="og:description" content="以manjaro为例" />
 <meta property="og:site_name" content="艾芝士" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/wiki/archives/a-interesting-story/" />
 <meta property="og:image" content="" />
-<meta property="article:published_time" content="2020-07-14T01:46:00-00.00" />
-<meta name="twitter:title" content="Java约瑟夫环问题 - 艾芝士" />
-<meta name="twitter:description" content="约瑟夫环问题：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。" />
+<meta property="article:published_time" content="2019-11-19T00:27:00-00.00" />
+<meta name="twitter:title" content="安装deb包 - 艾芝士" />
+<meta name="twitter:description" content="以manjaro为例" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:image" content="" />
 
@@ -99,7 +99,7 @@
                     
                     <section>
                         
-    <div class="open "><span><a href="/wiki/category/编程笔记/">编程笔记</a><button class="toggle_sidebar fa"></button></span><ul><div class="open "><span><a href="/wiki/category/Java/">Java</a><button class="toggle_sidebar fa"></button></span><ul><li class="current"><a href="/wiki/archives/a-interesting-story/">Java约瑟夫环问题</a></li></ul></div></ul></div>
+    <div class=" "><span><a href="/wiki/category/编程笔记/">编程笔记</a><button class="toggle_sidebar fa"></button></span><ul><div class=" "><span><a href="/wiki/category/Java/">Java</a><button class="toggle_sidebar fa"></button></span><ul><li class="current"><a href="/wiki/archives/a-interesting-story/">Java约瑟夫环问题</a></li></ul></div></ul></div><div class="open "><span><a href="/wiki/category/日常技巧/">日常技巧</a><button class="toggle_sidebar fa"></button></span><ul><div class="open "><span><a href="/wiki/category/linux/">linux</a><button class="toggle_sidebar fa"></button></span><ul><li class="current"><a href="/wiki/archives/a-interesting-story/">安装deb包</a></li></ul></div></ul></div>
 
                     </section>
                     <section hidden class="sidebar-external-link">
@@ -118,59 +118,47 @@
                 <div id="content-wrapper">
                     <div id="content">
     <section>
-        <h1 class="post-title">Java约瑟夫环问题</h1>
+        <h1 class="post-title">安装deb包</h1>
         <p class="post-meta">
-            <time>July 14 2020</time>
+            <time>November 19 2019</time>
             <span class="tags">
                 
                 <span>
-                    <a href="/wiki/tag/java/">#java</a>
+                    <a href="/wiki/tag/deb包/">#deb包</a>
                 </span>
                 
             </span>
         </p>
-        <article class="yue"><p><a href="https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98">约瑟夫环问题</a>：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。</p>
-<h2>例题</h2>
-<blockquote><p>设有n个人围坐一圈并按顺时针方向从1到n编号，从第1个人开始进行1到m的报数，报数到第个m人，此人出圈，再从他的下一个人重新开始1到m的报数，如此进行下去直到所剩下一人为止。</p>
-</blockquote>
-<p>解决方法：<code>LinkedList</code> + <code>Iterator</code></p>
-<blockquote><ul>
-<li>LinkedList类是双向链表,列表中的每个节点都包含了对前一个和后一个元素的引用</li>
-</ul>
-<ul>
-<li>Iterator是Java迭代器最简单的实现，为List设计的ListIterator具有更多的功能，它可以从两个方向遍历List，也可以从List中插入和删除元素<ul>
-<li>hasNext:没有指针下移操作，只是判断是否存在下一个元素</li>
-<li>next：指针下移，返回该指针所指向的元素</li>
-<li>remove：删除当前指针所指向的元素，一般和next方法一起用，这时候的作用就是删除next方法返回的元素</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<h2>代码</h2>
-
-<pre><code>public static void main(String[] args) {
-        int n = 10, m = 3;
-        LinkedList&lt;Integer&gt; L = new LinkedList&lt;&gt;();
-        for (int i = 1; i &lt;= n; i++) L.add(i);
-        Iterator&lt;Integer&gt; iterator = L.iterator();
-        while (L.size() &gt; 1) {
-            for (int cnt = 0; cnt &lt; m; cnt++) {
-                if (iterator.hasNext())
-                    iterator.next();
-                else {
-                    iterator = L.iterator();
-                    iterator.next();
-                }
-            }
-            iterator.remove();
-        }
-        System.out.println("The last one is: " + L.getFirst());
-    }</code></pre>
+        <article class="yue"><p>以<code>manjaro</code>为例</p>
+<hr>
+<h2>检查有没有安装 debtap</h2>
+<div class="highlight"><pre><span></span>sudo pacman -Q debtap
+</pre></div>
+<h2>没有就安装</h2>
+<div class="highlight"><pre><span></span>yaourt -S debtap
+</pre></div>
+<h2>升级debtap</h2>
+<div class="highlight"><pre><span></span>sudo debtap -u
+</pre></div>
+<h2>使用方法</h2>
+<div class="highlight"><pre><span></span>sudo debtap  xxxx.deb
+</pre></div>
+<p>安装时会提示输入包名，以及license。包名随意，license就填GPL吧
+上述操作完成后会在deb包同级目录生成×.tar.xz文件，直接用pacman安装即可</p>
+<div class="highlight"><pre><span></span>sudo pacman -U x.tar.xz
+</pre></div>
 </article>
     </section>
 
     
     <section id="content-pager">
+        
+            <div class="next">
+                <a class="card" href="/wiki/archives/a-interesting-story/">
+                    <time>July 14 2020</time>
+                    <span>Java约瑟夫环问题</span>
+                </a>
+            </div>
         
         
     </section>
