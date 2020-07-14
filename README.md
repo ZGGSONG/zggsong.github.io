@@ -1,4 +1,4 @@
-# Blog-With-GitHub-Boilerplate
+# wiki
 
 > 💡 注意：这不是所谓使用 Maverick 的「标准方法」，只不过是利用 Maverick 与 GitHub Actions 写博客一个流程而已。不要觉得非得这样不可。Maverick 的用法见 [README.md](https://github.com/AlanDecode/Maverick)。
 
