@@ -9,9 +9,10 @@ build_dir = "../dist/"
 index_page_size = 10
 archives_page_size = 20
 template = {
-    "name": "Galileo",
-    "type": "local",
-    "path": "../Galileo"
+    "name": "Kepler",
+    "type": "git",
+    "url": "https://github.com/AlanDecode/Maverick-Theme-Kepler.git",
+    "branch": "latest"
 }
 enable_jsdelivr = {
     "enabled": False,
@@ -19,25 +20,26 @@ enable_jsdelivr = {
 }
 
 # 站点设置
-site_name = "我的个人博客"
+# For site
+site_name = "wiki"
 site_logo = "${static_prefix}logo.png"
-site_build_date = "2019-12-18T16:51+08:00"
-author = "熊猫小A"
-email = "hi@imalan.cn"
-author_homepage = "https://www.imalan.cn"
-description = "只坚持一种正义。我的正义。"
-key_words = ['Maverick', '熊猫小A', 'Galileo', 'blog']
+site_build_date = "2020-07-14T00:00+08:00"
+author = "ZGGSONG"
+email = "zggsong@foxmail.com"
+author_homepage = "https://www.zggsong.cn"
+description = "简单的记录学习."
+key_words = ["Maverick", "ZGGSONG", "Kepler", "wiki"]
 language = 'zh-CN'
 external_links = [
     {
-        "name": "Maverick",
-        "url": "https://github.com/AlanDecode/Maverick",
-        "brief": "🏄‍ Go My Own Way."
+        "name": "blog",
+        "url": "https://www.zggsong.cn/",
+        "brief": "my blog."
     },
     {
-        "name": "三無計劃",
-        "url": "https://www.imalan.cn",
-        "brief": "熊猫小A的主页。"
+        "name": "music",
+        "url": "https://www.zggsong.cn/zgg/program/music",
+        "brief": "music."
     }
 ]
 nav = [
@@ -58,27 +60,12 @@ nav = [
     }
 ]
 
-social_links = [
-    {
-        "name": "Twitter",
-        "url": "https://twitter.com/AlanDecode",
-        "icon": "gi gi-twitter"
-    },
-    {
-        "name": "GitHub",
-        "url": "https://github.com/AlanDecode",
-        "icon": "gi gi-github"
-    },
-    {
-        "name": "Weibo",
-        "url": "https://weibo.com/5245109677/",
-        "icon": "gi gi-weibo"
-    }
-]
+
 
 head_addon = r'''
 <meta http-equiv="x-dns-prefetch-control" content="on">
 <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+<link rel="icon" type="image/ico" href="//cdn.jsdelivr.net/gh/zggsong/cdn/favicon.ico">
 '''
 
 footer_addon = ''
