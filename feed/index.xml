@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>艾芝士</title><link>/zggsong.github.io/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@gh-pages/logo.png</url><title>艾芝士</title><link>/zggsong.github.io/</link></image><language>zh-CN</language><lastBuildDate>Tue, 14 Jul 2020 04:02:46 +0806</lastBuildDate><pubDate>Tue, 14 Jul 2020 04:02:46 +0806</pubDate><item><title>Java约瑟夫环问题</title><link>/zggsong.github.io/archives/a-interesting-story/</link><description>&lt;p&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98"&gt;约瑟夫环问题&lt;/a&gt;：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>艾芝士</title><link>/wiki/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@gh-pages/logo.png</url><title>艾芝士</title><link>/wiki/</link></image><language>zh-CN</language><lastBuildDate>Tue, 14 Jul 2020 04:03:54 +0806</lastBuildDate><pubDate>Tue, 14 Jul 2020 04:03:54 +0806</pubDate><item><title>Java约瑟夫环问题</title><link>/wiki/archives/a-interesting-story/</link><description>&lt;p&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98"&gt;约瑟夫环问题&lt;/a&gt;：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。&lt;/p&gt;
 &lt;h2&gt;例题&lt;/h2&gt;
 &lt;blockquote&gt;&lt;p&gt;设有n个人围坐一圈并按顺时针方向从1到n编号，从第1个人开始进行1到m的报数，报数到第个m人，此人出圈，再从他的下一个人重新开始1到m的报数，如此进行下去直到所剩下一人为止。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -36,4 +36,4 @@
         }
         System.out.println("The last one is: " + L.getFirst());
     }&lt;/code&gt;&lt;/pre&gt;
-</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/zggsong.github.io/archives/a-interesting-story/</guid><pubDate>Tue, 14 Jul 2020 01:46:00 +0806</pubDate></item></channel></rss>
+</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/wiki/archives/a-interesting-story/</guid><pubDate>Tue, 14 Jul 2020 01:46:00 +0806</pubDate></item></channel></rss>
