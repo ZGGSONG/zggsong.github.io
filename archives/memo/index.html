@@ -32,18 +32,18 @@
         });
     </script>
     
-<title>Java约瑟夫环问题 - 艾芝士</title>
+<title>常用命令 - 艾芝士</title>
 <meta name="author" content="ZGGSONG" />
-<meta name="description" content="约瑟夫环问题：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。" />
-<meta property="og:title" content="Java约瑟夫环问题 - 艾芝士" />
-<meta property="og:description" content="约瑟夫环问题：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。" />
+<meta name="description" content="1、Windows" />
+<meta property="og:title" content="常用命令 - 艾芝士" />
+<meta property="og:description" content="1、Windows" />
 <meta property="og:site_name" content="艾芝士" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/wiki/archives/Joseph_Java/" />
+<meta property="og:url" content="/wiki/archives/memo/" />
 <meta property="og:image" content="" />
-<meta property="article:published_time" content="2020-07-14T01:46:00-00.00" />
-<meta name="twitter:title" content="Java约瑟夫环问题 - 艾芝士" />
-<meta name="twitter:description" content="约瑟夫环问题：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。" />
+<meta property="article:published_time" content="2020-03-27T20:58:00-00.00" />
+<meta name="twitter:title" content="常用命令 - 艾芝士" />
+<meta name="twitter:description" content="1、Windows" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:image" content="" />
 
@@ -99,7 +99,7 @@
                     
                     <section>
                         
-    <div class="open "><span><a href="/wiki/category/编程笔记/">编程笔记</a><button class="toggle_sidebar fa"></button></span><ul><div class="open "><span><a href="/wiki/category/Java/">Java</a><button class="toggle_sidebar fa"></button></span><ul><li class="current"><a href="/wiki/archives/Joseph_Java/">Java约瑟夫环问题</a></li></ul></div></ul></div><div class=" "><span><a href="/wiki/category/日常技巧/">日常技巧</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/wiki/archives/memo/">常用命令</a></li><div class=" "><span><a href="/wiki/category/linux/">linux</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/wiki/archives/linux_deb/">安装deb包</a></li></ul></div></ul></div>
+    <div class=" "><span><a href="/wiki/category/编程笔记/">编程笔记</a><button class="toggle_sidebar fa"></button></span><ul><div class=" "><span><a href="/wiki/category/Java/">Java</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/wiki/archives/Joseph_Java/">Java约瑟夫环问题</a></li></ul></div></ul></div><div class="open "><span><a href="/wiki/category/日常技巧/">日常技巧</a><button class="toggle_sidebar fa"></button></span><ul><li class="current"><a href="/wiki/archives/memo/">常用命令</a></li><div class=" "><span><a href="/wiki/category/linux/">linux</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/wiki/archives/linux_deb/">安装deb包</a></li></ul></div></ul></div>
 
                     </section>
                     <section hidden class="sidebar-external-link">
@@ -118,65 +118,158 @@
                 <div id="content-wrapper">
                     <div id="content">
     <section>
-        <h1 class="post-title">Java约瑟夫环问题</h1>
+        <h1 class="post-title">常用命令</h1>
         <p class="post-meta">
-            <time>July 14 2020</time>
+            <time>March 27 2020</time>
             <span class="tags">
                 
                 <span>
-                    <a href="/wiki/tag/java/">#java</a>
+                    <a href="/wiki/tag/shell/">#shell</a>
+                </span>
+                
+                <span>
+                    <a href="/wiki/tag/linux/">#linux</a>
+                </span>
+                
+                <span>
+                    <a href="/wiki/tag/git/">#git</a>
+                </span>
+                
+                <span>
+                    <a href="/wiki/tag/mac/">#mac</a>
                 </span>
                 
             </span>
         </p>
-        <article class="yue"><p><a href="https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98">约瑟夫环问题</a>：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。</p>
-<h2>例题</h2>
-<blockquote><p>设有n个人围坐一圈并按顺时针方向从1到n编号，从第1个人开始进行1到m的报数，报数到第个m人，此人出圈，再从他的下一个人重新开始1到m的报数，如此进行下去直到所剩下一人为止。</p>
-</blockquote>
-<p>解决方法：<code>LinkedList</code> + <code>Iterator</code></p>
-<blockquote><ul>
-<li>LinkedList类是双向链表,列表中的每个节点都包含了对前一个和后一个元素的引用</li>
-</ul>
+        <article class="yue"><h2>1、Windows</h2>
+<h3>1.1 Windows开机启动</h3>
+<div class="highlight"><pre><span></span><span class="c1"># 目录地址</span>
+C:<span class="se">\P</span>rogramData<span class="se">\M</span>icrosoft<span class="se">\W</span>indows<span class="se">\S</span>tart Menu<span class="se">\P</span>rograms<span class="se">\S</span>tartUp
+</pre></div>
+<h2>2、Mac</h2>
+<h3>2.1 手动刷新DNS</h3>
+<div class="highlight"><pre><span></span>sudo dscacheutil -flushcache
+</pre></div>
+<h3>2.2 Mac开启任何来源的APP</h3>
+<div class="highlight"><pre><span></span>sudo spctl --master-disable
+</pre></div>
+<h3>2.3 Host key verification failed</h3>
+<div class="highlight"><pre><span></span>ssh-keygen -R 你要访问的IP地址
+<span class="c1">#将host key从know_hosts移至know_hosts.old中去</span>
+</pre></div>
+<h3>2.4 安装powerleve10k</h3>
+<div class="highlight"><pre><span></span>git clone https://github.com/romkatv/powerlevel10k.git <span class="nv">$ZSH_CUSTOM</span>/themes/powerlevel10k
+
+vim ~/.zshrc 
+
+<span class="c1">#add</span>
+<span class="nv">ZSH_THEME</span><span class="o">=</span><span class="s2">&quot;powerlevel10k/powerlevel10k&quot;</span>
+<span class="nv">POWERLEVEL9K_MODE</span><span class="o">=</span><span class="s2">&quot;awesome-patched&quot;</span>
+</pre></div>
+<h3>2.5 tmux常用快捷键</h3>
+<div class="highlight"><pre><span></span>tmux new -s <span class="s2">&quot;name&quot;</span> <span class="c1">#创建session</span>
+tmux attach -t     <span class="c1">#重新连接session</span>
+ctrl b %   <span class="c1">#横向分屏</span>
+ctrl b <span class="s2">&quot;   #纵向分屏</span>
+<span class="s2">ctrl b o   #选择窗格</span>
+<span class="s2">ctrl d     #关闭</span>
+<span class="s2">ctrl b d   #隐藏所有session</span>
+<span class="s2">ctrl b s/w #选择session</span>
+</pre></div>
+<h3>2.6 应用添加快捷键</h3>
+<div class="highlight"><pre><span></span><span class="err">#</span> <span class="nx">以iTerm为例</span>
+<span class="nx">on</span> <span class="nx">run</span> <span class="p">{</span><span class="nx">input</span><span class="p">,</span> <span class="nx">parameters</span><span class="p">}</span>
+     <span class="p">(</span><span class="o">*</span> <span class="nx">Your</span> <span class="nx">script</span> <span class="nx">goes</span> <span class="nx">here</span> <span class="o">*</span><span class="p">)</span>
+     <span class="nx">tell</span> <span class="nx">application</span> <span class="s2">&quot;iTerm&quot;</span>         
+          <span class="nx">reopen</span>         
+          <span class="nx">activate</span>        
+         <span class="nx">end</span> <span class="nx">tell</span>
+<span class="nx">end</span> <span class="nx">run</span>
+</pre></div>
+<h3>2.7 Mac下Terminal指定用Sublime打开文件</h3>
+<div class="highlight"><pre><span></span><span class="c1">#1、open -a</span>
+open -a /Applications/Sublime<span class="se">\ </span>Text.app test.txt
+
+<span class="c1">#2、软链接</span>
+ln /Applications/Sublime<span class="se">\ </span>Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+subl test.txt
+
+<span class="c1">#3、alias</span>
+<span class="nb">alias</span> <span class="nv">sublime</span><span class="o">=</span><span class="s1">&#39;open -a /Applications/Sublime\ Text.app&#39;</span>
+sublime test.txt
+</pre></div>
+<h3>2.8 <code>raw.githubusercontent.com</code>DNS污染问题</h3>
 <ul>
-<li>Iterator是Java迭代器最简单的实现，为List设计的ListIterator具有更多的功能，它可以从两个方向遍历List，也可以从List中插入和删除元素<ul>
-<li>hasNext:没有指针下移操作，只是判断是否存在下一个元素</li>
-<li>next：指针下移，返回该指针所指向的元素</li>
-<li>remove：删除当前指针所指向的元素，一般和next方法一起用，这时候的作用就是删除next方法返回的元素</li>
-</ul>
+<li>打开<a href="https://www.ipaddress.com">ipaddress.com</a>查询<code>raw.githubusercontent.com</code>真实ip<div class="highlight"><pre><span></span>sudo vim /etc/hosts
+<span class="c1">#最后一行添加</span>
+<span class="m">199</span>.232.68.133    raw.githubusercontent.com
+sudo dscacheutil -flushcache    <span class="c1">#刷新DNS缓存</span>
+</pre></div>
 </li>
 </ul>
-</blockquote>
-<h2>代码</h2>
+<h3>2.9 艺术字生成器</h3>
+<div class="highlight"><pre><span></span>figlet 内容
+</pre></div>
+<h3>2.10 谷歌云ssh</h3>
+<div class="highlight"><pre><span></span>sudo -i    <span class="c1">#超级管理员</span>
 
-<pre><code>public static void main(String[] args) {
-        int n = 10, m = 3;
-        LinkedList&lt;Integer&gt; L = new LinkedList&lt;&gt;();
-        for (int i = 1; i &lt;= n; i++) L.add(i);
-        Iterator&lt;Integer&gt; iterator = L.iterator();
-        while (L.size() &gt; 1) {
-            for (int cnt = 0; cnt &lt; m; cnt++) {
-                if (iterator.hasNext())
-                    iterator.next();
-                else {
-                    iterator = L.iterator();
-                    iterator.next();
-                }
-            }
-            iterator.remove();
-        }
-        System.out.println("The last one is: " + L.getFirst());
-    }</code></pre>
+vi /etc/ssh/sshd_config    <span class="c1">#修改SSH配置文件</span>
+
+PermitRootLogin yes    <span class="c1">#默认为no，需要开启root用户访问改为yes</span>
+PasswordAuthentication yes    <span class="c1">#默认为no，改为yes开启密码登陆</span>
+
+passwd root    <span class="c1">#设置密码</span>
+
+/etc/init.d/ssh restart    <span class="c1">#重启ssh服务</span>
+</pre></div>
+<h3>2.10 zsh警告信息</h3>
+<div class="highlight"><pre><span></span><span class="c1">#说明https://www.bootschool.net/article/5e79aba6f60a317efe5bbbd5/oh-my-zsh-warning-message-insecure-completion-dependent-directories-detected</span>
+vim ~/.zshrc
+chmod <span class="m">755</span> /usr/local/share/zsh
+chmod <span class="m">755</span> /usr/local/share/zsh/site-functions
+</pre></div>
+<h2>3、OpenWrt</h2>
+<h3>3.1 samba命令</h3>
+<div class="highlight"><pre><span></span><span class="c1">#重启</span>
+/etc/init.d/samba4 restart
+<span class="c1">#开机启动</span>
+/etc/init.d/samba4 <span class="nb">enable</span>
+<span class="c1">#设置密码</span>
+smbpasswd -a root ****
+</pre></div>
+<h2>3、sublime text 3激活码</h2>
+
+<pre><code>----- BEGIN LICENSE -----
+Member J2TeaM
+Single User License
+EA7E-1011316
+D7DA350E 1B8B0760 972F8B60 F3E64036
+B9B4E234 F356F38F 0AD1E3B7 0E9C5FAD
+FA0A2ABE 25F65BD8 D51458E5 3923CE80
+87428428 79079A01 AA69F319 A1AF29A4
+A684C2DC 0B1583D4 19CBD290 217618CD
+5653E0A0 BACE3948 BB2EE45E 422D2C87
+DD9AF44B 99C49590 D2DBDEE1 75860FD2
+8C8BB2AD B2ECE5A4 EFC08AF2 25A9B864
+------ END LICENSE ------​</code></pre>
 </article>
     </section>
 
     
     <section id="content-pager">
         
+            <div class="next">
+                <a class="card" href="/wiki/archives/Joseph_Java/">
+                    <time>July 14 2020</time>
+                    <span>Java约瑟夫环问题</span>
+                </a>
+            </div>
+        
         
             <div class="prev">
-                <a class="card" href="/wiki/archives/memo/">
-                    <time>March 27 2020</time>
-                    <span>常用命令</span>
+                <a class="card" href="/wiki/archives/linux_deb/">
+                    <time>November 19 2019</time>
+                    <span>安装deb包</span>
                 </a>
             </div>
         
