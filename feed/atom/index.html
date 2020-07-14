@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/</id><title>啃芝士</title><updated>2020-07-14T15:19:30.966360+08:06</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email></author><link href="/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@gh-pages/logo.png</logo><subtitle>简单的记录学习.</subtitle><entry><id>/archives/linux_deb/</id><title>安装deb包</title><updated>2020-07-14T15:19:30.966543+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;p&gt;以&lt;code&gt;manjaro&lt;/code&gt;为例&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;检查有没有安装 debtap&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pacman -Q debtap
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;没有就安装&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;yaourt -S debtap
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;升级debtap&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo debtap -u
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;使用方法&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo debtap  xxxx.deb
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;安装时会提示输入包名，以及license。包名随意，license就填GPL吧
+上述操作完成后会在deb包同级目录生成×.tar.xz文件，直接用pacman安装即可&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pacman -U x.tar.xz
+&lt;/pre&gt;&lt;/div&gt;
+</content><link href="/archives/linux_deb/" rel="alternate"/><published>2019-11-19T00:27:00+08:06</published></entry><entry><id>/archives/memo/</id><title>常用命令</title><updated>2020-07-14T15:19:30.966511+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;1、Windows&lt;/h2&gt;
+&lt;h3&gt;1.1 Windows开机启动&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# 目录地址&lt;/span&gt;
+C:&lt;span class="se"&gt;\P&lt;/span&gt;rogramData&lt;span class="se"&gt;\M&lt;/span&gt;icrosoft&lt;span class="se"&gt;\W&lt;/span&gt;indows&lt;span class="se"&gt;\S&lt;/span&gt;tart Menu&lt;span class="se"&gt;\P&lt;/span&gt;rograms&lt;span class="se"&gt;\S&lt;/span&gt;tartUp
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;2、Mac&lt;/h2&gt;
+&lt;h3&gt;2.1 手动刷新DNS&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo dscacheutil -flushcache
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;2.2 Mac开启任何来源的APP&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo spctl --master-disable
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;2.3 Host key verification failed&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ssh-keygen -R 你要访问的IP地址
+&lt;span class="c1"&gt;#将host key从know_hosts移至know_hosts.old中去&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;2.4 安装powerleve10k&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone https://github.com/romkatv/powerlevel10k.git &lt;span class="nv"&gt;$ZSH_CUSTOM&lt;/span&gt;/themes/powerlevel10k
+
+vim ~/.zshrc 
+
+&lt;span class="c1"&gt;#add&lt;/span&gt;
+&lt;span class="nv"&gt;ZSH_THEME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;powerlevel10k/powerlevel10k&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;POWERLEVEL9K_MODE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;awesome-patched&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;2.5 tmux常用快捷键&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;tmux new -s &lt;span class="s2"&gt;&amp;quot;name&amp;quot;&lt;/span&gt; &lt;span class="c1"&gt;#创建session&lt;/span&gt;
+tmux attach -t     &lt;span class="c1"&gt;#重新连接session&lt;/span&gt;
+ctrl b %   &lt;span class="c1"&gt;#横向分屏&lt;/span&gt;
+ctrl b &lt;span class="s2"&gt;&amp;quot;   #纵向分屏&lt;/span&gt;
+&lt;span class="s2"&gt;ctrl b o   #选择窗格&lt;/span&gt;
+&lt;span class="s2"&gt;ctrl d     #关闭&lt;/span&gt;
+&lt;span class="s2"&gt;ctrl b d   #隐藏所有session&lt;/span&gt;
+&lt;span class="s2"&gt;ctrl b s/w #选择session&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;2.6 应用添加快捷键&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;以iTerm为例&lt;/span&gt;
+&lt;span class="nx"&gt;on&lt;/span&gt; &lt;span class="nx"&gt;run&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;input&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;parameters&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nx"&gt;Your&lt;/span&gt; &lt;span class="nx"&gt;script&lt;/span&gt; &lt;span class="nx"&gt;goes&lt;/span&gt; &lt;span class="nx"&gt;here&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="nx"&gt;tell&lt;/span&gt; &lt;span class="nx"&gt;application&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;iTerm&amp;quot;&lt;/span&gt;         
+          &lt;span class="nx"&gt;reopen&lt;/span&gt;         
+          &lt;span class="nx"&gt;activate&lt;/span&gt;        
+         &lt;span class="nx"&gt;end&lt;/span&gt; &lt;span class="nx"&gt;tell&lt;/span&gt;
+&lt;span class="nx"&gt;end&lt;/span&gt; &lt;span class="nx"&gt;run&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;2.7 Mac下Terminal指定用Sublime打开文件&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#1、open -a&lt;/span&gt;
+open -a /Applications/Sublime&lt;span class="se"&gt;\ &lt;/span&gt;Text.app test.txt
+
+&lt;span class="c1"&gt;#2、软链接&lt;/span&gt;
+ln /Applications/Sublime&lt;span class="se"&gt;\ &lt;/span&gt;Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+subl test.txt
+
+&lt;span class="c1"&gt;#3、alias&lt;/span&gt;
+&lt;span class="nb"&gt;alias&lt;/span&gt; &lt;span class="nv"&gt;sublime&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;open -a /Applications/Sublime\ Text.app&amp;#39;&lt;/span&gt;
+sublime test.txt
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;2.8 &lt;code&gt;raw.githubusercontent.com&lt;/code&gt;DNS污染问题&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;打开&lt;a href="https://www.ipaddress.com"&gt;ipaddress.com&lt;/a&gt;查询&lt;code&gt;raw.githubusercontent.com&lt;/code&gt;真实ip&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo vim /etc/hosts
+&lt;span class="c1"&gt;#最后一行添加&lt;/span&gt;
+&lt;span class="m"&gt;199&lt;/span&gt;.232.68.133    raw.githubusercontent.com
+sudo dscacheutil -flushcache    &lt;span class="c1"&gt;#刷新DNS缓存&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2.9 艺术字生成器&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;figlet 内容
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;2.10 谷歌云ssh&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo -i    &lt;span class="c1"&gt;#超级管理员&lt;/span&gt;
+
+vi /etc/ssh/sshd_config    &lt;span class="c1"&gt;#修改SSH配置文件&lt;/span&gt;
+
+PermitRootLogin yes    &lt;span class="c1"&gt;#默认为no，需要开启root用户访问改为yes&lt;/span&gt;
+PasswordAuthentication yes    &lt;span class="c1"&gt;#默认为no，改为yes开启密码登陆&lt;/span&gt;
+
+passwd root    &lt;span class="c1"&gt;#设置密码&lt;/span&gt;
+
+/etc/init.d/ssh restart    &lt;span class="c1"&gt;#重启ssh服务&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;2.10 zsh警告信息&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#说明https://www.bootschool.net/article/5e79aba6f60a317efe5bbbd5/oh-my-zsh-warning-message-insecure-completion-dependent-directories-detected&lt;/span&gt;
+vim ~/.zshrc
+chmod &lt;span class="m"&gt;755&lt;/span&gt; /usr/local/share/zsh
+chmod &lt;span class="m"&gt;755&lt;/span&gt; /usr/local/share/zsh/site-functions
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;3、OpenWrt&lt;/h2&gt;
+&lt;h3&gt;3.1 samba命令&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#重启&lt;/span&gt;
+/etc/init.d/samba4 restart
+&lt;span class="c1"&gt;#开机启动&lt;/span&gt;
+/etc/init.d/samba4 &lt;span class="nb"&gt;enable&lt;/span&gt;
+&lt;span class="c1"&gt;#设置密码&lt;/span&gt;
+smbpasswd -a root ****
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;4、sublime text 3激活码&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;----- BEGIN LICENSE -----
+Member J2TeaM
+Single User License
+EA7E-1011316
+D7DA350E 1B8B0760 972F8B60 F3E64036
+B9B4E234 F356F38F 0AD1E3B7 0E9C5FAD
+FA0A2ABE 25F65BD8 D51458E5 3923CE80
+87428428 79079A01 AA69F319 A1AF29A4
+A684C2DC 0B1583D4 19CBD290 217618CD
+5653E0A0 BACE3948 BB2EE45E 422D2C87
+DD9AF44B 99C49590 D2DBDEE1 75860FD2
+8C8BB2AD B2ECE5A4 EFC08AF2 25A9B864
+------ END LICENSE ------​&lt;/code&gt;&lt;/pre&gt;
+</content><link href="/archives/memo/" rel="alternate"/><published>2020-03-27T20:58:00+08:06</published></entry><entry><id>/archives/Joseph_Java/</id><title>Java约瑟夫环问题</title><updated>2020-07-14T15:19:30.966452+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;p&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98"&gt;约瑟夫环问题&lt;/a&gt;：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。&lt;/p&gt;
+&lt;h2&gt;例题&lt;/h2&gt;
+&lt;blockquote&gt;&lt;p&gt;设有n个人围坐一圈并按顺时针方向从1到n编号，从第1个人开始进行1到m的报数，报数到第个m人，此人出圈，再从他的下一个人重新开始1到m的报数，如此进行下去直到所剩下一人为止。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;解决方法：&lt;code&gt;LinkedList&lt;/code&gt; + &lt;code&gt;Iterator&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;LinkedList类是双向链表,列表中的每个节点都包含了对前一个和后一个元素的引用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Iterator是Java迭代器最简单的实现，为List设计的ListIterator具有更多的功能，它可以从两个方向遍历List，也可以从List中插入和删除元素&lt;ul&gt;
+&lt;li&gt;hasNext:没有指针下移操作，只是判断是否存在下一个元素&lt;/li&gt;
+&lt;li&gt;next：指针下移，返回该指针所指向的元素&lt;/li&gt;
+&lt;li&gt;remove：删除当前指针所指向的元素，一般和next方法一起用，这时候的作用就是删除next方法返回的元素&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;代码&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;public static void main(String[] args) {
+        int n = 10, m = 3;
+        LinkedList&amp;lt;Integer&amp;gt; L = new LinkedList&amp;lt;&amp;gt;();
+        for (int i = 1; i &amp;lt;= n; i++) L.add(i);
+        Iterator&amp;lt;Integer&amp;gt; iterator = L.iterator();
+        while (L.size() &amp;gt; 1) {
+            for (int cnt = 0; cnt &amp;lt; m; cnt++) {
+                if (iterator.hasNext())
+                    iterator.next();
+                else {
+                    iterator = L.iterator();
+                    iterator.next();
+                }
+            }
+            iterator.remove();
+        }
+        System.out.println("The last one is: " + L.getFirst());
+    }&lt;/code&gt;&lt;/pre&gt;
+</content><link href="/archives/Joseph_Java/" rel="alternate"/><published>2020-07-14T01:46:00+08:06</published></entry></feed>
