@@ -16,7 +16,7 @@ template = {
 }
 enable_jsdelivr = {
     "enabled": "true",
-    "repo": "ZGGSONG/wiki-cdn@gh-pages"
+    "repo": "ZGGSONG/wiki-cdn"
 }
 
 # 站点设置
@@ -45,17 +45,17 @@ external_links = [
 nav = [
     {
         "name": "首页",
-        "url": "${site_prefix}",
+        "url": "${static_prefix}",
         "target": "_self"
     },
     {
         "name": "归档",
-        "url": "${site_prefix}archives/",
+        "url": "${static_prefix}archives/",
         "target": "_self"
     },
     {
         "name": "关于",
-        "url": "${site_prefix}about/",
+        "url": "${static_prefix}about/",
         "target": "_self"
     }
 ]
