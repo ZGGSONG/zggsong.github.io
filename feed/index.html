@@ -1,42 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>艾芝士</title><link>/wiki/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@gh-pages/logo.png</url><title>艾芝士</title><link>/wiki/</link></image><language>zh-CN</language><lastBuildDate>Tue, 14 Jul 2020 03:49:46 +0806</lastBuildDate><pubDate>Tue, 14 Jul 2020 03:49:46 +0806</pubDate><item><title>Java约瑟夫环问题</title><link>/wiki/archives/a-interesting-story/</link><description>&lt;p&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98"&gt;约瑟夫环问题&lt;/a&gt;：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。&lt;/p&gt;
-&lt;h2&gt;例题&lt;/h2&gt;
-&lt;blockquote&gt;&lt;p&gt;设有n个人围坐一圈并按顺时针方向从1到n编号，从第1个人开始进行1到m的报数，报数到第个m人，此人出圈，再从他的下一个人重新开始1到m的报数，如此进行下去直到所剩下一人为止。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;解决方法：&lt;code&gt;LinkedList&lt;/code&gt; + &lt;code&gt;Iterator&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;LinkedList类是双向链表,列表中的每个节点都包含了对前一个和后一个元素的引用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;Iterator是Java迭代器最简单的实现，为List设计的ListIterator具有更多的功能，它可以从两个方向遍历List，也可以从List中插入和删除元素&lt;ul&gt;
-&lt;li&gt;hasNext:没有指针下移操作，只是判断是否存在下一个元素&lt;/li&gt;
-&lt;li&gt;next：指针下移，返回该指针所指向的元素&lt;/li&gt;
-&lt;li&gt;remove：删除当前指针所指向的元素，一般和next方法一起用，这时候的作用就是删除next方法返回的元素&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;代码&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;public static void main(String[] args) {
-        int n = 10, m = 3;
-        LinkedList&amp;lt;Integer&amp;gt; L = new LinkedList&amp;lt;&amp;gt;();
-        for (int i = 1; i &amp;lt;= n; i++) L.add(i);
-        Iterator&amp;lt;Integer&amp;gt; iterator = L.iterator();
-        while (L.size() &amp;gt; 1) {
-            for (int cnt = 0; cnt &amp;lt; m; cnt++) {
-                if (iterator.hasNext())
-                    iterator.next();
-                else {
-                    iterator = L.iterator();
-                    iterator.next();
-                }
-            }
-            iterator.remove();
-        }
-        System.out.println("The last one is: " + L.getFirst());
-    }&lt;/code&gt;&lt;/pre&gt;
-</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/wiki/archives/a-interesting-story/</guid><pubDate>Tue, 14 Jul 2020 01:46:00 +0806</pubDate></item><item><title>二级菜单测试</title><link>/wiki/archives/a-interesting-story/</link><description>&lt;p&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98"&gt;约瑟夫环问题&lt;/a&gt;：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>艾芝士</title><link>/wiki/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@gh-pages/logo.png</url><title>艾芝士</title><link>/wiki/</link></image><language>zh-CN</language><lastBuildDate>Tue, 14 Jul 2020 03:53:07 +0806</lastBuildDate><pubDate>Tue, 14 Jul 2020 03:53:07 +0806</pubDate><item><title>Java约瑟夫环问题</title><link>/wiki/archives/a-interesting-story/</link><description>&lt;p&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98"&gt;约瑟夫环问题&lt;/a&gt;：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。&lt;/p&gt;
 &lt;h2&gt;例题&lt;/h2&gt;
 &lt;blockquote&gt;&lt;p&gt;设有n个人围坐一圈并按顺时针方向从1到n编号，从第1个人开始进行1到m的报数，报数到第个m人，此人出圈，再从他的下一个人重新开始1到m的报数，如此进行下去直到所剩下一人为止。&lt;/p&gt;
 &lt;/blockquote&gt;
