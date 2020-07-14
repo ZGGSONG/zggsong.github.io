@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/wiki/</id><title>艾芝士</title><updated>2020-07-14T05:11:34.409486+08:06</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email></author><link href="/wiki/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@gh-pages/logo.png</logo><subtitle>简单的记录学习.</subtitle><entry><id>/wiki/archives/linux_deb/</id><title>安装deb包</title><updated>2020-07-14T05:11:34.409658+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;p&gt;以&lt;code&gt;manjaro&lt;/code&gt;为例&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/wiki/</id><title>啃芝士</title><updated>2020-07-14T06:03:12.553365+08:06</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email></author><link href="/wiki/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@gh-pages/logo.png</logo><subtitle>简单的记录学习.</subtitle><entry><id>/wiki/archives/linux_deb/</id><title>安装deb包</title><updated>2020-07-14T06:03:12.553536+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;p&gt;以&lt;code&gt;manjaro&lt;/code&gt;为例&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;检查有没有安装 debtap&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pacman -Q debtap
@@ -17,7 +17,7 @@
 上述操作完成后会在deb包同级目录生成×.tar.xz文件，直接用pacman安装即可&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pacman -U x.tar.xz
 &lt;/pre&gt;&lt;/div&gt;
-</content><link href="/wiki/archives/linux_deb/" rel="alternate"/><published>2019-11-19T00:27:00+08:06</published></entry><entry><id>/wiki/archives/memo/</id><title>常用命令</title><updated>2020-07-14T05:11:34.409624+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;1、Windows&lt;/h2&gt;
+</content><link href="/wiki/archives/linux_deb/" rel="alternate"/><published>2019-11-19T00:27:00+08:06</published></entry><entry><id>/wiki/archives/memo/</id><title>常用命令</title><updated>2020-07-14T06:03:12.553502+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;1、Windows&lt;/h2&gt;
 &lt;h3&gt;1.1 Windows开机启动&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# 目录地址&lt;/span&gt;
 C:&lt;span class="se"&gt;\P&lt;/span&gt;rogramData&lt;span class="se"&gt;\M&lt;/span&gt;icrosoft&lt;span class="se"&gt;\W&lt;/span&gt;indows&lt;span class="se"&gt;\S&lt;/span&gt;tart Menu&lt;span class="se"&gt;\P&lt;/span&gt;rograms&lt;span class="se"&gt;\S&lt;/span&gt;tartUp
@@ -128,7 +128,7 @@ A684C2DC 0B1583D4 19CBD290 217618CD
 DD9AF44B 99C49590 D2DBDEE1 75860FD2
 8C8BB2AD B2ECE5A4 EFC08AF2 25A9B864
 ------ END LICENSE ------​&lt;/code&gt;&lt;/pre&gt;
-</content><link href="/wiki/archives/memo/" rel="alternate"/><published>2020-03-27T20:58:00+08:06</published></entry><entry><id>/wiki/archives/Joseph_Java/</id><title>Java约瑟夫环问题</title><updated>2020-07-14T05:11:34.409563+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;p&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98"&gt;约瑟夫环问题&lt;/a&gt;：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。&lt;/p&gt;
+</content><link href="/wiki/archives/memo/" rel="alternate"/><published>2020-03-27T20:58:00+08:06</published></entry><entry><id>/wiki/archives/Joseph_Java/</id><title>Java约瑟夫环问题</title><updated>2020-07-14T06:03:12.553443+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;p&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98"&gt;约瑟夫环问题&lt;/a&gt;：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。&lt;/p&gt;
 &lt;h2&gt;例题&lt;/h2&gt;
 &lt;blockquote&gt;&lt;p&gt;设有n个人围坐一圈并按顺时针方向从1到n编号，从第1个人开始进行1到m的报数，报数到第个m人，此人出圈，再从他的下一个人重新开始1到m的报数，如此进行下去直到所剩下一人为止。&lt;/p&gt;
 &lt;/blockquote&gt;
