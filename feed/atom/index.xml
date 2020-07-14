@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/wiki/</id><title>艾芝士</title><updated>2020-07-14T03:53:07.735552+08:06</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email></author><link href="/wiki/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@gh-pages/logo.png</logo><subtitle>简单的记录学习.</subtitle><entry><id>/wiki/archives/a-interesting-story/</id><title>Java约瑟夫环问题</title><updated>2020-07-14T03:53:07.735684+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;p&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98"&gt;约瑟夫环问题&lt;/a&gt;：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/zggsong.github.io/</id><title>艾芝士</title><updated>2020-07-14T04:02:46.710169+08:06</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email></author><link href="/zggsong.github.io/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@gh-pages/logo.png</logo><subtitle>简单的记录学习.</subtitle><entry><id>/zggsong.github.io/archives/a-interesting-story/</id><title>Java约瑟夫环问题</title><updated>2020-07-14T04:02:46.710238+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;p&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98"&gt;约瑟夫环问题&lt;/a&gt;：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。&lt;/p&gt;
 &lt;h2&gt;例题&lt;/h2&gt;
 &lt;blockquote&gt;&lt;p&gt;设有n个人围坐一圈并按顺时针方向从1到n编号，从第1个人开始进行1到m的报数，报数到第个m人，此人出圈，再从他的下一个人重新开始1到m的报数，如此进行下去直到所剩下一人为止。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -36,4 +36,4 @@
         }
         System.out.println("The last one is: " + L.getFirst());
     }&lt;/code&gt;&lt;/pre&gt;
-</content><link href="/wiki/archives/a-interesting-story/" rel="alternate"/><published>2020-07-14T01:46:00+08:06</published></entry></feed>
+</content><link href="/zggsong.github.io/archives/a-interesting-story/" rel="alternate"/><published>2020-07-14T01:46:00+08:06</published></entry></feed>

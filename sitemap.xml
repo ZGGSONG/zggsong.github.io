@@ -5,14 +5,14 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	
 
 <url>
-    <loc>/wiki/about/</loc>
+    <loc>/zggsong.github.io/about/</loc>
     <lastmod>2020-07-14</lastmod>
     <changefreq>always</changefreq>
     <priority>0.8</priority>
 </url>
 
 <url>
-    <loc>/wiki/archives/a-interesting-story/</loc>
+    <loc>/zggsong.github.io/archives/a-interesting-story/</loc>
     <lastmod>2020-07-14</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
