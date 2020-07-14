@@ -16,7 +16,7 @@ template = {
 }
 enable_jsdelivr = {
     "enabled": "true",
-    "repo": "ZGGSONG/wiki@gh-pages"
+    "repo": "ZGGSONG/wiki@master"
 }
 
 # 站点设置
