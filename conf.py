@@ -40,6 +40,11 @@ external_links = [
         "name": "music",
         "url": "https://www.zggsong.cn/zgg/program/music",
         "brief": "music."
+    },
+    {
+        "name": "github",
+        "url": "https://www.github.com/ZGGSONG",
+        "brief": "github."
     }
 ]
 nav = [
