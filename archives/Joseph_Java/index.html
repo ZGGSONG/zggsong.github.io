@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@master/2510bf598814e25d5170bf1e12dccbec.json"
+            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@master/09ea203fd6819f6d8128ea7f4e45014f.json"
         }
     </script>
     <script>
@@ -115,7 +115,7 @@ var _hmt = _hmt || [];
                     
                     <section>
                         
-    <div class="open "><span><a href="/category/编程笔记/">编程笔记</a><button class="toggle_sidebar fa"></button></span><ul><div class="open "><span><a href="/category/Java/">Java</a><button class="toggle_sidebar fa"></button></span><ul><li class="current"><a href="/archives/Joseph_Java/">Java约瑟夫环问题</a></li></ul></div></ul></div><div class=" "><span><a href="/category/日常技巧/">日常技巧</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/memo/">常用命令</a></li><div class=" "><span><a href="/category/linux/">linux</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/linux_deb/">安装deb包</a></li></ul></div></ul></div>
+    <div class="open "><span><a href="/category/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/">编程笔记</a><button class="toggle_sidebar fa"></button></span><ul><div class="open "><span><a href="/category/Java/">Java</a><button class="toggle_sidebar fa"></button></span><ul><li class="current"><a href="/archives/Joseph_Java/">Java约瑟夫环问题</a></li></ul></div></ul></div><div class=" "><span><a href="/category/%E6%97%A5%E5%B8%B8%E6%8A%80%E5%B7%A7/">日常技巧</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/memo/">常用命令</a></li><div class=" "><span><a href="/category/linux/">linux</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/linux_deb/">linux安装deb包</a></li></ul></div></ul></div>
 
                     </section>
                     <section hidden class="sidebar-external-link">
@@ -147,21 +147,25 @@ var _hmt = _hmt || [];
         </p>
         <article class="yue"><p><a href="https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98">约瑟夫环问题</a>：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。</p>
 <h2>例题</h2>
-<blockquote><p>设有n个人围坐一圈并按顺时针方向从1到n编号，从第1个人开始进行1到m的报数，报数到第个m人，此人出圈，再从他的下一个人重新开始1到m的报数，如此进行下去直到所剩下一人为止。</p>
+<blockquote>
+<p>设有n个人围坐一圈并按顺时针方向从1到n编号，从第1个人开始进行1到m的报数，报数到第个m人，此人出圈，再从他的下一个人重新开始1到m的报数，如此进行下去直到所剩下一人为止。</p>
 </blockquote>
 <p>解决方法：<code>LinkedList</code> + <code>Iterator</code></p>
-<blockquote><ul>
+<blockquote>
+<ul>
 <li>LinkedList类是双向链表,列表中的每个节点都包含了对前一个和后一个元素的引用</li>
 </ul>
+</blockquote>
+<blockquote>
 <ul>
-<li>Iterator是Java迭代器最简单的实现，为List设计的ListIterator具有更多的功能，它可以从两个方向遍历List，也可以从List中插入和删除元素<ul>
+<li>Iterator是Java迭代器最简单的实现，为List设计的ListIterator具有更多的功能，它可以从两个方向遍历List，也可以从List中插入和删除元素</li>
+</ul>
+</blockquote>
+<ul>
 <li>hasNext:没有指针下移操作，只是判断是否存在下一个元素</li>
 <li>next：指针下移，返回该指针所指向的元素</li>
 <li>remove：删除当前指针所指向的元素，一般和next方法一起用，这时候的作用就是删除next方法返回的元素</li>
 </ul>
-</li>
-</ul>
-</blockquote>
 <h2>代码</h2>
 
 <pre><code>public static void main(String[] args) {
@@ -180,8 +184,9 @@ var _hmt = _hmt || [];
             }
             iterator.remove();
         }
-        System.out.println("The last one is: " + L.getFirst());
-    }</code></pre>
+        System.out.println(&quot;The last one is: &quot; + L.getFirst());
+    }
+</code></pre>
 </article>
     </section>
 

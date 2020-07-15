@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@master/2510bf598814e25d5170bf1e12dccbec.json"
+            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@master/09ea203fd6819f6d8128ea7f4e45014f.json"
         }
     </script>
     <script>
@@ -32,17 +32,17 @@
         });
     </script>
     
-<title>安装deb包 - 啃芝士</title>
+<title>linux安装deb包 - 啃芝士</title>
 <meta name="author" content="ZGGSONG" />
 <meta name="description" content="以manjaro为例" />
-<meta property="og:title" content="安装deb包 - 啃芝士" />
+<meta property="og:title" content="linux安装deb包 - 啃芝士" />
 <meta property="og:description" content="以manjaro为例" />
 <meta property="og:site_name" content="啃芝士" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/archives/linux_deb/" />
 <meta property="og:image" content="" />
 <meta property="article:published_time" content="2019-11-19T00:27:00-00.00" />
-<meta name="twitter:title" content="安装deb包 - 啃芝士" />
+<meta name="twitter:title" content="linux安装deb包 - 啃芝士" />
 <meta name="twitter:description" content="以manjaro为例" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:image" content="" />
@@ -115,7 +115,7 @@ var _hmt = _hmt || [];
                     
                     <section>
                         
-    <div class=" "><span><a href="/category/编程笔记/">编程笔记</a><button class="toggle_sidebar fa"></button></span><ul><div class=" "><span><a href="/category/Java/">Java</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/Joseph_Java/">Java约瑟夫环问题</a></li></ul></div></ul></div><div class="open "><span><a href="/category/日常技巧/">日常技巧</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/memo/">常用命令</a></li><div class="open "><span><a href="/category/linux/">linux</a><button class="toggle_sidebar fa"></button></span><ul><li class="current"><a href="/archives/linux_deb/">安装deb包</a></li></ul></div></ul></div>
+    <div class=" "><span><a href="/category/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/">编程笔记</a><button class="toggle_sidebar fa"></button></span><ul><div class=" "><span><a href="/category/Java/">Java</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/Joseph_Java/">Java约瑟夫环问题</a></li></ul></div></ul></div><div class="open "><span><a href="/category/%E6%97%A5%E5%B8%B8%E6%8A%80%E5%B7%A7/">日常技巧</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/memo/">常用命令</a></li><div class="open "><span><a href="/category/linux/">linux</a><button class="toggle_sidebar fa"></button></span><ul><li class="current"><a href="/archives/linux_deb/">linux安装deb包</a></li></ul></div></ul></div>
 
                     </section>
                     <section hidden class="sidebar-external-link">
@@ -134,19 +134,19 @@ var _hmt = _hmt || [];
                 <div id="content-wrapper">
                     <div id="content">
     <section>
-        <h1 class="post-title">安装deb包</h1>
+        <h1 class="post-title">linux安装deb包</h1>
         <p class="post-meta">
             <time>November 19 2019</time>
             <span class="tags">
                 
                 <span>
-                    <a href="/tag/deb包/">#deb包</a>
+                    <a href="/tag/deb%E5%8C%85/">#deb包</a>
                 </span>
                 
             </span>
         </p>
         <article class="yue"><p>以<code>manjaro</code>为例</p>
-<hr>
+<hr />
 <h2>检查有没有安装 debtap</h2>
 <div class="highlight"><pre><span></span>sudo pacman -Q debtap
 </pre></div>
@@ -154,8 +154,9 @@ var _hmt = _hmt || [];
 <div class="highlight"><pre><span></span>yaourt -S debtap
 </pre></div>
 <h2>升级debtap</h2>
-<div class="highlight"><pre><span></span>sudo debtap -u
-</pre></div>
+
+<pre><code>sudo debtap -u
+</code></pre>
 <h2>使用方法</h2>
 <div class="highlight"><pre><span></span>sudo debtap  xxxx.deb
 </pre></div>
