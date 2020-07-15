@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>啃芝士</title><link>/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@master/logo.png</url><title>啃芝士</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Wed, 15 Jul 2020 16:56:36 +0806</lastBuildDate><pubDate>Wed, 15 Jul 2020 16:56:36 +0806</pubDate><item><title>linux安装deb包</title><link>/archives/linux_deb/</link><description>&lt;p&gt;以&lt;code&gt;manjaro&lt;/code&gt;为例&lt;/p&gt;
-&lt;hr /&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>啃芝士</title><link>/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@master/logo.png</url><title>啃芝士</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Wed, 15 Jul 2020 16:57:20 +0806</lastBuildDate><pubDate>Wed, 15 Jul 2020 16:57:20 +0806</pubDate><item><title>安装deb包</title><link>/archives/linux_deb/</link><description>&lt;p&gt;以&lt;code&gt;manjaro&lt;/code&gt;为例&lt;/p&gt;
+&lt;hr&gt;
 &lt;h2&gt;检查有没有安装 debtap&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pacman -Q debtap
 &lt;/pre&gt;&lt;/div&gt;
@@ -8,9 +8,8 @@
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;yaourt -S debtap
 &lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;升级debtap&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo debtap -u
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo debtap -u
+&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;使用方法&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo debtap  xxxx.deb
 &lt;/pre&gt;&lt;/div&gt;
@@ -77,13 +76,13 @@ sublime test.txt
 &lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;2.8 &lt;code&gt;raw.githubusercontent.com&lt;/code&gt;DNS污染问题&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;打开&lt;a href="https://www.ipaddress.com"&gt;ipaddress.com&lt;/a&gt;查询&lt;code&gt;raw.githubusercontent.com&lt;/code&gt;真实ip&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo vim /etc/hosts
+&lt;li&gt;打开&lt;a href="https://www.ipaddress.com"&gt;ipaddress.com&lt;/a&gt;查询&lt;code&gt;raw.githubusercontent.com&lt;/code&gt;真实ip&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo vim /etc/hosts
 &lt;span class="c1"&gt;#最后一行添加&lt;/span&gt;
 &lt;span class="m"&gt;199&lt;/span&gt;.232.68.133    raw.githubusercontent.com
 sudo dscacheutil -flushcache    &lt;span class="c1"&gt;#刷新DNS缓存&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;2.9 艺术字生成器&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;figlet 内容
 &lt;/pre&gt;&lt;/div&gt;
@@ -115,8 +114,7 @@ whoami   #查看用户名
 # 然后将id_rsa.pub上传到电脑
 
 #电脑
-ssh 用户名@ip -p 8022
-&lt;/code&gt;&lt;/pre&gt;
+ssh 用户名@ip -p 8022&lt;/code&gt;&lt;/pre&gt;
 &lt;h3&gt;2.12 linux查看修改时区&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;一、查看和修改Linux的时区
@@ -132,7 +130,7 @@ tzselect
 
 方法 B 仅限于RedHat Linux 和 CentOS
 
-timeconfig&amp;quot;
+timeconfig"
 
 方法 C 适用于Debian
 
@@ -144,8 +142,7 @@ cp /usr/share/zoneinfo/$主时区/$次时区 /etc/localtime
 
 例如：在设置中国时区使用亚洲/上海（+8）
 
-cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-&lt;/code&gt;&lt;/pre&gt;
+cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;3、OpenWrt&lt;/h2&gt;
 &lt;h3&gt;3.1 samba命令&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#重启&lt;/span&gt;
@@ -169,29 +166,24 @@ A684C2DC 0B1583D4 19CBD290 217618CD
 5653E0A0 BACE3948 BB2EE45E 422D2C87
 DD9AF44B 99C49590 D2DBDEE1 75860FD2
 8C8BB2AD B2ECE5A4 EFC08AF2 25A9B864
------- END LICENSE ------​
-&lt;/code&gt;&lt;/pre&gt;
+------ END LICENSE ------​&lt;/code&gt;&lt;/pre&gt;
 </description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/memo/</guid><pubDate>Fri, 27 Mar 2020 20:58:00 +0806</pubDate></item><item><title>Java约瑟夫环问题</title><link>/archives/Joseph_Java/</link><description>&lt;p&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98"&gt;约瑟夫环问题&lt;/a&gt;：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。&lt;/p&gt;
 &lt;h2&gt;例题&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;设有n个人围坐一圈并按顺时针方向从1到n编号，从第1个人开始进行1到m的报数，报数到第个m人，此人出圈，再从他的下一个人重新开始1到m的报数，如此进行下去直到所剩下一人为止。&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;设有n个人围坐一圈并按顺时针方向从1到n编号，从第1个人开始进行1到m的报数，报数到第个m人，此人出圈，再从他的下一个人重新开始1到m的报数，如此进行下去直到所剩下一人为止。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;解决方法：&lt;code&gt;LinkedList&lt;/code&gt; + &lt;code&gt;Iterator&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
+&lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;LinkedList类是双向链表,列表中的每个节点都包含了对前一个和后一个元素的引用&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;Iterator是Java迭代器最简单的实现，为List设计的ListIterator具有更多的功能，它可以从两个方向遍历List，也可以从List中插入和删除元素&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
+&lt;li&gt;Iterator是Java迭代器最简单的实现，为List设计的ListIterator具有更多的功能，它可以从两个方向遍历List，也可以从List中插入和删除元素&lt;ul&gt;
 &lt;li&gt;hasNext:没有指针下移操作，只是判断是否存在下一个元素&lt;/li&gt;
 &lt;li&gt;next：指针下移，返回该指针所指向的元素&lt;/li&gt;
 &lt;li&gt;remove：删除当前指针所指向的元素，一般和next方法一起用，这时候的作用就是删除next方法返回的元素&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;h2&gt;代码&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;public static void main(String[] args) {
@@ -210,7 +202,6 @@ DD9AF44B 99C49590 D2DBDEE1 75860FD2
             }
             iterator.remove();
         }
-        System.out.println(&amp;quot;The last one is: &amp;quot; + L.getFirst());
-    }
-&lt;/code&gt;&lt;/pre&gt;
+        System.out.println("The last one is: " + L.getFirst());
+    }&lt;/code&gt;&lt;/pre&gt;
 </description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/Joseph_Java/</guid><pubDate>Tue, 14 Jul 2020 01:46:00 +0806</pubDate></item></channel></rss>
