@@ -65,7 +65,7 @@ jobs:
         PUBLISH_DIR: ./build_cache
       with:
         emptyCommits: false
-
+# Deploy to Tencent
     - name: Deploy static to Tencent CloudBase
       id: deployStatic
       uses: TencentCloudBase/cloudbase-action@v1.1.0
