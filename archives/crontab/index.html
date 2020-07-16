@@ -32,19 +32,20 @@
         });
     </script>
     
-<title>Tag: git - 啃芝士</title>
+<title>crontab定时计划 - 啃芝士</title>
 <meta name="author" content="ZGGSONG" />
-<meta name="description" content="简单的记录学习." />
-<meta property="og:title" content="Tag: git - 啃芝士" />
-<meta property="og:description" content="简单的记录学习." />
+<meta name="description" content="简介" />
+<meta property="og:title" content="crontab定时计划 - 啃芝士" />
+<meta property="og:description" content="简介" />
 <meta property="og:site_name" content="啃芝士" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/tag/git/" />
-<meta property="og:image" content="啃芝士" />
-<meta name="twitter:title" content="Tag: git - 啃芝士" />
-<meta name="twitter:description" content="简单的记录学习." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/archives/crontab/" />
+<meta property="og:image" content="" />
+<meta property="article:published_time" content="2020-07-16T09:07:00-00.00" />
+<meta name="twitter:title" content="crontab定时计划 - 啃芝士" />
+<meta name="twitter:description" content="简介" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@master/logo.png" />
+<meta name="twitter:image" content="" />
 
 
     
@@ -70,7 +71,7 @@ var _hmt = _hmt || [];
 
     </head>
     
-    <body class="archive">
+    <body class="content">
         <header>
             <div class="container">
                 <section>
@@ -114,7 +115,7 @@ var _hmt = _hmt || [];
                     
                     <section>
                         
-    <div class=" "><span><a href="/category/%E6%97%A5%E5%B8%B8%E6%8A%80%E5%B7%A7/">日常技巧</a><button class="toggle_sidebar fa"></button></span><ul><div class=" "><span><a href="/category/linux/">linux</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/crontab/">crontab定时计划</a></li><li class=""><a href="/archives/linux_deb/">linux安装deb包</a></li></ul></div><div class=" "><span><a href="/category/VPS/">VPS</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/bbr-plus/">BBR开启脚本</a></li></ul></div><li class=""><a href="/archives/memo/">常用命令</a></li></ul></div><div class=" "><span><a href="/category/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/">编程笔记</a><button class="toggle_sidebar fa"></button></span><ul><div class=" "><span><a href="/category/Java/">Java</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/Joseph_Java/">Java约瑟夫环问题</a></li></ul></div></ul></div>
+    <div class="open "><span><a href="/category/%E6%97%A5%E5%B8%B8%E6%8A%80%E5%B7%A7/">日常技巧</a><button class="toggle_sidebar fa"></button></span><ul><div class="open "><span><a href="/category/linux/">linux</a><button class="toggle_sidebar fa"></button></span><ul><li class="current"><a href="/archives/crontab/">crontab定时计划</a></li><li class=""><a href="/archives/linux_deb/">linux安装deb包</a></li></ul></div><div class=" "><span><a href="/category/VPS/">VPS</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/bbr-plus/">BBR开启脚本</a></li></ul></div><li class=""><a href="/archives/memo/">常用命令</a></li></ul></div><div class=" "><span><a href="/category/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/">编程笔记</a><button class="toggle_sidebar fa"></button></span><ul><div class=" "><span><a href="/category/Java/">Java</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/Joseph_Java/">Java约瑟夫环问题</a></li></ul></div></ul></div>
 
                     </section>
                     <section hidden class="sidebar-external-link">
@@ -132,38 +133,182 @@ var _hmt = _hmt || [];
                 </aside>
                 <div id="content-wrapper">
                     <div id="content">
-
     <section>
-        <h1 class="page-title">TAG: #git</h1>
-        <div id="content-list">
-            
-            <section class="card-list">
+        <h1 class="post-title">crontab定时计划</h1>
+        <p class="post-meta">
+            <time>July 16 2020</time>
+            <span class="tags">
                 
-                    <a class="card" href="/archives/memo/">
-                        <time>March 27 2020</time>
-                        <span>常用命令</span>
-                    </a>
+                <span>
+                    <a href="/tag/crontab/">#crontab</a>
+                </span>
                 
-            </section>
-        </div>
+            </span>
+        </p>
+        <article class="yue"><h2>简介</h2>
+<ul>
+<li><p>名称：crontab</p>
+</li>
+<li><p>功能说明：设置计时器。</p>
+</li>
+<li><p>语法：crontab [-u &lt;用户名称&gt;][配置文件] 或 crontab [-u &lt;用户名称&gt;][-elr]</p>
+</li>
+</ul>
+<blockquote>
+<p>补充说明：cron是一个常驻服务，它提供计时器的功能，让用户在特定的时间得以执行预设的指令或程序。只要用户会编辑计时器的配置文件，就可以使用计时器的功能。其配置文件格式如下：</p>
+</blockquote>
+<p><code>Minute Hour Day Month DayOFWeek Command</code></p>
+<ul>
+<li><p>配置命令的取值范围：</p>
+<ul>
+<li>minute (0-59), hour (0-23), day of the month (1-31), month of the year (1-12), day of the week (0-6 with 0=Sunday).</li>
+</ul>
+</li>
+<li><p>参数：</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span>-e 　编辑该用户的计时器设置。
+
+-l 　列出该用户的计时器设置。
+
+-r 　删除该用户的计时器设置。
+
+-u&lt;用户名称&gt; 　指定要设定计时器的用户名称。
+</pre></div>
+<ul>
+<li><p>详细说明：</p>
+<ul>
+<li>时程表的格式如下 :</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span>f1 f2 f3 f4 f5 program
+
+其中 f1 是表示分钟，f2 表示小时，f3 表示一个月份中的第几日，f4 表示月份，f5 表示一个星期中的第几天。program 表示要执行的程序。
+
+当 f1 为 * 时表示每分钟都要执行 program，f2 为 * 时表示每小时都要执行程序，其余类推
+
+当 f1 为 a-b 时表示从第 a 分钟到第 b 分钟这段时间内要执行，f2 为 a-b 时表示从第 a 到第 b 小时都要执行，其余类推
+
+当 f1 为 */n 时表示每 n 分钟个时间间隔执行一次，f2 为 */n 表示每 n 小时个时间间隔执行一次，其余类推
+
+当 f1 为 a, b, c,... 时表示第 a, b, c,... 分钟要执行，f2 为 a, b, c,... 时表示第 a, b, c...个小时要执行，其余类推
+
+使用者也可以将所有的设定先存放在档案 file 中，用 crontab file 的方式来设定时程表。
+</pre></div>
+<ul>
+<li>引用例子：</li>
+</ul>
+<div class="highlight"><pre><span></span>每月每天7点的第 <span class="m">0</span> 分钟执行一次 /bin/ls 
+<span class="m">0</span> <span class="m">7</span> * * * /bin/ls
+
+在 <span class="m">12</span> 月内, 每天的早上 <span class="m">6</span> 点到 <span class="m">12</span> 点中，每隔 <span class="m">20</span> 分钟执行一次 /usr/bin/backup 
+<span class="m">0</span> <span class="m">6</span>-12/20 * <span class="m">12</span> * /usr/bin/backup
+
+周一到周五每天下午 <span class="m">5</span>:00 寄一封信给 wen.yang@bibipu.com 
+<span class="m">0</span> <span class="m">17</span> * * <span class="m">1</span>-5 mail -s <span class="s2">&quot;hi&quot;</span> wen.yang@bibipu.com &lt; /tmp/maildata
+
+每月每天的午夜 <span class="m">0</span> 点 <span class="m">20</span> 分, <span class="m">2</span> 点 <span class="m">20</span> 分, <span class="m">4</span> 点 <span class="m">20</span> 分....执行 <span class="nb">echo</span> <span class="s2">&quot;haha&quot;</span>
+<span class="m">20</span> <span class="m">0</span>-23/2 * * * <span class="nb">echo</span> <span class="s2">&quot;haha&quot;</span>
+</pre></div>
+<blockquote>
+<p>附带：</p>
+</blockquote>
+<ol>
+<li><p>Freebsd取昨天日期方法：date -v -1d +%Y%m%d</p>
+</li>
+<li><p>Freebsd取上个周今日方法：date -v -1w +%Y%m%d</p>
+</li>
+<li><p>Freebsd取上个月今日方法：date -v -1m +%Y%m%d</p>
+</li>
+<li><p>Freebsd取去年今日的方法：date -v -1y +%Y%m%d</p>
+</li>
+</ol>
+<ul>
+<li>基本格式 :</li>
+</ul>
+<div class="highlight"><pre><span></span>*　　*　　*　　*　　*　　<span class="nb">command</span>
+分　时　日　月　周　命令
+
+第1列表示分钟1～59 每分钟用*或者 */1表示
+第2列表示小时1～23（0表示0点）
+第3列表示日期1～31
+第4列表示月份1～12
+第5列标识号星期0～6（0表示星期天）
+第6列要运行的命令
+</pre></div>
+<ul>
+<li>实例</li>
+</ul>
+
+<pre><code>crontab文件的一些例子：
+
+30 21 * * * /usr/local/etc/rc.d/lighttpd restart
+上面的例子表示每晚的21:30重启apache。
+
+45 4 1,10,22 * * /usr/local/etc/rc.d/lighttpd restart
+上面的例子表示每月1、10、22日的4 : 45重启apache。
+
+10 1 * * 6,0 /usr/local/etc/rc.d/lighttpd restart
+上面的例子表示每周六、周日的1 : 10重启apache。
+
+0,30 18-23 * * * /usr/local/etc/rc.d/lighttpd restart
+上面的例子表示在每天18 : 00至23 : 00之间每隔30分钟重启apache。
+
+0 23 * * 6 /usr/local/etc/rc.d/lighttpd restart
+上面的例子表示每星期六的11 : 00 pm重启apache。
+
+* */1 * * * /usr/local/etc/rc.d/lighttpd restart
+每一小时重启apache
+
+* 23-7/1 * * * /usr/local/etc/rc.d/lighttpd restart
+晚上11点到早上7点之间，每隔一小时重启apache
+
+0 11 4 * mon-wed /usr/local/etc/rc.d/lighttpd restart
+每月的4号与每周一到周三的11点重启apache
+
+0 4 1 jan * /usr/local/etc/rc.d/lighttpd restart
+一月一号的4点重启apache
+</code></pre>
+<p>原文：
+<a href="https://blog.csdn.net/shaobingj126/java/article/details/5638006"><a href="https://blog.csdn.net/shaobingj126/java/article/details/5638006">https://blog.csdn.net/shaobingj126/java/article/details/5638006</a></a></p>
+</article>
     </section>
+
+    
+    <section id="content-pager">
+        
+        
+            <div class="prev">
+                <a class="card" href="/archives/bbr-plus/">
+                    <time>July 16 2020</time>
+                    <span>BBR开启脚本</span>
+                </a>
+            </div>
+        
+    </section>
+    
 
     
 
     <script>
-        document.body.classList.add('archive');
-        document.body.classList.remove('content');
+        document.body.classList.add('content');
+        document.body.classList.remove('archive');
     </script>
-
 </div>
                     <footer>
                         <span>Copyright © 2020 ZGGSONG</span>
                         
+    
+
                         
                     </footer>
                 </div>
                 
-<aside id="toc-container" class="no-scrollbar no-bg"></aside>
+<aside id="toc-container" class="no-scrollbar">
+    <span><i class="fa fa-align-right"></i> CONTENTS</span>
+    <div id="toc"></div>
+</aside>
 
             </div>
         </main>
