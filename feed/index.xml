@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>啃芝士</title><link>/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@master/logo.png</url><title>啃芝士</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Thu, 16 Jul 2020 01:32:11 +0806</lastBuildDate><pubDate>Thu, 16 Jul 2020 01:32:11 +0806</pubDate><item><title>linux安装deb包</title><link>/archives/linux_deb/</link><description>&lt;p&gt;以&lt;code&gt;manjaro&lt;/code&gt;为例&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>啃芝士</title><link>/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@master/logo.png</url><title>啃芝士</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Thu, 16 Jul 2020 01:34:37 +0806</lastBuildDate><pubDate>Thu, 16 Jul 2020 01:34:37 +0806</pubDate><item><title>linux安装deb包</title><link>/archives/linux_deb/</link><description>&lt;p&gt;以&lt;code&gt;manjaro&lt;/code&gt;为例&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2&gt;检查有没有安装 debtap&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pacman -Q debtap
@@ -238,7 +238,7 @@ crontab -e //编辑某个用户的cron服务
 &lt;blockquote&gt;
 &lt;p&gt;补充说明：cron是一个常驻服务，它提供计时器的功能，让用户在特定的时间得以执行预设的指令或程序。只要用户会编辑计时器的配置文件，就可以使用计时器的功能。其配置文件格式如下：&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2&gt;基本格式 :&lt;/h2&gt;
+&lt;h2&gt;基本格式&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;*　　*　　*　　*　　*　　&lt;span class="nb"&gt;command&lt;/span&gt;
 分　时　日　月　周　命令
 
@@ -249,7 +249,7 @@ crontab -e //编辑某个用户的cron服务
 第5列标识号星期0～6（0表示星期天）
 第6列要运行的命令
 &lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;详细说明：&lt;/h2&gt;
+&lt;h2&gt;详细说明&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;时程表的格式如下 :&lt;/li&gt;
 &lt;/ul&gt;
@@ -267,7 +267,7 @@ crontab -e //编辑某个用户的cron服务
 
 使用者也可以将所有的设定先存放在档案 file 中，用 crontab file 的方式来设定时程表。
 &lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;引用例子：&lt;/h2&gt;
+&lt;h2&gt;日常例子&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;每月每天7点的第 &lt;span class="m"&gt;0&lt;/span&gt; 分钟执行一次 /bin/ls 
 &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;7&lt;/span&gt; * * * /bin/ls
 
@@ -280,7 +280,7 @@ crontab -e //编辑某个用户的cron服务
 每月每天的午夜 &lt;span class="m"&gt;0&lt;/span&gt; 点 &lt;span class="m"&gt;20&lt;/span&gt; 分, &lt;span class="m"&gt;2&lt;/span&gt; 点 &lt;span class="m"&gt;20&lt;/span&gt; 分, &lt;span class="m"&gt;4&lt;/span&gt; 点 &lt;span class="m"&gt;20&lt;/span&gt; 分....执行 &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;haha&amp;quot;&lt;/span&gt;
 &lt;span class="m"&gt;20&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;-23/2 * * * &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;haha&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;实例&lt;/h2&gt;
+&lt;h2&gt;服务器实例&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;crontab文件的一些例子：
 

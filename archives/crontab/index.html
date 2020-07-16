@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@master/42f6d03990c67adfd25a10fcf09585c3.json"
+            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@master/157faecbbc610695312611d43e054a9a.json"
         }
     </script>
     <script>
@@ -167,7 +167,7 @@ crontab -e //编辑某个用户的cron服务
 <blockquote>
 <p>补充说明：cron是一个常驻服务，它提供计时器的功能，让用户在特定的时间得以执行预设的指令或程序。只要用户会编辑计时器的配置文件，就可以使用计时器的功能。其配置文件格式如下：</p>
 </blockquote>
-<h2>基本格式 :</h2>
+<h2>基本格式</h2>
 <div class="highlight"><pre><span></span>*　　*　　*　　*　　*　　<span class="nb">command</span>
 分　时　日　月　周　命令
 
@@ -178,7 +178,7 @@ crontab -e //编辑某个用户的cron服务
 第5列标识号星期0～6（0表示星期天）
 第6列要运行的命令
 </pre></div>
-<h2>详细说明：</h2>
+<h2>详细说明</h2>
 <ul>
 <li>时程表的格式如下 :</li>
 </ul>
@@ -196,7 +196,7 @@ crontab -e //编辑某个用户的cron服务
 
 使用者也可以将所有的设定先存放在档案 file 中，用 crontab file 的方式来设定时程表。
 </pre></div>
-<h2>引用例子：</h2>
+<h2>日常例子</h2>
 <div class="highlight"><pre><span></span>每月每天7点的第 <span class="m">0</span> 分钟执行一次 /bin/ls 
 <span class="m">0</span> <span class="m">7</span> * * * /bin/ls
 
@@ -209,7 +209,7 @@ crontab -e //编辑某个用户的cron服务
 每月每天的午夜 <span class="m">0</span> 点 <span class="m">20</span> 分, <span class="m">2</span> 点 <span class="m">20</span> 分, <span class="m">4</span> 点 <span class="m">20</span> 分....执行 <span class="nb">echo</span> <span class="s2">&quot;haha&quot;</span>
 <span class="m">20</span> <span class="m">0</span>-23/2 * * * <span class="nb">echo</span> <span class="s2">&quot;haha&quot;</span>
 </pre></div>
-<h2>实例</h2>
+<h2>服务器实例</h2>
 
 <pre><code>crontab文件的一些例子：
 
