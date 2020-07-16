@@ -71,11 +71,12 @@ head_addon = r'''
 <meta http-equiv="x-dns-prefetch-control" content="on">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/zggsong/cdn/apple-touch-icon/Icon-40.png">
-<link rel="apple-touch-icon" sizes="80x80" href="https://cdn.jsdelivr.net/gh/zggsong/cdn@master/apple-touch-icon/Icon-40@2x.png">
-<link rel="apple-touch-icon" sizes="120x120" href="https://cdn.jsdelivr.net/gh/zggsong/cdn/apple-touch-icon/Icon-60@2x.png">
-<link rel="apple-touch-icon" sizes="152x152" href="https://cdn.jsdelivr.net/gh/zggsong/cdn/apple-touch-icon/Icon-76@2x.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/zggsong/cdn/apple-touch-icon/Icon-60@3x.png">
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/zggsong/cdn/apple-icon/Icon-40.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://cdn.jsdelivr.net/gh/zggsong/cdn@master/apple-icon/Icon-72.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://cdn.jsdelivr.net/gh/zggsong/cdn/apple-icon/Icon-60@2x.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://cdn.jsdelivr.net/gh/zggsong/cdn/apple-icon/Icon-72@2x.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://cdn.jsdelivr.net/gh/zggsong/cdn/apple-icon/Icon-76@2x.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/zggsong/cdn/apple-icon/Icon-60@3x.png">
 <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
 <link rel="icon" type="image/ico" href="//cdn.jsdelivr.net/gh/zggsong/cdn/favicon.ico">
 <script>
