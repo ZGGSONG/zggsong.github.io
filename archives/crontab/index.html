@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@master/6bbafcb39ce3191b8e284026019adb30.json"
+            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@master/42f6d03990c67adfd25a10fcf09585c3.json"
         }
     </script>
     <script>
@@ -153,34 +153,34 @@ var _hmt = _hmt || [];
 </li>
 <li><p>语法：crontab [-u &lt;用户名称&gt;][配置文件] 或 crontab [-u &lt;用户名称&gt;][-elr]</p>
 </li>
-</ul>
-<blockquote>
-<p>补充说明：cron是一个常驻服务，它提供计时器的功能，让用户在特定的时间得以执行预设的指令或程序。只要用户会编辑计时器的配置文件，就可以使用计时器的功能。其配置文件格式如下：</p>
-</blockquote>
-<p><code>Minute Hour Day Month DayOFWeek Command</code></p>
-<ul>
-<li><p>配置命令的取值范围：</p>
-<ul>
-<li>minute (0-59), hour (0-23), day of the month (1-31), month of the year (1-12), day of the week (0-6 with 0=Sunday).</li>
-</ul>
-</li>
 <li><p>参数：</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span>-e 　编辑该用户的计时器设置。
+<div class="highlight"><pre><span></span>crontab -u //设定某个用户的cron服务，一般root用户在执行这个命令的时候需要此参数
 
--l 　列出该用户的计时器设置。
+crontab -l //列出某个用户cron服务的详细内容
 
--r 　删除该用户的计时器设置。
+crontab -r //删除某个用户的cron服务
 
--u&lt;用户名称&gt; 　指定要设定计时器的用户名称。
+crontab -e //编辑某个用户的cron服务
 </pre></div>
-<ul>
-<li><p>详细说明：</p>
+<blockquote>
+<p>补充说明：cron是一个常驻服务，它提供计时器的功能，让用户在特定的时间得以执行预设的指令或程序。只要用户会编辑计时器的配置文件，就可以使用计时器的功能。其配置文件格式如下：</p>
+</blockquote>
+<h2>基本格式 :</h2>
+<div class="highlight"><pre><span></span>*　　*　　*　　*　　*　　<span class="nb">command</span>
+分　时　日　月　周　命令
+
+第1列表示分钟1～59 每分钟用*或者 */1表示
+第2列表示小时1～23（0表示0点）
+第3列表示日期1～31
+第4列表示月份1～12
+第5列标识号星期0～6（0表示星期天）
+第6列要运行的命令
+</pre></div>
+<h2>详细说明：</h2>
 <ul>
 <li>时程表的格式如下 :</li>
-</ul>
-</li>
 </ul>
 <div class="highlight"><pre><span></span>f1 f2 f3 f4 f5 program
 
@@ -196,9 +196,7 @@ var _hmt = _hmt || [];
 
 使用者也可以将所有的设定先存放在档案 file 中，用 crontab file 的方式来设定时程表。
 </pre></div>
-<ul>
-<li>引用例子：</li>
-</ul>
+<h2>引用例子：</h2>
 <div class="highlight"><pre><span></span>每月每天7点的第 <span class="m">0</span> 分钟执行一次 /bin/ls 
 <span class="m">0</span> <span class="m">7</span> * * * /bin/ls
 
@@ -211,35 +209,7 @@ var _hmt = _hmt || [];
 每月每天的午夜 <span class="m">0</span> 点 <span class="m">20</span> 分, <span class="m">2</span> 点 <span class="m">20</span> 分, <span class="m">4</span> 点 <span class="m">20</span> 分....执行 <span class="nb">echo</span> <span class="s2">&quot;haha&quot;</span>
 <span class="m">20</span> <span class="m">0</span>-23/2 * * * <span class="nb">echo</span> <span class="s2">&quot;haha&quot;</span>
 </pre></div>
-<blockquote>
-<p>附带：</p>
-</blockquote>
-<ol>
-<li><p>Freebsd取昨天日期方法：date -v -1d +%Y%m%d</p>
-</li>
-<li><p>Freebsd取上个周今日方法：date -v -1w +%Y%m%d</p>
-</li>
-<li><p>Freebsd取上个月今日方法：date -v -1m +%Y%m%d</p>
-</li>
-<li><p>Freebsd取去年今日的方法：date -v -1y +%Y%m%d</p>
-</li>
-</ol>
-<ul>
-<li>基本格式 :</li>
-</ul>
-<div class="highlight"><pre><span></span>*　　*　　*　　*　　*　　<span class="nb">command</span>
-分　时　日　月　周　命令
-
-第1列表示分钟1～59 每分钟用*或者 */1表示
-第2列表示小时1～23（0表示0点）
-第3列表示日期1～31
-第4列表示月份1～12
-第5列标识号星期0～6（0表示星期天）
-第6列要运行的命令
-</pre></div>
-<ul>
-<li>实例</li>
-</ul>
+<h2>实例</h2>
 
 <pre><code>crontab文件的一些例子：
 
@@ -270,8 +240,21 @@ var _hmt = _hmt || [];
 0 4 1 jan * /usr/local/etc/rc.d/lighttpd restart
 一月一号的4点重启apache
 </code></pre>
-<p>原文：
-<a href="https://blog.csdn.net/shaobingj126/java/article/details/5638006"><a href="https://blog.csdn.net/shaobingj126/java/article/details/5638006">https://blog.csdn.net/shaobingj126/java/article/details/5638006</a></a></p>
+<h2>扩展</h2>
+<ol>
+<li><p>Freebsd取昨天日期方法：date -v -1d +%Y%m%d</p>
+</li>
+<li><p>Freebsd取上个周今日方法：date -v -1w +%Y%m%d</p>
+</li>
+<li><p>Freebsd取上个月今日方法：date -v -1m +%Y%m%d</p>
+</li>
+<li><p>Freebsd取去年今日的方法：date -v -1y +%Y%m%d</p>
+</li>
+</ol>
+<h2>参考</h2>
+<ul>
+<li><a href="https://blog.csdn.net/shaobingj126/java/article/details/5638006"><a href="https://blog.csdn.net/shaobingj126/java/article/details/5638006">https://blog.csdn.net/shaobingj126/java/article/details/5638006</a></a></li>
+</ul>
 </article>
     </section>
 
