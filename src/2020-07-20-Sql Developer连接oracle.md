@@ -13,11 +13,11 @@ tags:
   - oracle数据库
 ---
 
-## 安装数据库
+## <span id="jump">安装数据库</span>
 
-> <span id="jump">安装`oracle`数据库所有的文件都在[这里](https://www.oracle.com/cn/downloads/)</span>
+> 安装`oracle`数据库所有的文件都在[这里](https://www.oracle.com/cn/downloads/)
 
-![](./img/oracle)
+![](./img/oracle.png)
 
 ## 连接数据库
 
