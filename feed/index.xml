@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>啃芝士</title><link>/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@master/logo.png</url><title>啃芝士</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Mon, 20 Jul 2020 10:51:42 +0806</lastBuildDate><pubDate>Mon, 20 Jul 2020 10:51:42 +0806</pubDate><item><title>linux安装deb包</title><link>/archives/linux_deb/</link><description>&lt;p&gt;以&lt;code&gt;manjaro&lt;/code&gt;为例&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>啃芝士</title><link>/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@master/logo.png</url><title>啃芝士</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Mon, 20 Jul 2020 10:56:59 +0806</lastBuildDate><pubDate>Mon, 20 Jul 2020 10:56:59 +0806</pubDate><item><title>linux安装deb包</title><link>/archives/linux_deb/</link><description>&lt;p&gt;以&lt;code&gt;manjaro&lt;/code&gt;为例&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2&gt;检查有没有安装 debtap&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pacman -Q debtap
@@ -359,11 +359,11 @@ Available Commands:
 Flags:
   -h, --help   &lt;span class="nb"&gt;help&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; trojan
 &lt;/pre&gt;&lt;/div&gt;
-</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/trojan/</guid><pubDate>Fri, 17 Jul 2020 01:02:00 +0806</pubDate></item><item><title>Sql Developer连接Oracle数据库</title><link>/archives/sql_developer/</link><description>&lt;h2&gt;安装数据库&lt;/h2&gt;
+</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/trojan/</guid><pubDate>Fri, 17 Jul 2020 01:02:00 +0806</pubDate></item><item><title>Sql Developer连接Oracle数据库</title><link>/archives/sql_developer/</link><description>&lt;h2&gt;&lt;span id="jump"&gt;安装数据库&lt;/span&gt;&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span id="jump"&gt;安装&lt;code&gt;oracle&lt;/code&gt;数据库所有的文件都在&lt;a href="https://www.oracle.com/cn/downloads/"&gt;这里&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;安装&lt;code&gt;oracle&lt;/code&gt;数据库所有的文件都在&lt;a href="https://www.oracle.com/cn/downloads/"&gt;这里&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;figure&gt;&lt;img data-width="-1" data-height="-1" src="./img/oracle" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="1598" data-height="896" src="https://cdn.jsdelivr.net/gh/ZGGSONG/wiki@master/archives/assets/3eedc4f687a75bc7b2df2a4159f095bd.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;h2&gt;连接数据库&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;使用&lt;code&gt;cmd&lt;/code&gt; 输入 &lt;code&gt;sqlplus&lt;/code&gt;进行连接数据库&lt;/p&gt;
