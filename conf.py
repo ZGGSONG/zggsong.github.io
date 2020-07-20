@@ -10,8 +10,9 @@ index_page_size = 10
 archives_page_size = 30
 template = {
     "name": "Kepler",
-    "type": "local",
-    "path": "../Kepler"
+    "type": "git",
+    "url": "https://github.com/AlanDecode/Maverick-Theme-Kepler.git",
+    "branch": "latest"
 }
 enable_jsdelivr = {
     "enabled": "true",
