@@ -79,6 +79,9 @@ head_addon = r'''
 <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/zggsong/cdn/apple-icon/Icon-60@3x.png">
 <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
 <link rel="icon" type="image/ico" href="//cdn.jsdelivr.net/gh/zggsong/cdn/favicon.ico">
+'''
+
+footer_addon = r'''
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -90,6 +93,11 @@ var _hmt = _hmt || [];
 </script>
 '''
 
-footer_addon = ''
-
 body_addon = ''
+
+valine = {
+    "enable": True,
+    "el": '#vcomments',
+    "appId": "By9KWYDVoOIP5DmAFLdSkgYJ-gzGzoHsz",
+    "appKey": "V5X2XQjTRFxU4RBE9dHcE5iO",
+}
