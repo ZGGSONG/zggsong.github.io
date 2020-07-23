@@ -19,6 +19,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+    <loc>/archives/mobaxterm_ssh/</loc>
+    <lastmod>2020-07-17</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
     <loc>/archives/sql_developer/</loc>
     <lastmod>2020-07-17</lastmod>
     <changefreq>always</changefreq>
