@@ -26,7 +26,13 @@ root@192.168.11.61's password:
 
 这是因为MobaXterm命令行登录的用户是mobaxterm，而并非是我们登陆系统的用户。
 
-![user](./img/mobaxterm.png)
+- user for mobaxterm
+
+![user_mobaxterm](./img/mobaxterm.png)
+
+- user for windows
+
+![user_windows](./img/user_win.png)
 
 ## 解决
 
