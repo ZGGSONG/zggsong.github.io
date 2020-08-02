@@ -21,7 +21,7 @@ enable_jsdelivr = {
 
 # 站点设置
 # For site
-site_name = "啃芝士"
+site_name = "ZGGSONG WIKI"
 site_logo = "${static_prefix}logo.png"
 site_build_date = "2020-07-14T00:00+08:00"
 author = "ZGGSONG"
@@ -32,17 +32,12 @@ key_words = ["Maverick", "ZGGSONG", "Kepler", "wiki"]
 language = 'zh-CN'
 external_links = [
     {
-        "name": "blog",
+        "name": "BLOG",
         "url": "https://www.zggsong.cn/",
         "brief": "my blog."
     },
     {
-        "name": "music",
-        "url": "https://www.zggsong.cn/zgg/program/music",
-        "brief": "music."
-    },
-    {
-        "name": "github",
+        "name": "GITHUB",
         "url": "https://www.github.com/ZGGSONG",
         "brief": "github."
     }
