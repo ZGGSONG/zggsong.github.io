@@ -34,7 +34,7 @@ external_links = [
     {
         "name": "BLOG",
         "url": "https://www.zggsong.cn/",
-        "brief": "my blog."
+        "brief": "blog."
     },
     {
         "name": "GITHUB",
