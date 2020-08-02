@@ -1,7 +1,8 @@
 ## Welcome
 
-这是我的wiki源码仓库，地址: [https://wiki.zggsong.cn](https://wiki.zggsong.cn)
-
+这是我的wiki源码仓库，地址: 
+- 国内[https://wiki.zggsong.cn](https://wiki.zggsong.cn)
+- 国外[https://zggsong.ml](https://zggsong.ml)
 
 ## Contact
 
