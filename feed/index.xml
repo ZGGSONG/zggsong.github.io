@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZGGSONG WIKI</title><link>/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/logo.png</url><title>ZGGSONG WIKI</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Sun, 02 Aug 2020 10:47:21 +0806</lastBuildDate><pubDate>Sun, 02 Aug 2020 10:47:21 +0806</pubDate><item><title>linux安装deb包</title><link>/archives/linux_deb/</link><description>&lt;p&gt;以&lt;code&gt;manjaro&lt;/code&gt;为例&lt;/p&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZGGSONG WIKI</title><link>/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/logo.png</url><title>ZGGSONG WIKI</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Sat, 08 Aug 2020 11:23:46 +0806</lastBuildDate><pubDate>Sat, 08 Aug 2020 11:23:46 +0806</pubDate><item><title>linux安装deb包</title><link>/archives/linux_deb/</link><description>&lt;p&gt;以&lt;code&gt;manjaro&lt;/code&gt;为例&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2&gt;检查有没有安装 debtap&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pacman -Q debtap
@@ -396,4 +396,64 @@ root@192.168.11.61&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;s password:
 &lt;h2&gt;解决&lt;/h2&gt;
 &lt;p&gt;只需要在MobaXterm的会话设置中要选中SSH所用的私钥文件即可。&lt;/p&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="891" data-height="599" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/d233489ec594f2fdba8780c7cce2030d.png" alt="ssh" /&gt;&lt;figcaption&gt;ssh&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/mobaxterm_ssh/</guid><pubDate>Thu, 23 Jul 2020 12:00:00 +0806</pubDate></item></channel></rss>
+</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/mobaxterm_ssh/</guid><pubDate>Thu, 23 Jul 2020 12:00:00 +0806</pubDate></item><item><title>Mysql常用命令</title><link>/archives/mysql/</link><description>&lt;h2&gt;安装&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt install mysql-server          #服务端
+sudo apt install mysql-client          #客户端
+sudo apt install libmysqlclient-dev    #程序编译时链接的库
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;检查是否安装好&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo netstat -tap | grep mysql
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;登录&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;mysql -u root -p
+
+# 或者
+
+
+#服务启动后端口查询
+sudo netstat -anp | grep mysql
+
+#连接数据库
+mysql -h 127.0.0.1 -P 3306 -uroot -p123456
+#-h为远程IP，-P为端口号，-u为用户名，-p为密码
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;管理&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;#启动
+sudo service mysql start
+#停止
+sudo service mysql stop
+#服务状态
+sudo service mysql status
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;卸载&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;#首先使用以下命令删除MySQL服务器：
+sudo apt-get remove mysql-server
+#然后，删除随MySQL服务器自动安装的任何其他软件：
+sudo apt-get autoremove
+#卸载其他组件：
+sudo apt-get remove &amp;lt;&amp;lt;package-name&amp;gt;&amp;gt;
+#查看从MySQL APT存储库安装的软件包列表：
+dpkg -l | grep mysql | grep ii
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;其他&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;远程连接报错&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;打开&lt;code&gt;/etc/mysql/mysql.conf.d/&lt;/code&gt;文件，找到&lt;code&gt;bind-address = 127.0.0.1&lt;/code&gt;在前面加上&lt;code&gt;#&lt;/code&gt;注释掉&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#bind-address = 127.0.0.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;再重启服务即可&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;service mysql restart
+&lt;/code&gt;&lt;/pre&gt;
+</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/mysql/</guid><pubDate>Sat, 08 Aug 2020 18:57:00 +0806</pubDate></item></channel></rss>
