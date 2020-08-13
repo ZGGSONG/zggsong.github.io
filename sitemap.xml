@@ -12,6 +12,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+    <loc>/archives/iphone-check/</loc>
+    <lastmod>2020-08-13</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
     <loc>/archives/mysql/</loc>
     <lastmod>2020-08-08</lastmod>
     <changefreq>always</changefreq>
