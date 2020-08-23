@@ -1,24 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZGGSONG WIKI</title><link>/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/logo.png</url><title>ZGGSONG WIKI</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Thu, 13 Aug 2020 09:29:21 +0806</lastBuildDate><pubDate>Thu, 13 Aug 2020 09:29:21 +0806</pubDate><item><title>linux安装deb包</title><link>/archives/linux_deb/</link><description>&lt;p&gt;以&lt;code&gt;manjaro&lt;/code&gt;为例&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2&gt;检查有没有安装 debtap&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pacman -Q debtap
-&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;没有就安装&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;yaourt -S debtap
-&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;升级debtap&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo debtap -u
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;使用方法&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo debtap  xxxx.deb
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;安装时会提示输入包名，以及license。包名随意，license就填GPL吧
-上述操作完成后会在deb包同级目录生成×.tar.xz文件，直接用pacman安装即可&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pacman -U x.tar.xz
-&lt;/pre&gt;&lt;/div&gt;
-</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/linux_deb/</guid><pubDate>Tue, 19 Nov 2019 00:27:00 +0806</pubDate></item><item><title>常用命令</title><link>/archives/memo/</link><description>&lt;h2&gt;1、Windows&lt;/h2&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZGGSONG WIKI</title><link>/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/logo.png</url><title>ZGGSONG WIKI</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Sun, 23 Aug 2020 05:38:48 +0806</lastBuildDate><pubDate>Sun, 23 Aug 2020 05:38:48 +0806</pubDate><item><title>常用命令</title><link>/archives/memo/</link><description>&lt;h2&gt;1、Windows&lt;/h2&gt;
 &lt;h3&gt;1.1 Windows开机启动&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# 目录地址&lt;/span&gt;
 C:&lt;span class="se"&gt;\P&lt;/span&gt;rogramData&lt;span class="se"&gt;\M&lt;/span&gt;icrosoft&lt;span class="se"&gt;\W&lt;/span&gt;indows&lt;span class="se"&gt;\S&lt;/span&gt;tart Menu&lt;span class="se"&gt;\P&lt;/span&gt;rograms&lt;span class="se"&gt;\S&lt;/span&gt;tartUp
@@ -524,4 +505,27 @@ dpkg -l | grep mysql | grep ii
 &lt;li&gt;WiFi测试&lt;/li&gt;
 &lt;li&gt;蓝牙测试&lt;/li&gt;
 &lt;/ul&gt;
-</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/iphone-check/</guid><pubDate>Thu, 13 Aug 2020 17:27:00 +0806</pubDate></item></channel></rss>
+</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/iphone-check/</guid><pubDate>Thu, 13 Aug 2020 17:27:00 +0806</pubDate></item><item><title>fzf安装配置</title><link>/archives/fzf/</link><description>&lt;h2&gt;安装&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;brew install fzf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;快捷键安装&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$(brew --prefix)/opt/fzf/install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;安装好后按照提示刷新&lt;code&gt;shell&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;配置&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;zsh配置&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;#export FZF_DEFAULT_OPTS='--bind=ctrl-t:top,change:top --bind ctrl-e:down,ctrl-u:up'
+export FZF_DEFAULT_OPTS='--bind ctrl-e:down,ctrl-u:up --preview &amp;quot;[[ $(file --mime {}) =~ binary ]] &amp;amp;&amp;amp; echo {} is a binary file || (ccat --color=always {} || highlight -O ansi -l {} || cat {}) 2&amp;gt; /dev/null | head -500&amp;quot;'
+#export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g &amp;quot;&amp;quot;'
+export FZF_DEFAULT_COMMAND='fd'
+export FZF_COMPLETION_TRIGGER='\'
+export FZF_TMUX=1
+export FZF_TMUX_HEIGHT='80%'
+export fzf_preview_cmd='[[ $(file --mime {}) =~ binary ]] &amp;amp;&amp;amp; echo {} is a binary file || (ccat --color=always {} || highlight -O ansi -l {} || cat {}) 2&amp;gt; /dev/null | head -500'
+&lt;/code&gt;&lt;/pre&gt;
+</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/fzf/</guid><pubDate>Sun, 23 Aug 2020 17:27:00 +0806</pubDate></item></channel></rss>
