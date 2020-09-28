@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/036a6340670feec2b9af0365bd774720.json"
+            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/ab7ec76cd371cc826e7ea9f3e192f6c3.json"
         }
     </script>
     <script>
@@ -185,7 +185,7 @@
     <span class="o">*</span><span class="p">(</span><span class="n">pid</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="n">fork</span><span class="p">();</span>
     <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="n">pid</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span><span class="c1">//子进程</span>
       <span class="n">printf</span><span class="p">(</span><span class="s">&quot;child[%d] created...(sleep 1s)</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">i</span><span class="p">);</span>
-      <span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="o">-</span><span class="mf">0.5</span><span class="o">*</span><span class="n">i</span><span class="p">);</span><span class="c1">//测试waitpid是否生效</span>
+      <span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="mf">-0.5</span><span class="o">*</span><span class="n">i</span><span class="p">);</span><span class="c1">//测试waitpid是否生效</span>
       <span class="k">break</span><span class="p">;</span>
     <span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="n">pid</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span> <span class="p">{</span><span class="c1">//父进程</span>
       <span class="c1">//</span>
@@ -250,7 +250,7 @@ rm <span class="nv">$1</span><span class="p">;</span>
   <span class="cp">#include</span> <span class="cpf">&lt;arpa/inet.h&gt;</span><span class="cp"></span>
   <span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
 
-  <span class="k">typedef</span> <span class="k">struct</span> <span class="n">sockaddr</span><span class="o">*</span> <span class="n">saddrp</span><span class="p">;</span>
+  <span class="k">typedef</span> <span class="k">struct</span> <span class="nc">sockaddr</span><span class="o">*</span> <span class="n">saddrp</span><span class="p">;</span>
 
   <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">BIND_SERVER_IP</span> <span class="o">=</span> <span class="s">&quot;127.0.0.1&quot;</span><span class="p">;</span>
   <span class="k">const</span> <span class="kt">int</span> <span class="n">BIND_PORT</span> <span class="o">=</span> <span class="mi">30303</span><span class="p">;</span>
@@ -261,10 +261,10 @@ rm <span class="nv">$1</span><span class="p">;</span>
     <span class="kt">int</span> <span class="n">sockfd</span> <span class="o">=</span> <span class="n">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span><span class="n">SOCK_DGRAM</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">sockfd</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">){</span>
         <span class="n">perror</span><span class="p">(</span><span class="s">&quot;创建文件描述符失败&quot;</span><span class="p">);</span>
-        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+        <span class="k">return</span> <span class="mi">-1</span><span class="p">;</span>
     <span class="p">}</span>
     <span class="c1">// 配置</span>
-    <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">addr</span> <span class="o">=</span> <span class="p">{};</span>
+    <span class="k">struct</span> <span class="nc">sockaddr_in</span> <span class="n">addr</span> <span class="o">=</span> <span class="p">{};</span>
     <span class="n">addr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span> <span class="c1">// IPV4</span>
     <span class="n">addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">.</span><span class="n">s_addr</span> <span class="o">=</span> <span class="n">inet_addr</span><span class="p">(</span><span class="n">BIND_SERVER_IP</span><span class="p">);</span><span class="c1">// IP</span>
     <span class="n">addr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="n">htons</span><span class="p">(</span><span class="n">BIND_PORT</span><span class="p">);</span> <span class="c1">// PORT</span>
@@ -272,10 +272,10 @@ rm <span class="nv">$1</span><span class="p">;</span>
     <span class="kt">int</span> <span class="n">res</span> <span class="o">=</span> <span class="n">bind</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,(</span><span class="n">saddrp</span><span class="p">)</span><span class="o">&amp;</span><span class="n">addr</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">addr</span><span class="p">));</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">res</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">){</span>
         <span class="n">perror</span><span class="p">(</span><span class="s">&quot;监听失败&quot;</span><span class="p">);</span>
-        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+        <span class="k">return</span> <span class="mi">-1</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">src_addr</span> <span class="o">=</span><span class="p">{};</span>
-    <span class="kt">socklen_t</span> <span class="n">addr_len</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="n">sockaddr_in</span><span class="p">);</span>
+    <span class="k">struct</span> <span class="nc">sockaddr_in</span> <span class="n">src_addr</span> <span class="o">=</span><span class="p">{};</span>
+    <span class="kt">socklen_t</span> <span class="n">addr_len</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="nc">sockaddr_in</span><span class="p">);</span>
     <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
       <span class="kt">char</span> <span class="n">buf</span><span class="p">[</span><span class="mi">255</span><span class="p">]</span> <span class="o">=</span> <span class="p">{};</span>
       <span class="c1">//接收数据和来源的ip地址</span>
@@ -308,27 +308,27 @@ rm <span class="nv">$1</span><span class="p">;</span>
   <span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp"></span>
   <span class="cp">#include</span> <span class="cpf">&lt;arpa/inet.h&gt;</span><span class="cp"></span>
   <span class="cp">#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp"></span>
-  <span class="k">typedef</span> <span class="k">struct</span> <span class="n">sockaddr</span><span class="o">*</span> <span class="n">saddrp</span><span class="p">;</span>
+  <span class="k">typedef</span> <span class="k">struct</span> <span class="nc">sockaddr</span><span class="o">*</span> <span class="n">saddrp</span><span class="p">;</span>
 
   <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
   <span class="p">{</span>
     <span class="k">if</span><span class="p">(</span><span class="n">argc</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
       <span class="n">perror</span><span class="p">(</span><span class="s">&quot;参数不足&quot;</span><span class="p">);</span>
-      <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+      <span class="k">return</span> <span class="mi">-1</span><span class="p">;</span>
     <span class="p">}</span>
     <span class="kt">char</span><span class="o">*</span> <span class="n">ip</span> <span class="o">=</span> <span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
     <span class="kt">char</span><span class="o">*</span> <span class="n">buf</span> <span class="o">=</span> <span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
     <span class="kt">int</span> <span class="n">sockfd</span> <span class="o">=</span> <span class="n">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span><span class="n">SOCK_DGRAM</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">sockfd</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">){</span>
         <span class="n">perror</span><span class="p">(</span><span class="s">&quot;创建文件描述符失败&quot;</span><span class="p">);</span>
-        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+        <span class="k">return</span> <span class="mi">-1</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">addr</span> <span class="o">=</span> <span class="p">{};</span>
+    <span class="k">struct</span> <span class="nc">sockaddr_in</span> <span class="n">addr</span> <span class="o">=</span> <span class="p">{};</span>
     <span class="n">addr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span>
     <span class="n">addr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="n">htons</span><span class="p">(</span><span class="mi">30303</span><span class="p">);</span>
     <span class="n">addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">.</span><span class="n">s_addr</span> <span class="o">=</span> <span class="n">inet_addr</span><span class="p">(</span><span class="n">ip</span><span class="p">);</span>
 
-    <span class="kt">socklen_t</span> <span class="n">addr_len</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="n">sockaddr_in</span><span class="p">);</span>
+    <span class="kt">socklen_t</span> <span class="n">addr_len</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="nc">sockaddr_in</span><span class="p">);</span>
     <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="kt">char</span> <span class="n">recv_buf</span><span class="p">[</span><span class="mi">255</span><span class="p">]</span> <span class="o">=</span> <span class="p">{};</span>
@@ -367,7 +367,7 @@ rm <span class="nv">$1</span><span class="p">;</span>
 <span class="cp">#include</span> <span class="cpf">&lt;arpa/inet.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
 
-<span class="k">typedef</span> <span class="k">struct</span> <span class="n">sockaddr</span><span class="o">*</span> <span class="n">saddrp</span><span class="p">;</span>
+<span class="k">typedef</span> <span class="k">struct</span> <span class="nc">sockaddr</span><span class="o">*</span> <span class="n">saddrp</span><span class="p">;</span>
 
 <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">BIND_SERVER_IP</span> <span class="o">=</span> <span class="s">&quot;127.0.0.1&quot;</span><span class="p">;</span>
 <span class="k">const</span> <span class="kt">int</span> <span class="n">BIND_PORT</span> <span class="o">=</span> <span class="mi">30303</span><span class="p">;</span>
@@ -378,10 +378,10 @@ rm <span class="nv">$1</span><span class="p">;</span>
   <span class="kt">int</span> <span class="n">sockfd</span> <span class="o">=</span> <span class="n">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span><span class="n">SOCK_DGRAM</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
   <span class="k">if</span> <span class="p">(</span><span class="n">sockfd</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">){</span>
       <span class="n">perror</span><span class="p">(</span><span class="s">&quot;创建文件描述符失败&quot;</span><span class="p">);</span>
-      <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+      <span class="k">return</span> <span class="mi">-1</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="c1">// 配置</span>
-  <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">addr</span> <span class="o">=</span> <span class="p">{};</span>
+  <span class="k">struct</span> <span class="nc">sockaddr_in</span> <span class="n">addr</span> <span class="o">=</span> <span class="p">{};</span>
   <span class="n">addr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span> <span class="c1">// IPV4</span>
   <span class="n">addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">.</span><span class="n">s_addr</span> <span class="o">=</span> <span class="n">inet_addr</span><span class="p">(</span><span class="n">BIND_SERVER_IP</span><span class="p">);</span><span class="c1">// IP</span>
   <span class="n">addr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="n">htons</span><span class="p">(</span><span class="n">BIND_PORT</span><span class="p">);</span> <span class="c1">// PORT</span>
@@ -389,10 +389,10 @@ rm <span class="nv">$1</span><span class="p">;</span>
   <span class="kt">int</span> <span class="n">res</span> <span class="o">=</span> <span class="n">bind</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,(</span><span class="n">saddrp</span><span class="p">)</span><span class="o">&amp;</span><span class="n">addr</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">addr</span><span class="p">));</span>
   <span class="k">if</span> <span class="p">(</span><span class="n">res</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">){</span>
       <span class="n">perror</span><span class="p">(</span><span class="s">&quot;监听失败&quot;</span><span class="p">);</span>
-      <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+      <span class="k">return</span> <span class="mi">-1</span><span class="p">;</span>
   <span class="p">}</span>
-  <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">src_addr</span> <span class="o">=</span><span class="p">{};</span>
-  <span class="kt">socklen_t</span> <span class="n">addr_len</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="n">sockaddr_in</span><span class="p">);</span>
+  <span class="k">struct</span> <span class="nc">sockaddr_in</span> <span class="n">src_addr</span> <span class="o">=</span><span class="p">{};</span>
+  <span class="kt">socklen_t</span> <span class="n">addr_len</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="nc">sockaddr_in</span><span class="p">);</span>
   <span class="kt">int</span> <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
   <span class="kt">int</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">};</span>
   <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
@@ -403,7 +403,7 @@ rm <span class="nv">$1</span><span class="p">;</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Recv:%s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">buf</span><span class="p">);</span>
     <span class="c1">// char*转int</span>
     <span class="kt">int</span> <span class="n">recv</span> <span class="o">=</span> <span class="n">atoi</span><span class="p">(</span><span class="n">buf</span><span class="p">);</span>
-    <span class="n">a</span><span class="p">[</span><span class="n">counter</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">recv</span><span class="p">;</span>
+    <span class="n">a</span><span class="p">[</span><span class="n">counter</span><span class="mi">-1</span><span class="p">]</span> <span class="o">=</span> <span class="n">recv</span><span class="p">;</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">counter</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
       <span class="kt">int</span> <span class="n">ret_res</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
       <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Return:%d + %d = %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">ret_res</span><span class="p">);</span>
@@ -426,7 +426,7 @@ rm <span class="nv">$1</span><span class="p">;</span>
 <span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;arpa/inet.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp"></span>
-<span class="k">typedef</span> <span class="k">struct</span> <span class="n">sockaddr</span><span class="o">*</span> <span class="n">saddrp</span><span class="p">;</span>
+<span class="k">typedef</span> <span class="k">struct</span> <span class="nc">sockaddr</span><span class="o">*</span> <span class="n">saddrp</span><span class="p">;</span>
 
 <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">BIND_SERVER_IP</span> <span class="o">=</span> <span class="s">&quot;127.0.0.1&quot;</span><span class="p">;</span>
 <span class="k">const</span> <span class="kt">int</span> <span class="n">BIND_PORT</span> <span class="o">=</span> <span class="mi">30303</span><span class="p">;</span>
@@ -438,14 +438,14 @@ rm <span class="nv">$1</span><span class="p">;</span>
   <span class="kt">int</span> <span class="n">sockfd</span> <span class="o">=</span> <span class="n">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span><span class="n">SOCK_DGRAM</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
   <span class="k">if</span> <span class="p">(</span><span class="n">sockfd</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">){</span>
       <span class="n">perror</span><span class="p">(</span><span class="s">&quot;创建文件描述符失败&quot;</span><span class="p">);</span>
-      <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+      <span class="k">return</span> <span class="mi">-1</span><span class="p">;</span>
   <span class="p">}</span>
-  <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">addr</span> <span class="o">=</span> <span class="p">{};</span>
+  <span class="k">struct</span> <span class="nc">sockaddr_in</span> <span class="n">addr</span> <span class="o">=</span> <span class="p">{};</span>
   <span class="n">addr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span>
   <span class="n">addr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="n">htons</span><span class="p">(</span><span class="n">BIND_PORT</span><span class="p">);</span>
   <span class="n">addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">.</span><span class="n">s_addr</span> <span class="o">=</span> <span class="n">inet_addr</span><span class="p">(</span><span class="n">BIND_SERVER_IP</span><span class="p">);</span>
 
-  <span class="kt">socklen_t</span> <span class="n">addr_len</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="n">sockaddr_in</span><span class="p">);</span>
+  <span class="kt">socklen_t</span> <span class="n">addr_len</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="nc">sockaddr_in</span><span class="p">);</span>
   <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
   <span class="p">{</span>
       <span class="kt">char</span> <span class="n">recv_buf</span><span class="p">[</span><span class="mi">255</span><span class="p">]</span> <span class="o">=</span> <span class="p">{};</span>
@@ -483,9 +483,9 @@ rm <span class="nv">$1</span><span class="p">;</span>
 <span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;fcntl.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;sys/types.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;sys/wait.h&gt;  </span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;sys/wait.h&gt;</span><span class="c1">  </span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;limits.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;errno.h&gt;  </span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;errno.h&gt;</span><span class="c1">  </span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;malloc.h&gt;</span><span class="cp"></span>
 
 <span class="cm">/* 模拟popen */</span>
@@ -667,7 +667,7 @@ rm $1;
     <span class="c1">// 阻塞</span>
     <span class="n">sret</span> <span class="o">=</span> <span class="n">select</span><span class="p">(</span><span class="n">fd</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">readfds</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span> <span class="c1">// &amp;timeout</span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="n">sret</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">sret</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">sret</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">sret</span> <span class="o">==</span> <span class="mi">-1</span><span class="p">)</span> <span class="p">{</span>
       <span class="n">printf</span><span class="p">(</span><span class="s">&quot;sret = %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">sret</span><span class="p">);</span>
       <span class="n">printf</span><span class="p">(</span><span class="s">&quot;    error</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
       <span class="k">break</span><span class="p">;</span>
@@ -675,14 +675,14 @@ rm $1;
       <span class="c1">// printf(&quot;sret = %d\n&quot;, sret);</span>
       <span class="n">memset</span><span class="p">((</span><span class="kt">void</span> <span class="o">*</span><span class="p">)</span> <span class="n">buf</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
       <span class="n">ret</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="p">)</span> <span class="n">buf</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">ret</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">ret</span> <span class="o">!=</span> <span class="mi">-1</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">buf</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;\0&#39;</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 停止轮询条件</span>
           <span class="k">break</span><span class="p">;</span>
         <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
           <span class="n">ret_cp</span> <span class="o">=</span> <span class="n">write</span><span class="p">(</span><span class="n">fd_cp</span><span class="p">,</span> <span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="p">)</span> <span class="n">buf</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
           <span class="c1">// printf(&quot;ret_cp = %d\n&quot;, ret_cp);</span>
         <span class="p">}</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">ret_cp</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">ret_cp</span> <span class="o">==</span> <span class="mi">-1</span><span class="p">)</span> <span class="p">{</span>
           <span class="k">break</span><span class="p">;</span>
         <span class="p">}</span>
       <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
@@ -738,9 +738,9 @@ rm $1;
 <span class="cp">#include</span> <span class="cpf">&lt;sys/types.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;netinet/in.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;arpa/inet.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;unistd.h&gt; //close()</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;string.h&gt; //strcmp()等字符串操作函数</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt; //atoi() 字符串转int</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="c1"> //close()</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="c1"> //strcmp()等字符串操作函数</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="c1"> //atoi() 字符串转int</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;sys/epoll.h&gt;</span><span class="cp"></span>
 
 <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">BIND_SERVER_IP</span> <span class="o">=</span> <span class="s">&quot;127.0.0.1&quot;</span><span class="p">;</span>
@@ -750,17 +750,17 @@ rm $1;
 
   <span class="c1">// 1 创建tcp通信socket</span>
   <span class="kt">int</span> <span class="n">socket_fd</span> <span class="o">=</span> <span class="n">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">socket_fd</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">){</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">socket_fd</span> <span class="o">==</span> <span class="mi">-1</span><span class="p">){</span>
     <span class="n">perror</span><span class="p">(</span><span class="s">&quot;socket failed!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
   <span class="p">}</span>
 
   <span class="c1">// 2 连接服务器</span>
-  <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">server_addr</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span><span class="c1">//服务器的地址信息</span>
+  <span class="k">struct</span> <span class="nc">sockaddr_in</span> <span class="n">server_addr</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span><span class="c1">//服务器的地址信息</span>
   <span class="n">server_addr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span><span class="c1">//IPv4协议</span>
   <span class="n">server_addr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="n">htons</span><span class="p">(</span><span class="n">BIND_PORT</span><span class="p">);</span><span class="c1">//服务器端口号</span>
   <span class="n">server_addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">.</span><span class="n">s_addr</span> <span class="o">=</span> <span class="n">inet_addr</span><span class="p">(</span><span class="n">BIND_SERVER_IP</span><span class="p">);</span><span class="c1">//设置服务器IP</span>
-  <span class="kt">int</span> <span class="n">ret</span> <span class="o">=</span> <span class="n">connect</span><span class="p">(</span><span class="n">socket_fd</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">server_addr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">server_addr</span><span class="p">));</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">ret</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">){</span>
+  <span class="kt">int</span> <span class="n">ret</span> <span class="o">=</span> <span class="n">connect</span><span class="p">(</span><span class="n">socket_fd</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="nc">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">server_addr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">server_addr</span><span class="p">));</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">ret</span> <span class="o">==</span> <span class="mi">-1</span><span class="p">){</span>
     <span class="n">perror</span><span class="p">(</span><span class="s">&quot;connect failed!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
   <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;connect server successful!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
@@ -768,7 +768,7 @@ rm $1;
 
   <span class="c1">// 创建epoll监听连接TCP的文件描述符是否可读</span>
   <span class="kt">int</span> <span class="n">epfd</span><span class="p">,</span> <span class="n">nfds</span><span class="p">;</span>
-  <span class="k">struct</span> <span class="n">epoll_event</span> <span class="n">event</span><span class="p">,</span> <span class="n">events</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span> <span class="c1">// 最多存三个触发，本例中实际上只会占用一个</span>
+  <span class="k">struct</span> <span class="nc">epoll_event</span> <span class="n">event</span><span class="p">,</span> <span class="n">events</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span> <span class="c1">// 最多存三个触发，本例中实际上只会占用一个</span>
   <span class="n">epfd</span> <span class="o">=</span> <span class="n">epoll_create</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
   <span class="n">event</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span> <span class="o">=</span> <span class="n">socket_fd</span><span class="p">;</span> <span class="c1">// 监听连接服务器的TCP文件描述符</span>
   <span class="n">event</span><span class="p">.</span><span class="n">events</span> <span class="o">=</span> <span class="n">EPOLLIN</span> <span class="o">|</span> <span class="n">EPOLLET</span><span class="p">;</span> <span class="c1">// 是否可都 + 边缘触发（描述符由不可读变为可读，只通知一次）</span>
@@ -784,7 +784,7 @@ rm $1;
     <span class="n">write</span><span class="p">(</span><span class="n">socket_fd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="n">strlen</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span> <span class="c1">//发送消息</span>
     <span class="n">memset</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
     <span class="c1">// read(socket_fd, buf, sizeof(buf)); //阻塞，等待客户端发来消息</span>
-    <span class="n">nfds</span> <span class="o">=</span> <span class="n">epoll_wait</span><span class="p">(</span><span class="n">epfd</span><span class="p">,</span> <span class="n">events</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span> <span class="c1">// 非阻塞监听回信</span>
+    <span class="n">nfds</span> <span class="o">=</span> <span class="n">epoll_wait</span><span class="p">(</span><span class="n">epfd</span><span class="p">,</span> <span class="n">events</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">-1</span><span class="p">);</span> <span class="c1">// 非阻塞监听回信</span>
     <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
     <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">nfds</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
       <span class="k">if</span> <span class="p">(</span><span class="n">events</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span> <span class="o">==</span> <span class="n">socket_fd</span><span class="p">)</span> <span class="p">{</span>
@@ -813,9 +813,9 @@ rm $1;
 <span class="cp">#include</span> <span class="cpf">&lt;sys/types.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;netinet/in.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;arpa/inet.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;unistd.h&gt; //close()</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;string.h&gt; //strcmp()等字符串操作函数</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt; //atoi() 字符串转int</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="c1"> //close()</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="c1"> //strcmp()等字符串操作函数</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="c1"> //atoi() 字符串转int</span><span class="cp"></span>
 
 <span class="c1">// const char* BIND_SERVER_IP = &quot;127.0.0.1&quot;;</span>
 <span class="k">const</span> <span class="kt">int</span> <span class="n">BIND_PORT</span> <span class="o">=</span> <span class="mi">30303</span><span class="p">;</span>
@@ -824,37 +824,37 @@ rm $1;
 
   <span class="c1">//1 创建tcp通信socket</span>
   <span class="kt">int</span> <span class="n">socket_fd</span> <span class="o">=</span> <span class="n">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">socket_fd</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">){</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">socket_fd</span> <span class="o">==</span> <span class="mi">-1</span><span class="p">){</span>
     <span class="n">perror</span><span class="p">(</span><span class="s">&quot;创建tcp通信socket失败!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">-1</span><span class="p">;</span>
   <span class="p">}</span>
 
   <span class="c1">//2 绑定socket地址</span>
-  <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">server_addr</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span><span class="c1">//存放地址信息</span>
+  <span class="k">struct</span> <span class="nc">sockaddr_in</span> <span class="n">server_addr</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span><span class="c1">//存放地址信息</span>
   <span class="n">server_addr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span><span class="c1">//AF_INET-&gt;IPv4  </span>
   <span class="n">server_addr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="n">htons</span><span class="p">(</span><span class="n">BIND_PORT</span><span class="p">);</span><span class="c1">//端口号</span>
   <span class="n">server_addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">.</span><span class="n">s_addr</span> <span class="o">=</span> <span class="n">INADDR_ANY</span><span class="p">;</span> <span class="c1">//让系统检测本地网卡，自动绑定本地IP</span>
-  <span class="kt">int</span> <span class="n">ret</span> <span class="o">=</span> <span class="n">bind</span><span class="p">(</span><span class="n">socket_fd</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span> <span class="o">&amp;</span><span class="n">server_addr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">server_addr</span><span class="p">));</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">ret</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">){</span>
+  <span class="kt">int</span> <span class="n">ret</span> <span class="o">=</span> <span class="n">bind</span><span class="p">(</span><span class="n">socket_fd</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="nc">sockaddr</span> <span class="o">*</span><span class="p">)</span> <span class="o">&amp;</span><span class="n">server_addr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">server_addr</span><span class="p">));</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">ret</span> <span class="o">==</span> <span class="mi">-1</span><span class="p">){</span>
     <span class="n">perror</span><span class="p">(</span><span class="s">&quot;bind failed!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">-1</span><span class="p">;</span>
   <span class="p">}</span>
 
   <span class="c1">//3 设置监听队列，设置为可以接受5个客户端连接</span>
   <span class="n">ret</span> <span class="o">=</span> <span class="n">listen</span><span class="p">(</span><span class="n">socket_fd</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">ret</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">){</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">ret</span> <span class="o">==</span> <span class="mi">-1</span><span class="p">){</span>
     <span class="n">perror</span><span class="p">(</span><span class="s">&quot;listen falied!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
   <span class="p">}</span>
 
   <span class="n">printf</span><span class="p">(</span><span class="s">&quot;server is running!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
 
-  <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">client_addr</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span><span class="c1">//用来存放客户端的地址信息</span>
+  <span class="k">struct</span> <span class="nc">sockaddr_in</span> <span class="n">client_addr</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span><span class="c1">//用来存放客户端的地址信息</span>
   <span class="kt">socklen_t</span> <span class="n">len</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">client_addr</span><span class="p">);</span>
-  <span class="kt">int</span> <span class="n">new_socket_fd</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span><span class="c1">//存放与客户端的通信socket</span>
+  <span class="kt">int</span> <span class="n">new_socket_fd</span> <span class="o">=</span> <span class="mi">-1</span><span class="p">;</span><span class="c1">//存放与客户端的通信socket</span>
 
   <span class="c1">//4 等待客户端连接</span>
-  <span class="n">new_socket_fd</span> <span class="o">=</span> <span class="n">accept</span><span class="p">(</span> <span class="n">socket_fd</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">client_addr</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">len</span><span class="p">);</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">new_socket_fd</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">){</span>
+  <span class="n">new_socket_fd</span> <span class="o">=</span> <span class="n">accept</span><span class="p">(</span> <span class="n">socket_fd</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="nc">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">client_addr</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">len</span><span class="p">);</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">new_socket_fd</span> <span class="o">==</span> <span class="mi">-1</span><span class="p">){</span>
     <span class="n">perror</span><span class="p">(</span><span class="s">&quot;accpet error!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
   <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;IP:%s, PORT:%d [connected]</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">inet_ntoa</span><span class="p">(</span><span class="n">client_addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">),</span> <span class="n">ntohs</span><span class="p">(</span><span class="n">client_addr</span><span class="p">.</span><span class="n">sin_port</span><span class="p">));</span>
@@ -907,7 +907,7 @@ rm <span class="nv">$1</span><span class="p">;</span>
 <p>size用来告诉内核这个监听的数目一共有多大</p>
 </blockquote>
 <h4>2. 将被监听的描述符添加到epoll句柄或从epool句柄中删除或者对监听事件进行修改</h4>
-<div class="highlight"><pre><span></span><span class="kt">int</span> <span class="n">epoll_ctl</span><span class="p">(</span><span class="kt">int</span> <span class="n">epfd</span><span class="p">,</span> <span class="kt">int</span> <span class="n">op</span><span class="p">,</span> <span class="kt">int</span> <span class="n">fd</span><span class="p">,</span> <span class="k">struct</span> <span class="n">epoll_event</span> <span class="o">*</span><span class="n">event</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="kt">int</span> <span class="n">epoll_ctl</span><span class="p">(</span><span class="kt">int</span> <span class="n">epfd</span><span class="p">,</span> <span class="kt">int</span> <span class="n">op</span><span class="p">,</span> <span class="kt">int</span> <span class="n">fd</span><span class="p">,</span> <span class="k">struct</span> <span class="nc">epoll_event</span> <span class="o">*</span><span class="n">event</span><span class="p">)</span>
 </pre></div>
 <blockquote>
 <p>该函数用于控制某个epoll文件描述符上的事件，可以注册事件，修改事件，删除事件。</p>
@@ -930,14 +930,14 @@ rm <span class="nv">$1</span><span class="p">;</span>
 |EPOLL_CTL_DEL|从epfd中删除一个fd|</p>
 <p>第三个参数是需要监听的fd</p>
 <p>第四个参数是告诉内核需要监听什么事件，structepoll_event结构如下：</p>
-<div class="highlight"><pre><span></span><span class="k">typedef</span> <span class="k">union</span> <span class="n">epoll_data</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="k">typedef</span> <span class="k">union</span> <span class="nc">epoll_data</span> <span class="p">{</span>
 <span class="kt">void</span> <span class="o">*</span><span class="n">ptr</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">fd</span><span class="p">;</span>
 <span class="n">__uint32_t</span> <span class="n">u32</span><span class="p">;</span>
 <span class="n">__uint64_t</span> <span class="n">u64</span><span class="p">;</span>
 <span class="p">}</span> <span class="n">epoll_data_t</span><span class="p">;</span>
 
-<span class="k">struct</span> <span class="n">epoll_event</span> <span class="p">{</span>
+<span class="k">struct</span> <span class="nc">epoll_event</span> <span class="p">{</span>
 <span class="n">__uint32_t</span> <span class="n">events</span><span class="p">;</span> <span class="cm">/* Epoll events */</span>
 <span class="n">epoll_data_t</span> <span class="n">data</span><span class="p">;</span> <span class="cm">/* User data variable */</span>
 <span class="p">};</span>
@@ -953,7 +953,7 @@ rm <span class="nv">$1</span><span class="p">;</span>
 |EPOLLET|将EPOLL设为边缘触发(Edge Triggered)模式，这是相对于水平触发(Level Triggered)来说的；|
 |EPOLLONESHOT|只监听一次事件，当监听完这次事件之后，如果还需要继续监听这个socket的话，需要再次把这个socket加入到EPOLL队列里。|</p>
 <h4>3.等待事件触发，当超过timeout还没有事件触发时，就超时。</h4>
-<div class="highlight"><pre><span></span><span class="kt">int</span> <span class="nf">epoll_wait</span><span class="p">(</span><span class="kt">int</span> <span class="n">epfd</span><span class="p">,</span> <span class="k">struct</span> <span class="n">epoll_event</span> <span class="o">*</span> <span class="n">events</span><span class="p">,</span> <span class="kt">int</span> <span class="n">maxevents</span><span class="p">,</span> <span class="kt">int</span> <span class="n">timeout</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><span class="kt">int</span> <span class="nf">epoll_wait</span><span class="p">(</span><span class="kt">int</span> <span class="n">epfd</span><span class="p">,</span> <span class="k">struct</span> <span class="nc">epoll_event</span> <span class="o">*</span> <span class="n">events</span><span class="p">,</span> <span class="kt">int</span> <span class="n">maxevents</span><span class="p">,</span> <span class="kt">int</span> <span class="n">timeout</span><span class="p">);</span>
 </pre></div>
 <p>该函数用于轮询I/O事件的发生，即等待事件的产生，类似于select()调用。参数events用来从内核得到事件的集合，maxevents告之内核这个events有多大(数组成员的个数)，这个maxevents的值不能大于创建epoll_create()时的size，参数timeout是超时时间（毫秒，0会立即返回，-1为阻塞）。</p>
 <p>该函数返回需要处理的事件数目，如返回0表示已超时。</p>
