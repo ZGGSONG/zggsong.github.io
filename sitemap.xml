@@ -12,6 +12,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+    <loc>/archives/data_struct/</loc>
+    <lastmod>2020-10-13</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
     <loc>/archives/sudoers/</loc>
     <lastmod>2020-09-11</lastmod>
     <changefreq>always</changefreq>
