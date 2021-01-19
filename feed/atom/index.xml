@@ -1,115 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/</id><title>ZGGSONG WIKI</title><updated>2020-10-13T12:34:45.238535+08:06</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email></author><link href="/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/logo.png</logo><subtitle>简单的记录学习.</subtitle><entry><id>/archives/crontab/</id><title>crontab定时计划</title><updated>2020-10-13T12:34:45.238983+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;简介&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;名称：crontab&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;功能说明：设置计时器。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;语法：crontab [-u &amp;lt;用户名称&amp;gt;][配置文件] 或 crontab [-u &amp;lt;用户名称&amp;gt;][-elr]&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;参数：&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;crontab -u //设定某个用户的cron服务，一般root用户在执行这个命令的时候需要此参数
-
-crontab -l //列出某个用户cron服务的详细内容
-
-crontab -r //删除某个用户的cron服务
-
-crontab -e //编辑某个用户的cron服务
-&lt;/pre&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-&lt;p&gt;补充说明：cron是一个常驻服务，它提供计时器的功能，让用户在特定的时间得以执行预设的指令或程序。只要用户会编辑计时器的配置文件，就可以使用计时器的功能。其配置文件格式如下：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;基本格式&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;*　　*　　*　　*　　*　　&lt;span class="nb"&gt;command&lt;/span&gt;
-分　时　日　月　周　命令
-
-第1列表示分钟1～59 每分钟用*或者 */1表示
-第2列表示小时1～23（0表示0点）
-第3列表示日期1～31
-第4列表示月份1～12
-第5列标识号星期0～6（0表示星期天）
-第6列要运行的命令
-&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;详细说明&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;时程表的格式如下 :&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;f1 f2 f3 f4 f5 program
-
-其中 f1 是表示分钟，f2 表示小时，f3 表示一个月份中的第几日，f4 表示月份，f5 表示一个星期中的第几天。program 表示要执行的程序。
-
-当 f1 为 * 时表示每分钟都要执行 program，f2 为 * 时表示每小时都要执行程序，其余类推
-
-当 f1 为 a-b 时表示从第 a 分钟到第 b 分钟这段时间内要执行，f2 为 a-b 时表示从第 a 到第 b 小时都要执行，其余类推
-
-当 f1 为 */n 时表示每 n 分钟个时间间隔执行一次，f2 为 */n 表示每 n 小时个时间间隔执行一次，其余类推
-
-当 f1 为 a, b, c,... 时表示第 a, b, c,... 分钟要执行，f2 为 a, b, c,... 时表示第 a, b, c...个小时要执行，其余类推
-
-使用者也可以将所有的设定先存放在档案 file 中，用 crontab file 的方式来设定时程表。
-&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;日常例子&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;每月每天7点的第 &lt;span class="m"&gt;0&lt;/span&gt; 分钟执行一次 /bin/ls 
-&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;7&lt;/span&gt; * * * /bin/ls
-
-在 &lt;span class="m"&gt;12&lt;/span&gt; 月内, 每天的早上 &lt;span class="m"&gt;6&lt;/span&gt; 点到 &lt;span class="m"&gt;12&lt;/span&gt; 点中，每隔 &lt;span class="m"&gt;20&lt;/span&gt; 分钟执行一次 /usr/bin/backup 
-&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;6&lt;/span&gt;-12/20 * &lt;span class="m"&gt;12&lt;/span&gt; * /usr/bin/backup
-
-周一到周五每天下午 &lt;span class="m"&gt;5&lt;/span&gt;:00 寄一封信给 wen.yang@bibipu.com 
-&lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;17&lt;/span&gt; * * &lt;span class="m"&gt;1&lt;/span&gt;-5 mail -s &lt;span class="s2"&gt;&amp;quot;hi&amp;quot;&lt;/span&gt; wen.yang@bibipu.com &amp;lt; /tmp/maildata
-
-每月每天的午夜 &lt;span class="m"&gt;0&lt;/span&gt; 点 &lt;span class="m"&gt;20&lt;/span&gt; 分, &lt;span class="m"&gt;2&lt;/span&gt; 点 &lt;span class="m"&gt;20&lt;/span&gt; 分, &lt;span class="m"&gt;4&lt;/span&gt; 点 &lt;span class="m"&gt;20&lt;/span&gt; 分....执行 &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;haha&amp;quot;&lt;/span&gt;
-&lt;span class="m"&gt;20&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;-23/2 * * * &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;haha&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;服务器实例&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;crontab文件的一些例子：
-
-30 21 * * * /usr/local/etc/rc.d/lighttpd restart
-上面的例子表示每晚的21:30重启apache。
-
-45 4 1,10,22 * * /usr/local/etc/rc.d/lighttpd restart
-上面的例子表示每月1、10、22日的4 : 45重启apache。
-
-10 1 * * 6,0 /usr/local/etc/rc.d/lighttpd restart
-上面的例子表示每周六、周日的1 : 10重启apache。
-
-0,30 18-23 * * * /usr/local/etc/rc.d/lighttpd restart
-上面的例子表示在每天18 : 00至23 : 00之间每隔30分钟重启apache。
-
-0 23 * * 6 /usr/local/etc/rc.d/lighttpd restart
-上面的例子表示每星期六的11 : 00 pm重启apache。
-
-* */1 * * * /usr/local/etc/rc.d/lighttpd restart
-每一小时重启apache
-
-* 23-7/1 * * * /usr/local/etc/rc.d/lighttpd restart
-晚上11点到早上7点之间，每隔一小时重启apache
-
-0 11 4 * mon-wed /usr/local/etc/rc.d/lighttpd restart
-每月的4号与每周一到周三的11点重启apache
-
-0 4 1 jan * /usr/local/etc/rc.d/lighttpd restart
-一月一号的4点重启apache
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;扩展&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Freebsd取昨天日期方法：date -v -1d +%Y%m%d&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Freebsd取上个周今日方法：date -v -1w +%Y%m%d&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Freebsd取上个月今日方法：date -v -1m +%Y%m%d&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Freebsd取去年今日的方法：date -v -1y +%Y%m%d&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;参考&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://blog.csdn.net/shaobingj126/java/article/details/5638006"&gt;&lt;a href="https://blog.csdn.net/shaobingj126/java/article/details/5638006"&gt;https://blog.csdn.net/shaobingj126/java/article/details/5638006&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content><link href="/archives/crontab/" rel="alternate"/><published>2020-07-16T09:07:00+08:06</published></entry><entry><id>/archives/trojan/</id><title>Trojan脚本</title><updated>2020-10-13T12:34:45.238949+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;p&gt;Trojan面板脚本&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/</id><title>ZGGSONG WIKI</title><updated>2021-01-19T09:30:34.643940+08:06</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email></author><link href="/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/logo.png</logo><subtitle>简单的记录学习.</subtitle><entry><id>/archives/trojan/</id><title>Trojan脚本</title><updated>2021-01-19T09:30:34.644328+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;p&gt;Trojan面板脚本&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;安装Curl支持环境
 apt -y install curl      &lt;span class="c1"&gt;#Debian&lt;/span&gt;
 yum -y install curl     &lt;span class="c1"&gt;#CentOS&lt;/span&gt;
@@ -142,7 +32,7 @@ Available Commands:
 Flags:
   -h, --help   &lt;span class="nb"&gt;help&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; trojan
 &lt;/pre&gt;&lt;/div&gt;
-</content><link href="/archives/trojan/" rel="alternate"/><published>2020-07-17T01:02:00+08:06</published></entry><entry><id>/archives/sql_developer/</id><title>Sql Developer连接Oracle数据库</title><updated>2020-10-13T12:34:45.238915+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;&lt;span id="jump"&gt;安装数据库&lt;/span&gt;&lt;/h2&gt;
+</content><link href="/archives/trojan/" rel="alternate"/><published>2020-07-17T01:02:00+08:06</published></entry><entry><id>/archives/sql_developer/</id><title>Sql Developer连接Oracle数据库</title><updated>2021-01-19T09:30:34.644299+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;&lt;span id="jump"&gt;安装数据库&lt;/span&gt;&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;安装&lt;code&gt;oracle&lt;/code&gt;数据库所有的文件都在&lt;a href="https://www.oracle.com/cn/downloads/"&gt;这里&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -161,7 +51,7 @@ Flags:
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://blog.csdn.net/qq_32528231/article/details/52914329?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522159524101219195188406377%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;amp;request_id=159524101219195188406377&amp;amp;biz_id=0&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v3~pc_rank_v2-1-52914329.first_rank_ecpm_v3_pc_rank_v2&amp;amp;utm_term=%E5%AE%89%E8%A3%85oracle11g%E5%90%8E%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%E5%85%B6%E8%87%AA%E5%B8%A6"&gt;安装Oracle11g后无法使用其自带的SQLdeveloper&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content><link href="/archives/sql_developer/" rel="alternate"/><published>2020-07-20T20:00:00+08:06</published></entry><entry><id>/archives/mobaxterm_ssh/</id><title>MobaXterm 使用SSH 免密码登录问题</title><updated>2020-10-13T12:34:45.238882+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;说明&lt;/h2&gt;
+</content><link href="/archives/sql_developer/" rel="alternate"/><published>2020-07-20T20:00:00+08:06</published></entry><entry><id>/archives/mobaxterm_ssh/</id><title>MobaXterm 使用SSH 免密码登录问题</title><updated>2021-01-19T09:30:34.644270+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;说明&lt;/h2&gt;
 &lt;p&gt;在使用cmd或者git bash生成ssh公钥之后，在服务器上加入对应的公钥即可免密进行ssh连接，但是在MobaXterm中新建连接还是需要输入密码。&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Access denied
 root@192.168.11.61&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;s password:
@@ -179,7 +69,7 @@ root@192.168.11.61&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;s password:
 &lt;h2&gt;解决&lt;/h2&gt;
 &lt;p&gt;只需要在MobaXterm的会话设置中要选中SSH所用的私钥文件即可。&lt;/p&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="891" data-height="599" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/d233489ec594f2fdba8780c7cce2030d.png" alt="ssh" /&gt;&lt;figcaption&gt;ssh&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-</content><link href="/archives/mobaxterm_ssh/" rel="alternate"/><published>2020-07-23T12:00:00+08:06</published></entry><entry><id>/archives/mysql/</id><title>Mysql常用命令</title><updated>2020-10-13T12:34:45.238847+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;安装&lt;/h2&gt;
+</content><link href="/archives/mobaxterm_ssh/" rel="alternate"/><published>2020-07-23T12:00:00+08:06</published></entry><entry><id>/archives/mysql/</id><title>Mysql常用命令</title><updated>2021-01-19T09:30:34.644241+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;安装&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;sudo apt install mysql-server          #服务端
 sudo apt install mysql-client          #客户端
@@ -239,7 +129,7 @@ dpkg -l | grep mysql | grep ii
 
 &lt;pre&gt;&lt;code&gt;service mysql restart
 &lt;/code&gt;&lt;/pre&gt;
-</content><link href="/archives/mysql/" rel="alternate"/><published>2020-08-08T18:57:00+08:06</published></entry><entry><id>/archives/iphone-check/</id><title>iPhone检查</title><updated>2020-10-13T12:34:45.238812+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;爱思助手&lt;/h2&gt;
+</content><link href="/archives/mysql/" rel="alternate"/><published>2020-08-08T18:57:00+08:06</published></entry><entry><id>/archives/iphone-check/</id><title>iPhone检查</title><updated>2021-01-19T09:30:34.644211+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;爱思助手&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;虽然可以修改成全绿，但是如果有红那就是必然有问题&lt;/li&gt;
 &lt;/ul&gt;
@@ -307,7 +197,7 @@ dpkg -l | grep mysql | grep ii
 &lt;li&gt;WiFi测试&lt;/li&gt;
 &lt;li&gt;蓝牙测试&lt;/li&gt;
 &lt;/ul&gt;
-</content><link href="/archives/iphone-check/" rel="alternate"/><published>2020-08-13T17:27:00+08:06</published></entry><entry><id>/archives/fzf/</id><title>fzf安装配置</title><updated>2020-10-13T12:34:45.238776+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;安装&lt;/h2&gt;
+</content><link href="/archives/iphone-check/" rel="alternate"/><published>2020-08-13T17:27:00+08:06</published></entry><entry><id>/archives/fzf/</id><title>fzf安装配置</title><updated>2021-01-19T09:30:34.644181+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;安装&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;brew install fzf
 &lt;/code&gt;&lt;/pre&gt;
@@ -370,7 +260,7 @@ export fzf_preview_cmd='[[ $(file --mime {}) =~ binary ]] &amp;amp;&amp;amp; ech
             else:
                 self.fm.select_file(fzf_file)
 &lt;/code&gt;&lt;/pre&gt;
-</content><link href="/archives/fzf/" rel="alternate"/><published>2020-08-23T17:27:00+08:06</published></entry><entry><id>/archives/unix_network/</id><title>Unix网络编程复习</title><updated>2020-10-13T12:34:45.238737+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h1&gt;LNP作业1&lt;/h1&gt;
+</content><link href="/archives/fzf/" rel="alternate"/><published>2020-08-23T17:27:00+08:06</published></entry><entry><id>/archives/unix_network/</id><title>Unix网络编程复习</title><updated>2021-01-19T09:30:34.644150+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h1&gt;LNP作业1&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;2020年2月17号 星期一 08:55&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1506,7 +1396,7 @@ void *eventHandler_start(void *myvar) {
 &lt;blockquote&gt;
 &lt;p&gt;转载自&lt;a href="https://blog.webpro.ltd/"&gt;&lt;a href="https://blog.webpro.ltd"&gt;https://blog.webpro.ltd&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-</content><link href="/archives/unix_network/" rel="alternate"/><published>2020-09-08T07:53:00+08:06</published></entry><entry><id>/archives/sudoers/</id><title>用户不在sudoers文件中</title><updated>2020-10-13T12:34:45.238694+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;解决方案&lt;/h2&gt;
+</content><link href="/archives/unix_network/" rel="alternate"/><published>2020-09-08T07:53:00+08:06</published></entry><entry><id>/archives/sudoers/</id><title>用户不在sudoers文件中</title><updated>2021-01-19T09:30:34.644118+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;解决方案&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;将用户添加至&lt;code&gt;sudoers&lt;/code&gt;中&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1525,7 +1415,7 @@ vi /etc/sudoers
 chmod 440 /etc/sudoers
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="639" data-height="157" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/dd83680010c40c60d66486180ca0dd8f.png" alt="sudoers" /&gt;&lt;figcaption&gt;sudoers&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-</content><link href="/archives/sudoers/" rel="alternate"/><published>2020-09-11T22:13:00+08:06</published></entry><entry><id>/archives/data_struct/</id><title>数据结构</title><updated>2020-10-13T12:34:45.238618+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h1&gt;数据结构&lt;/h1&gt;
+</content><link href="/archives/sudoers/" rel="alternate"/><published>2020-09-11T22:13:00+08:06</published></entry><entry><id>/archives/data_struct/</id><title>数据结构</title><updated>2021-01-19T09:30:34.644080+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h1&gt;数据结构&lt;/h1&gt;
 &lt;h2&gt;第一章：数据结构的&lt;/h2&gt;
 &lt;p&gt;基本概念&lt;/p&gt;
 &lt;h3&gt;定义&lt;/h3&gt;
@@ -2719,4 +2609,25 @@ path[]：path[i]表示从源点到顶点i之间的最短路径的前驱结点，
 &lt;li&gt;概要: 例子&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="3619" data-height="14920" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/f6a38eaee1e4c72350171bc6275ba3bc.png" alt="picture" /&gt;&lt;figcaption&gt;picture&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-</content><link href="/archives/data_struct/" rel="alternate"/><published>2020-10-13T22:27:00+08:06</published></entry></feed>
+</content><link href="/archives/data_struct/" rel="alternate"/><published>2020-10-13T22:27:00+08:06</published></entry><entry><id>/archives/dnscachepollution/</id><title>DNS污染</title><updated>2021-01-19T09:30:34.644013+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;前言&lt;/h2&gt;
+&lt;p&gt;一直发现有这个问题，后来才发现是DNS污染问题，ABROAD也是没用。暂时只能修改&lt;code&gt;hosts&lt;/code&gt;了&lt;/p&gt;
+&lt;h2&gt;解决&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;打开&lt;a href="https://www.ipaddress.com"&gt;ipaddress.com&lt;/a&gt;查询&lt;code&gt;raw.githubusercontent.com&lt;/code&gt;真实ip&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="1035" data-height="331" src="https://cdn.zggsong.cn/2020/04/23/6ea1202e0c596.png" alt="ipaddress" /&gt;&lt;figcaption&gt;ipaddress&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;linux &amp;amp;&amp;amp; mac&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo vim /etc/hosts
+&lt;span class="c1"&gt;#最后一行添加&lt;/span&gt;
+&lt;span class="m"&gt;199&lt;/span&gt;.232.68.133    raw.githubusercontent.com
+&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;刷新DNS缓存&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo dscacheutil -flushcache    &lt;span class="c1"&gt;#mac刷新DNS&lt;/span&gt;
+sudo service networking restart     &lt;span class="c1"&gt;#linux刷新DNS&lt;/span&gt;
+ipconfig /flushdns     &lt;span class="c1"&gt;#windows刷新DNS&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+</content><link href="/archives/dnscachepollution/" rel="alternate"/><published>2021-01-19T17:26:00+08:06</published></entry></feed>
