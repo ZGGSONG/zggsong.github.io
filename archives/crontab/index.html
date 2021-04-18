@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/9c56ba87128b47c70633ba71e0f6e27d.json"
+            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/72c8630bd2e8e2d7eeed0fb831fde29d.json"
         }
     </script>
     <script>
@@ -135,14 +135,10 @@
         </p>
         <article class="yue"><h2>简介</h2>
 <ul>
-<li><p>名称：crontab</p>
-</li>
-<li><p>功能说明：设置计时器。</p>
-</li>
-<li><p>语法：crontab [-u &lt;用户名称&gt;][配置文件] 或 crontab [-u &lt;用户名称&gt;][-elr]</p>
-</li>
-<li><p>参数：</p>
-</li>
+<li><p>名称：crontab</p></li>
+<li><p>功能说明：设置计时器。</p></li>
+<li><p>语法：crontab [-u &lt;用户名称&gt;][配置文件] 或 crontab [-u &lt;用户名称&gt;][-elr]</p></li>
+<li><p>参数：</p></li>
 </ul>
 <div class="highlight"><pre><span></span>crontab -u //设定某个用户的cron服务，一般root用户在执行这个命令的时候需要此参数
 
@@ -153,8 +149,7 @@ crontab -r //删除某个用户的cron服务
 crontab -e //编辑某个用户的cron服务
 </pre></div>
 <blockquote>
-<p>补充说明：cron是一个常驻服务，它提供计时器的功能，让用户在特定的时间得以执行预设的指令或程序。只要用户会编辑计时器的配置文件，就可以使用计时器的功能。其配置文件格式如下：</p>
-</blockquote>
+<p>补充说明：cron是一个常驻服务，它提供计时器的功能，让用户在特定的时间得以执行预设的指令或程序。只要用户会编辑计时器的配置文件，就可以使用计时器的功能。其配置文件格式如下：</p></blockquote>
 <h2>基本格式</h2>
 <div class="highlight"><pre><span></span>*　　*　　*　　*　　*　　<span class="nb">command</span>
 分　时　日　月　周　命令
@@ -230,14 +225,10 @@ crontab -e //编辑某个用户的cron服务
 </code></pre>
 <h2>扩展</h2>
 <ol>
-<li><p>Freebsd取昨天日期方法：date -v -1d +%Y%m%d</p>
-</li>
-<li><p>Freebsd取上个周今日方法：date -v -1w +%Y%m%d</p>
-</li>
-<li><p>Freebsd取上个月今日方法：date -v -1m +%Y%m%d</p>
-</li>
-<li><p>Freebsd取去年今日的方法：date -v -1y +%Y%m%d</p>
-</li>
+<li><p>Freebsd取昨天日期方法：date -v -1d +%Y%m%d</p></li>
+<li><p>Freebsd取上个周今日方法：date -v -1w +%Y%m%d</p></li>
+<li><p>Freebsd取上个月今日方法：date -v -1m +%Y%m%d</p></li>
+<li><p>Freebsd取去年今日的方法：date -v -1y +%Y%m%d</p></li>
 </ol>
 <h2>参考</h2>
 <ul>

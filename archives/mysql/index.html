@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/9c56ba87128b47c70633ba71e0f6e27d.json"
+            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/72c8630bd2e8e2d7eeed0fb831fde29d.json"
         }
     </script>
     <script>
@@ -186,11 +186,9 @@ dpkg -l | grep mysql | grep ii
 <li>远程连接报错</li>
 </ul>
 <p>打开<code>/etc/mysql/mysql.conf.d/</code>文件，找到<code>bind-address = 127.0.0.1</code>在前面加上<code>#</code>注释掉</p>
-
 <pre><code>#bind-address = 127.0.0.1
 </code></pre>
 <p>再重启服务即可</p>
-
 <pre><code>service mysql restart
 </code></pre>
 </article>

@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/9c56ba87128b47c70633ba71e0f6e27d.json"
+            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/72c8630bd2e8e2d7eeed0fb831fde29d.json"
         }
     </script>
     <script>
@@ -34,16 +34,16 @@
     
 <title>Java约瑟夫环问题 - ZGGSONG WIKI</title>
 <meta name="author" content="ZGGSONG" />
-<meta name="description" content="约瑟夫环问题：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。" />
+<meta name="description" content="约瑟夫环问题：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。例题" />
 <meta property="og:title" content="Java约瑟夫环问题 - ZGGSONG WIKI" />
-<meta property="og:description" content="约瑟夫环问题：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。" />
+<meta property="og:description" content="约瑟夫环问题：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。例题" />
 <meta property="og:site_name" content="ZGGSONG WIKI" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/archives/Joseph_Java/" />
 <meta property="og:image" content="" />
 <meta property="article:published_time" content="2020-07-14T01:46:00-00.00" />
 <meta name="twitter:title" content="Java约瑟夫环问题 - ZGGSONG WIKI" />
-<meta name="twitter:description" content="约瑟夫环问题：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。" />
+<meta name="twitter:description" content="约瑟夫环问题：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。例题" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:image" content="" />
 
@@ -133,13 +133,10 @@
                 
             </span>
         </p>
-        <article class="yue"><p><a href="https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98">约瑟夫环问题</a>：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。</p>
-<h2>例题</h2>
+        <article class="yue"><p><a href="https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98">约瑟夫环问题</a>：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。</p><h2>例题</h2>
 <blockquote>
-<p>设有n个人围坐一圈并按顺时针方向从1到n编号，从第1个人开始进行1到m的报数，报数到第个m人，此人出圈，再从他的下一个人重新开始1到m的报数，如此进行下去直到所剩下一人为止。</p>
-</blockquote>
-<p>解决方法：<code>LinkedList</code> + <code>Iterator</code></p>
-<blockquote>
+<p>设有n个人围坐一圈并按顺时针方向从1到n编号，从第1个人开始进行1到m的报数，报数到第个m人，此人出圈，再从他的下一个人重新开始1到m的报数，如此进行下去直到所剩下一人为止。</p></blockquote>
+<p>解决方法：<code>LinkedList</code> + <code>Iterator</code></p><blockquote>
 <ul>
 <li>LinkedList类是双向链表,列表中的每个节点都包含了对前一个和后一个元素的引用</li>
 </ul>
