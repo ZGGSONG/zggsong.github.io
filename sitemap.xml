@@ -12,7 +12,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-    <loc>/archives/vim/</loc>
+    <loc>/archives/git/</loc>
     <lastmod>2021-04-01</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -21,13 +21,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
     <loc>/archives/dnscachepollution/</loc>
     <lastmod>2021-01-19</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-</url>
-
-<url>
-    <loc>/archives/data_struct/</loc>
-    <lastmod>2020-10-13</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
 </url>
