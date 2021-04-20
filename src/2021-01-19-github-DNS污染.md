@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DNS污染
+title: Github-DNS污染
 slug: dnscachepollution
 date: 2021-01-19 17:26:00
 status: publish
@@ -9,6 +9,7 @@ categories:
   - 日常技巧
 tags: 
   - DNS
+  - Github
 ---
 
 ## 前言
