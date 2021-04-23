@@ -1,18 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZGGSONG WIKI</title><link>/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/logo.png</url><title>ZGGSONG WIKI</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Tue, 20 Apr 2021 13:46:52 +0806</lastBuildDate><pubDate>Tue, 20 Apr 2021 13:46:52 +0806</pubDate><item><title>Sql Developer连接Oracle数据库</title><link>/archives/sql_developer/</link><description>&lt;h2&gt;&lt;span id="jump"&gt;安装数据库&lt;/span&gt;&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;安装&lt;code&gt;oracle&lt;/code&gt;数据库所有的文件都在&lt;a href="https://www.oracle.com/cn/downloads/"&gt;这里&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;figure&gt;&lt;img loading="lazy" data-width="1598" data-height="896" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/3eedc4f687a75bc7b2df2a4159f095bd.png" alt="" /&gt;&lt;/figure&gt;&lt;h2&gt;连接数据库&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;使用&lt;code&gt;cmd&lt;/code&gt; 输入 &lt;code&gt;sqlplus&lt;/code&gt;进行连接数据库&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;打开软件根目录&lt;code&gt;/product/11.2/db_home1/sqldeveloper/sqldeveloper.exe&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;然而这将无法使用，因为不论是自带的jdk还是一般自己配制的jdk都是64位，但是官方在制作时这里面自带的&lt;code&gt;sqlDeveloper&lt;/code&gt;是不支持64位jdk的，所以需要更换成新版本的，&lt;a href="#jump"&gt;点这里&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;遇到的问题&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;然而，在使用64位jdk之后，可能&lt;code&gt;C:\\Program Files\\java\\jdk***\\jre\\bin\\&lt;/code&gt;里面并没有&lt;code&gt;msvcr100.dll&lt;/code&gt;，就只需要将&lt;code&gt;sqlDeveloper/jdk/jre/bin/&lt;/code&gt;里面的&lt;code&gt;msvcr100.dll&lt;/code&gt;copy一份过去，也可以直接使用带jdk的&lt;code&gt;sqlDeveloper&lt;/code&gt;里面的jdk也是可以的&lt;/strong&gt;&lt;/p&gt;&lt;h2&gt;参考&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://blog.csdn.net/qq_32528231/article/details/52914329?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522159524101219195188406377%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;amp;request_id=159524101219195188406377&amp;amp;biz_id=0&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v3~pc_rank_v2-1-52914329.first_rank_ecpm_v3_pc_rank_v2&amp;amp;utm_term=%E5%AE%89%E8%A3%85oracle11g%E5%90%8E%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%E5%85%B6%E8%87%AA%E5%B8%A6"&gt;安装Oracle11g后无法使用其自带的SQLdeveloper&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/sql_developer/</guid><pubDate>Mon, 20 Jul 2020 20:00:00 +0806</pubDate></item><item><title>MobaXterm 使用SSH 免密码登录问题</title><link>/archives/mobaxterm_ssh/</link><description>&lt;h2&gt;说明&lt;/h2&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZGGSONG WIKI</title><link>/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/logo.png</url><title>ZGGSONG WIKI</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Fri, 23 Apr 2021 11:19:09 +0806</lastBuildDate><pubDate>Fri, 23 Apr 2021 11:19:09 +0806</pubDate><item><title>MobaXterm 使用SSH 免密码登录问题</title><link>/archives/mobaxterm_ssh/</link><description>&lt;h2&gt;说明&lt;/h2&gt;
 &lt;p&gt;在使用cmd或者git bash生成ssh公钥之后，在服务器上加入对应的公钥即可免密进行ssh连接，但是在MobaXterm中新建连接还是需要输入密码。&lt;/p&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Access denied
 root@192.168.11.61&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;s password:
 &lt;/pre&gt;&lt;/div&gt;
@@ -2778,4 +2765,26 @@ $ git archive
 &lt;blockquote&gt;
 &lt;p&gt;以上常用命令来自阮一峰老师的博客文章《常用 Git 命令清单》，感谢阮老师！&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2&gt;Git命令速查表&lt;/h2&gt;
-&lt;figure&gt;&lt;img loading="lazy" data-width="1081" data-height="1921" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/416e2fbb8e0d7c0505407ef55f76e93a.png" alt="" /&gt;&lt;/figure&gt;</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/git/</guid><pubDate>Thu, 01 Apr 2021 17:27:00 +0806</pubDate></item></channel></rss>
+&lt;figure&gt;&lt;img loading="lazy" data-width="1081" data-height="1921" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/416e2fbb8e0d7c0505407ef55f76e93a.png" alt="" /&gt;&lt;/figure&gt;</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/git/</guid><pubDate>Thu, 01 Apr 2021 17:27:00 +0806</pubDate></item><item><title>命名规范</title><link>/archives/code_name/</link><description>&lt;h2&gt;Java命名规范&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;项目名称：全部小写&lt;/li&gt;
+&lt;li&gt;常量：都用大写。如：public static final String DBDRIVER = “…..”;&lt;/li&gt;
+&lt;li&gt;类名：大写开头： 如：public class Person{}&lt;/li&gt;
+&lt;li&gt;属性名：小写：如：String personName = “Kayle”;&lt;/li&gt;
+&lt;li&gt;方法名：小写：如：public String getPersonName() {return this.personName}&lt;/li&gt;
+&lt;li&gt;构造函数名：与类名称一样，所以也是大写开头。&lt;/li&gt;
+&lt;li&gt;包名：所有的单词都是小写：如：import java.io.*&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Python命名规范&lt;/h2&gt;
+&lt;p&gt;_模块名：小写字母，单词之间用_分割 如：rivet_detection&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;包名：小写字母，单词之间用_分割 如：rivet_detection&lt;/li&gt;
+&lt;li&gt;类名：单词首字母大写 如：python class LogRecord(object):&lt;/li&gt;
+&lt;li&gt;普通变量：小写字母，单词之间用_分割 如：exc_info&lt;/li&gt;
+&lt;li&gt;实例变量：以_开头，小写字母，单词之间用_分割 如:_exc_info，以一个下划线开头的标识符(_xxx)，不能访问的类属性，但可通过类提供的接口进行访问，不会被语句 “from module import *” 语句加载&lt;/li&gt;
+&lt;li&gt;私有实例变量：以__开头（2个下划线），小写字母，单词之间用_分割 如:__private_var ，外部访问会报错&lt;/li&gt;
+&lt;li&gt;专有变量：&lt;strong&gt;开头（2个下划线），__结尾（2个下划线），一般为python的自有变量，不要以这种方式命名 如:__doc&lt;/strong&gt; ，是系统定义的，具有特殊意义的标识符&lt;/li&gt;
+&lt;li&gt;普通函数：小写字母，单词之间用_分割： 如:get_name()&lt;/li&gt;
+&lt;li&gt;私有函数：以__开头（2个下划线），小写字母，单词之间用分割 如:__get_name() ，外部访问会报错.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;函数命名查询网站&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://unbug.github.io/codelf/"&gt;&lt;a href="http://unbug.github.io/codelf/"&gt;http://unbug.github.io/codelf/&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/code_name/</guid><pubDate>Fri, 23 Apr 2021 19:58:00 +0806</pubDate></item></channel></rss>
