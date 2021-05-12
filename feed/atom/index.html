@@ -1,17 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/</id><title>ZGGSONG WIKI</title><updated>2021-05-05T16:29:08.997843+08:06</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email></author><link href="/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/logo.png</logo><subtitle>简单的记录学习.</subtitle><entry><id>/archives/mobaxterm_ssh/</id><title>MobaXterm 使用SSH 免密码登录问题</title><updated>2021-05-05T16:29:08.998310+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;说明&lt;/h2&gt;
-&lt;p&gt;在使用cmd或者git bash生成ssh公钥之后，在服务器上加入对应的公钥即可免密进行ssh连接，但是在MobaXterm中新建连接还是需要输入密码。&lt;/p&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Access denied
-root@192.168.11.61&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;s password:
-&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;原因&lt;/h2&gt;
-&lt;p&gt;这是因为MobaXterm命令行登录的用户是mobaxterm，而并非是我们登陆系统的用户。&lt;/p&gt;&lt;ul&gt;
-&lt;li&gt;user for mobaxterm&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure&gt;&lt;img loading="lazy" data-width="427" data-height="209" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/f322a64cba6d8e505875f06cb714ba6b.png" alt="user_mobaxterm" /&gt;&lt;figcaption&gt;user_mobaxterm&lt;/figcaption&gt;&lt;/figure&gt;&lt;ul&gt;
-&lt;li&gt;user for windows&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure&gt;&lt;img loading="lazy" data-width="511" data-height="179" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/cd37cc88274b96d1d61f3f5e2499584e.png" alt="user_windows" /&gt;&lt;figcaption&gt;user_windows&lt;/figcaption&gt;&lt;/figure&gt;&lt;h2&gt;解决&lt;/h2&gt;
-&lt;p&gt;只需要在MobaXterm的会话设置中要选中SSH所用的私钥文件即可。&lt;/p&gt;&lt;figure&gt;&lt;img loading="lazy" data-width="891" data-height="599" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/d233489ec594f2fdba8780c7cce2030d.png" alt="ssh" /&gt;&lt;figcaption&gt;ssh&lt;/figcaption&gt;&lt;/figure&gt;</content><link href="/archives/mobaxterm_ssh/" rel="alternate"/><published>2020-07-23T12:00:00+08:06</published></entry><entry><id>/archives/mysql/</id><title>Mysql常用命令</title><updated>2021-05-05T16:29:08.998277+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;安装&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/</id><title>ZGGSONG WIKI</title><updated>2021-05-12T10:15:10.861533+08:06</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email></author><link href="/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/logo.png</logo><subtitle>简单的记录学习.</subtitle><entry><id>/archives/mysql/</id><title>Mysql常用命令</title><updated>2021-05-12T10:15:10.861934+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;安装&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;sudo apt install mysql-server          #服务端
 sudo apt install mysql-client          #客户端
@@ -69,7 +57,7 @@ dpkg -l | grep mysql | grep ii
 &lt;p&gt;再重启服务即可&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;service mysql restart
 &lt;/code&gt;&lt;/pre&gt;
-</content><link href="/archives/mysql/" rel="alternate"/><published>2020-08-08T18:57:00+08:06</published></entry><entry><id>/archives/iphone-check/</id><title>iPhone检查</title><updated>2021-05-05T16:29:08.998242+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;爱思助手&lt;/h2&gt;
+</content><link href="/archives/mysql/" rel="alternate"/><published>2020-08-08T18:57:00+08:06</published></entry><entry><id>/archives/iphone-check/</id><title>iPhone检查</title><updated>2021-05-12T10:15:10.861903+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;爱思助手&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;虽然可以修改成全绿，但是如果有红那就是必然有问题&lt;/li&gt;
 &lt;/ul&gt;
@@ -137,7 +125,7 @@ dpkg -l | grep mysql | grep ii
 &lt;li&gt;WiFi测试&lt;/li&gt;
 &lt;li&gt;蓝牙测试&lt;/li&gt;
 &lt;/ul&gt;
-</content><link href="/archives/iphone-check/" rel="alternate"/><published>2020-08-13T17:27:00+08:06</published></entry><entry><id>/archives/fzf/</id><title>fzf安装配置</title><updated>2021-05-05T16:29:08.998209+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;安装&lt;/h2&gt;
+</content><link href="/archives/iphone-check/" rel="alternate"/><published>2020-08-13T17:27:00+08:06</published></entry><entry><id>/archives/fzf/</id><title>fzf安装配置</title><updated>2021-05-12T10:15:10.861872+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;安装&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;brew install fzf
 &lt;/code&gt;&lt;/pre&gt;
@@ -199,7 +187,7 @@ export fzf_preview_cmd='[[ $(file --mime {}) =~ binary ]] &amp;amp;&amp;amp; ech
             else:
                 self.fm.select_file(fzf_file)
 &lt;/code&gt;&lt;/pre&gt;
-</content><link href="/archives/fzf/" rel="alternate"/><published>2020-08-23T17:27:00+08:06</published></entry><entry><id>/archives/unix_network/</id><title>Unix网络编程复习</title><updated>2021-05-05T16:29:08.998175+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h1&gt;LNP作业1&lt;/h1&gt;
+</content><link href="/archives/fzf/" rel="alternate"/><published>2020-08-23T17:27:00+08:06</published></entry><entry><id>/archives/unix_network/</id><title>Unix网络编程复习</title><updated>2021-05-12T10:15:10.861841+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h1&gt;LNP作业1&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;2020年2月17号 星期一 08:55&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
@@ -1277,7 +1265,7 @@ void *eventHandler_start(void *myvar) {
 &lt;h2&gt;转载&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;转载自&lt;a href="https://blog.webpro.ltd/"&gt;&lt;a href="https://blog.webpro.ltd"&gt;https://blog.webpro.ltd&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
-</content><link href="/archives/unix_network/" rel="alternate"/><published>2020-09-08T07:53:00+08:06</published></entry><entry><id>/archives/sudoers/</id><title>用户不在sudoers文件中</title><updated>2021-05-05T16:29:08.998140+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;解决方案&lt;/h2&gt;
+</content><link href="/archives/unix_network/" rel="alternate"/><published>2020-09-08T07:53:00+08:06</published></entry><entry><id>/archives/sudoers/</id><title>用户不在sudoers文件中</title><updated>2021-05-12T10:15:10.861810+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;解决方案&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;将用户添加至&lt;code&gt;sudoers&lt;/code&gt;中&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
@@ -1294,7 +1282,7 @@ vi /etc/sudoers
 
 chmod 440 /etc/sudoers
 &lt;/code&gt;&lt;/pre&gt;
-&lt;figure&gt;&lt;img loading="lazy" data-width="639" data-height="157" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/dd83680010c40c60d66486180ca0dd8f.png" alt="sudoers" /&gt;&lt;figcaption&gt;sudoers&lt;/figcaption&gt;&lt;/figure&gt;</content><link href="/archives/sudoers/" rel="alternate"/><published>2020-09-11T22:13:00+08:06</published></entry><entry><id>/archives/data_struct/</id><title>数据结构</title><updated>2021-05-05T16:29:08.998104+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h1&gt;数据结构&lt;/h1&gt;
+&lt;figure&gt;&lt;img loading="lazy" data-width="639" data-height="157" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/dd83680010c40c60d66486180ca0dd8f.png" alt="sudoers" /&gt;&lt;figcaption&gt;sudoers&lt;/figcaption&gt;&lt;/figure&gt;</content><link href="/archives/sudoers/" rel="alternate"/><published>2020-09-11T22:13:00+08:06</published></entry><entry><id>/archives/data_struct/</id><title>数据结构</title><updated>2021-05-12T10:15:10.861779+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h1&gt;数据结构&lt;/h1&gt;
 &lt;h2&gt;第一章：数据结构的&lt;/h2&gt;
 &lt;p&gt;基本概念&lt;/p&gt;&lt;h3&gt;定义&lt;/h3&gt;
 &lt;ul&gt;
@@ -2416,7 +2404,7 @@ path[]：path[i]表示从源点到顶点i之间的最短路径的前驱结点，
 &lt;li&gt;树的先序遍历等于它对应二叉树的先序遍历，后序遍历等于它对应的二叉树的中序遍历&lt;/li&gt;
 &lt;li&gt;概要: 例子&lt;/li&gt;
 &lt;/ul&gt;
-&lt;figure&gt;&lt;img loading="lazy" data-width="3619" data-height="14920" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/f6a38eaee1e4c72350171bc6275ba3bc.png" alt="picture" /&gt;&lt;figcaption&gt;picture&lt;/figcaption&gt;&lt;/figure&gt;</content><link href="/archives/data_struct/" rel="alternate"/><published>2020-10-13T22:27:00+08:06</published></entry><entry><id>/archives/dnscachepollution/</id><title>Github-DNS污染</title><updated>2021-05-05T16:29:08.998066+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;前言&lt;/h2&gt;
+&lt;figure&gt;&lt;img loading="lazy" data-width="3619" data-height="14920" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/f6a38eaee1e4c72350171bc6275ba3bc.png" alt="picture" /&gt;&lt;figcaption&gt;picture&lt;/figcaption&gt;&lt;/figure&gt;</content><link href="/archives/data_struct/" rel="alternate"/><published>2020-10-13T22:27:00+08:06</published></entry><entry><id>/archives/dnscachepollution/</id><title>Github-DNS污染</title><updated>2021-05-12T10:15:10.861746+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;前言&lt;/h2&gt;
 &lt;p&gt;一直发现有这个问题，后来才发现是DNS污染问题，ABROAD也是没用。暂时只能修改&lt;code&gt;hosts&lt;/code&gt;了&lt;/p&gt;&lt;h2&gt;解决&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;打开&lt;a href="https://www.ipaddress.com"&gt;ipaddress.com&lt;/a&gt;查询&lt;code&gt;raw.githubusercontent.com&lt;/code&gt;真实ip&lt;/li&gt;
@@ -2434,7 +2422,67 @@ path[]：path[i]表示从源点到顶点i之间的最短路径的前驱结点，
 sudo service networking restart     &lt;span class="c1"&gt;#linux刷新DNS&lt;/span&gt;
 ipconfig /flushdns     &lt;span class="c1"&gt;#windows刷新DNS&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-</content><link href="/archives/dnscachepollution/" rel="alternate"/><published>2021-01-19T17:26:00+08:06</published></entry><entry><id>/archives/git/</id><title>Git</title><updated>2021-05-05T16:29:08.998023+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;前言&lt;/h2&gt;
+</content><link href="/archives/dnscachepollution/" rel="alternate"/><published>2021-01-19T17:26:00+08:06</published></entry><entry><id>/archives/redis_mac/</id><title>Mac安装配置Redis</title><updated>2021-05-12T10:15:10.861712+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;安装&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;brew install redis
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;路径&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Homebrew安装的软件会默认在/usr/local/Cellar/路径下&lt;/li&gt;
+&lt;li&gt;redis的配置文件redis.conf存放在/usr/local/etc路径下&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;配置&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;redis默认是前台启动，我们实际开发是以守护进程的方式运行。进入/usr/local/etc路径下，然后vi redis.conf ，找到daemonize no并修改成yes即可。&lt;/li&gt;
+&lt;li&gt;找到bind 127.0.01 并且注释掉&lt;/li&gt;
+&lt;li&gt;找到requirepass设置密码为：requirepass 【填自己设置的密码】，然后按住esc键输入【:wq】回车保存退出即可。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;启动服务&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;# 1
+brew services start redis
+
+# 2
+redis-server /usr/local/etc/redis.conf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;再执行命令：redis-server出现redis图标就说明启动成功了&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2&gt;查看服务&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;ps axu | grep redis
+# 或者
+lsof -i tcp:6379
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;启动&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;redis-cli
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;关闭&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;正确停止Redis的方式：redis-cli shutdown
+强行终止redis：sudo pkill redis-server
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;强行终止redis进程可能会导致redis持久化数据丢失，应该避免。&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2&gt;其他&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;# 开机启动redis命令
+ln -f /usr/local/Cellar/redis/6.2.3./homebrew.mxcl.redis.plist ~/Libr·ary/LaunchAgents/
+
+# 使用launchctl启动redis server
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
+
+# 使用配置文件启动redis server
+redis-server /usr/local/etc/redis.conf
+
+# 停止redis server的自启动
+launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
+
+# 卸载
+brew uninstall redis
+rm ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
+&lt;/code&gt;&lt;/pre&gt;
+</content><link href="/archives/redis_mac/" rel="alternate"/><published>2021-04-01T17:27:00+08:06</published></entry><entry><id>/archives/git/</id><title>Git</title><updated>2021-05-12T10:15:10.861673+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;前言&lt;/h2&gt;
 &lt;p&gt;git仓库使用的基本操作，以及生成使用ssh公钥&lt;/p&gt;&lt;h2&gt;git初始化&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git config --global user.email &lt;span class="s2"&gt;&amp;quot;youremail@domain.com&amp;quot;&lt;/span&gt;
 git config --global user.name &lt;span class="s2"&gt;&amp;quot;Your Name&amp;quot;&lt;/span&gt;
@@ -2765,7 +2813,7 @@ $ git archive
 &lt;blockquote&gt;
 &lt;p&gt;以上常用命令来自阮一峰老师的博客文章《常用 Git 命令清单》，感谢阮老师！&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2&gt;Git命令速查表&lt;/h2&gt;
-&lt;figure&gt;&lt;img loading="lazy" data-width="1081" data-height="1921" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/416e2fbb8e0d7c0505407ef55f76e93a.png" alt="" /&gt;&lt;/figure&gt;</content><link href="/archives/git/" rel="alternate"/><published>2021-04-01T17:27:00+08:06</published></entry><entry><id>/archives/code_name/</id><title>命名规范</title><updated>2021-05-05T16:29:08.997947+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;Java命名规范&lt;/h2&gt;
+&lt;figure&gt;&lt;img loading="lazy" data-width="1081" data-height="1921" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/416e2fbb8e0d7c0505407ef55f76e93a.png" alt="" /&gt;&lt;/figure&gt;</content><link href="/archives/git/" rel="alternate"/><published>2021-04-01T17:27:00+08:06</published></entry><entry><id>/archives/code_name/</id><title>命名规范</title><updated>2021-05-12T10:15:10.861603+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;Java命名规范&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;项目名称：全部小写&lt;/li&gt;
 &lt;li&gt;常量：都用大写。如：public static final String DBDRIVER = “…..”;&lt;/li&gt;
