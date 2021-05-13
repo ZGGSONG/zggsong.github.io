@@ -6,7 +6,7 @@ date: 2020-09-11 22:13:00
 status: publish
 author: ZGGSONG
 categories: 
-  - 日常技巧
+  - 编程笔记
   - linux
 tags: 
   - sudoers
