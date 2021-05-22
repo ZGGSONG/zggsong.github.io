@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZGGSONG WIKI</title><link>/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/logo.png</url><title>ZGGSONG WIKI</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Sat, 22 May 2021 17:40:01 +0806</lastBuildDate><pubDate>Sat, 22 May 2021 17:40:01 +0806</pubDate><item><title>iPhone检查</title><link>/archives/iphone-check/</link><description>&lt;h2&gt;爱思助手&lt;/h2&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZGGSONG WIKI</title><link>/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/logo.png</url><title>ZGGSONG WIKI</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Sat, 22 May 2021 17:42:13 +0806</lastBuildDate><pubDate>Sat, 22 May 2021 17:42:13 +0806</pubDate><item><title>iPhone检查</title><link>/archives/iphone-check/</link><description>&lt;h2&gt;爱思助手&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;虽然可以修改成全绿，但是如果有红那就是必然有问题&lt;/li&gt;
 &lt;/ul&gt;
@@ -2808,7 +2808,7 @@ rm ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
 &lt;ul&gt;
 &lt;li&gt;粗剪
 -首先快速预览，将内容加入收藏&lt;/li&gt;
-&lt;li&gt;精剪&amp;quot;]&lt;ul&gt;
+&lt;li&gt;精剪&lt;ul&gt;
 &lt;li&gt;在上方筛选中选择个人收藏，然后在选取内容添加到时间线上，提高效率&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
