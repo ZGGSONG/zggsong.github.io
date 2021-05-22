@@ -76,17 +76,18 @@ head_addon = r'''
 <link rel="icon" type="image/ico" href="//cdn.jsdelivr.net/gh/zggsong/cdn/favicon.ico">
 '''
 
-footer_addon = r'''
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?5f4e80f87318224a9c76e9def1019df5";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-'''
+footer_addon = ''
+# footer_addon = r'''
+# <script>
+# var _hmt = _hmt || [];
+# (function() {
+#   var hm = document.createElement("script");
+#   hm.src = "https://hm.baidu.com/hm.js?5f4e80f87318224a9c76e9def1019df5";
+#   var s = document.getElementsByTagName("script")[0]; 
+#   s.parentNode.insertBefore(hm, s);
+# })();
+# </script>
+# '''
 
 body_addon = ''
 
