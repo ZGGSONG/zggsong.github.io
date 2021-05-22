@@ -1,63 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZGGSONG WIKI</title><link>/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/logo.png</url><title>ZGGSONG WIKI</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Sat, 15 May 2021 08:37:03 +0806</lastBuildDate><pubDate>Sat, 15 May 2021 08:37:03 +0806</pubDate><item><title>Mysql常用命令</title><link>/archives/mysql/</link><description>&lt;h2&gt;安装&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo apt install mysql-server          #服务端
-sudo apt install mysql-client          #客户端
-sudo apt install libmysqlclient-dev    #程序编译时链接的库
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;检查是否安装好&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo netstat -tap | grep mysql
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;登录&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;mysql -u root -p
-
-# 或者
-
-
-#服务启动后端口查询
-sudo netstat -anp | grep mysql
-
-#连接数据库
-mysql -h 127.0.0.1 -P 3306 -uroot -p123456
-#-h为远程IP，-P为端口号，-u为用户名，-p为密码
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;管理&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;#启动
-sudo service mysql start
-#停止
-sudo service mysql stop
-#服务状态
-sudo service mysql status
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;卸载&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;#首先使用以下命令删除MySQL服务器：
-sudo apt-get remove mysql-server
-#然后，删除随MySQL服务器自动安装的任何其他软件：
-sudo apt-get autoremove
-#卸载其他组件：
-sudo apt-get remove &amp;lt;&amp;lt;package-name&amp;gt;&amp;gt;
-#查看从MySQL APT存储库安装的软件包列表：
-dpkg -l | grep mysql | grep ii
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;其他&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;远程连接报错&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;打开&lt;code&gt;/etc/mysql/mysql.conf.d/&lt;/code&gt;文件，找到&lt;code&gt;bind-address = 127.0.0.1&lt;/code&gt;在前面加上&lt;code&gt;#&lt;/code&gt;注释掉&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#bind-address = 127.0.0.1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;再重启服务即可&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;service mysql restart
-&lt;/code&gt;&lt;/pre&gt;
-</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/mysql/</guid><pubDate>Sat, 08 Aug 2020 18:57:00 +0806</pubDate></item><item><title>iPhone检查</title><link>/archives/iphone-check/</link><description>&lt;h2&gt;爱思助手&lt;/h2&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZGGSONG WIKI</title><link>/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/logo.png</url><title>ZGGSONG WIKI</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Sat, 22 May 2021 17:33:09 +0806</lastBuildDate><pubDate>Sat, 22 May 2021 17:33:09 +0806</pubDate><item><title>iPhone检查</title><link>/archives/iphone-check/</link><description>&lt;h2&gt;爱思助手&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;虽然可以修改成全绿，但是如果有红那就是必然有问题&lt;/li&gt;
 &lt;/ul&gt;
@@ -2846,4 +2788,72 @@ rm ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
 &lt;li&gt;私有函数：以__开头（2个下划线），小写字母，单词之间用分割 如:__get_name() ，外部访问会报错.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;函数命名查询网站&lt;/h2&gt;
-&lt;p&gt;&lt;a href="http://unbug.github.io/codelf/"&gt;&lt;a href="http://unbug.github.io/codelf/"&gt;http://unbug.github.io/codelf/&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/code_name/</guid><pubDate>Fri, 23 Apr 2021 19:58:00 +0806</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://unbug.github.io/codelf/"&gt;&lt;a href="http://unbug.github.io/codelf/"&gt;http://unbug.github.io/codelf/&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/code_name/</guid><pubDate>Fri, 23 Apr 2021 19:58:00 +0806</pubDate></item><item><title>FCPX快捷键</title><link>/archives/fcpx_shorcut_key/</link><description>&lt;h2&gt;快捷键&lt;/h2&gt;
+&lt;h3&gt;素材区&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;精确选择：&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;l&lt;/kbd&gt;：播放&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;k&lt;/kbd&gt;：暂停&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;j&lt;/kbd&gt;：倒放&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;command&lt;/kbd&gt;+&lt;kbd&gt;k&lt;/kbd&gt;：添加标签&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;连续两次&lt;kbd&gt;l&lt;/kbd&gt;和&lt;kbd&gt;j&lt;/kbd&gt;则为倍速播放，三次三倍&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;kbd&gt;i&lt;/kbd&gt;：选择入点&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;o&lt;/kbd&gt;：选择出点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;按&lt;kbd&gt;f&lt;/kbd&gt;加入收藏，按&lt;kbd&gt;Delete&lt;/kbd&gt;，标记为拒绝的，按&lt;kbd&gt;u&lt;/kbd&gt;撤回&lt;/p&gt;&lt;/blockquote&gt;
+&lt;div class="tabs"&gt;
+[tab name=&amp;quot;粗剪&amp;quot; active=&amp;quot;true&amp;quot;]首先快速预览，将内容加入收藏[/tab]
+[tab name=&amp;quot;精剪&amp;quot;]在上方筛选中选择个人收藏，然后在选取内容添加到时间线上，提高效率[/tab]
+&lt;/div&gt;&lt;h3&gt;时间线&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;时间线左侧的索引功能面对较多素材有很好的查找作用&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;kbd&gt;q&lt;/kbd&gt;：将片段加入到时间线，并且连接到主线&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;w&lt;/kbd&gt;：将片段插入到主线当前位置（切开插入片段）&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;e&lt;/kbd&gt;：将片段插入到主线尾&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;d&lt;/kbd&gt;：将片段覆盖到主线当前位置（覆盖插入片段长度的内容）&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;m&lt;/kbd&gt;：标记，方便音乐踩点或其他作用&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;a&lt;/kbd&gt;：选择快捷键&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;t&lt;/kbd&gt;：修建快捷键（选择移动修改内容，两侧黄线变红则表明到顶端了）&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;p&lt;/kbd&gt;：位置快捷键（可让两段视频之间添加黑场）&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;h&lt;/kbd&gt;：抓手工具&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;n&lt;/kbd&gt;：打开或关闭吸附功能&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;b&lt;/kbd&gt;：切割（&lt;strong&gt;更常用的是在选中位置然后点击&lt;i class="fa fa-apple"&gt;&lt;/i&gt;进行切割&lt;/strong&gt;）&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;z&lt;/kbd&gt;：放大&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;z&lt;/kbd&gt;：充满时间线&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;command&lt;/kbd&gt;+&lt;kbd&gt;-&lt;/kbd&gt;和&lt;kbd&gt;command&lt;/kbd&gt;+&lt;kbd&gt;+&lt;/kbd&gt;：放大和缩小&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;option&lt;/kbd&gt;+&lt;kbd&gt;x&lt;/kbd&gt;：&lt;strong&gt;取消范围选择&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;Delete&lt;/kbd&gt;：删除选中内容（视频的话会留下黑场）&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;退格键&lt;/kbd&gt;：删除选中内容&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;command&lt;/kbd&gt;+&lt;kbd&gt;r&lt;/kbd&gt;：调整速度快捷键&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;r&lt;/kbd&gt;：全局渲染&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;option&lt;/kbd&gt;+&lt;kbd&gt;r&lt;/kbd&gt;：自定义调整速率&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;转场插件&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="http://www.lookae.com/tag/fcpx%E8%BD%AC%E5%9C%BA%E6%8F%92%E4%BB%B6/"&gt;FCPX转场插件&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://pan.baidu.com/s/1ESrjV6gCrUxEJwpnVpDgpg"&gt;B站棱尧 Curry&lt;strong&gt;调整层&lt;/strong&gt;插件&lt;/a&gt; 提取码:&lt;code&gt;3u2u&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://pan.baidu.com/s/1Jtttu_QTKJtOWXO2odecWA&amp;amp;shfl=sharepset"&gt;vlog音效素材&lt;/a&gt; 密码:&lt;code&gt;rvqy&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;免费视频素材网站：&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.openfootage.net"&gt;https://www.openfootage.net&lt;/a&gt;&lt;br /&gt;
+&lt;a href="https://www.vidsplay.com"&gt;https://www.vidsplay.com&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://www.orangehd.com"&gt;http://www.orangehd.com&lt;/a&gt;&lt;br /&gt;
+&lt;a href="https://www.splitshire.com"&gt;https://www.splitshire.com&lt;/a&gt;&lt;br /&gt;
+&lt;a href="https://www.ignitemotion.com"&gt;https://www.ignitemotion.com&lt;/a&gt;&lt;br /&gt;
+&lt;a href="https://www.videezy.com"&gt;https://www.videezy.com&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://mazwai.com"&gt;http://mazwai.com&lt;/a&gt;&lt;br /&gt;
+&lt;a href="https://www.monzoom.com"&gt;https://www.monzoom.com&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://www.wedistill.io"&gt;http://www.wedistill.io&lt;/a&gt;&lt;br /&gt;
+&lt;a href="https://footagecrate.com"&gt;https://footagecrate.com&lt;/a&gt;&lt;/p&gt;&lt;p&gt;大拍档剪辑助手&lt;a href="http://spdpd.net/"&gt;下载地址：&lt;a href="http://spdpd.net/"&gt;http://spdpd.net/&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;开启任何来源的代码：&lt;/p&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo spctl --master-disable
+&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第三方插件实现调色&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;导出中选择添加目的位置可存储当前真为图片格式，方便制作封面&lt;/li&gt;
+&lt;/ul&gt;
+</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/fcpx_shorcut_key/</guid><pubDate>Sun, 23 May 2021 20:00:00 +0806</pubDate></item></channel></rss>
