@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/696d52b36c76d56948293b7669a073f9.json"
+            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/ea6b21dabd1758c60498ae84642ce66e.json"
         }
     </script>
     <script>
@@ -301,11 +301,10 @@ function proxy_on() {
         export RSYNC_PROXY=$http_proxy
         echo -e &quot;已开启代理&quot;
 }
-
-### 2.16 终端设置ip &amp;&amp; DNS
-
 </code></pre>
-<p>function manual() {
+<h3>2.16 终端设置ip &amp;&amp; DNS</h3>
+
+<pre><code>function manual() {
     echo &quot;Setting IP = 192.168.2.48 255.255.255.0 192.168.2.99&quot;
     sudo networksetup -setmanual Ethernet 192.168.2.48 255.255.252.0 192.168.2.99
     echo &quot;Setting DNS = 192.168.2.99&quot;
@@ -318,21 +317,23 @@ function dhcp() {
     sudo networksetup -setdhcp Ethernet
     sudo networksetup -setdnsservers Ethernet  empty
     sudo dscacheutil -flushcache
-}</p>
-<pre><code>
-
-# 检查 ip
-curl cip.cc
+}
 </code></pre>
-<h2>3、OpenWrt</h2>
-<h3>3.1 samba命令</h3>
-<div class="highlight"><pre><span></span><span class="c1">#重启</span>
+<h1>检查 ip</h1>
+<p>curl cip.cc</p>
+<pre><code>
+## 3、OpenWrt
+
+### 3.1 samba命令
+
+```shell
+#重启
 /etc/init.d/samba4 restart
-<span class="c1">#开机启动</span>
-/etc/init.d/samba4 <span class="nb">enable</span>
-<span class="c1">#设置密码</span>
+#开机启动
+/etc/init.d/samba4 enable
+#设置密码
 smbpasswd -a root ****
-</pre></div>
+</code></pre>
 <h2>4、其他</h2>
 <h3>4.1 sublime text 3激活码</h3>
 
