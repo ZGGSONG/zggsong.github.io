@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/</id><title>ZGGSONG WIKI</title><updated>2021-07-06T07:57:09.157869+08:06</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email></author><link href="/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/logo.png</logo><subtitle>简单的记录学习.</subtitle><entry><id>/archives/fzf/</id><title>fzf安装配置</title><updated>2021-07-06T07:57:09.158198+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;安装&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/</id><title>ZGGSONG WIKI</title><updated>2021-07-06T08:11:35.350046+08:06</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email></author><link href="/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/logo.png</logo><subtitle>简单的记录学习.</subtitle><entry><id>/archives/fzf/</id><title>fzf安装配置</title><updated>2021-07-06T08:11:35.350421+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;安装&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;brew install fzf
 &lt;/code&gt;&lt;/pre&gt;
@@ -61,7 +61,7 @@ export fzf_preview_cmd='[[ $(file --mime {}) =~ binary ]] &amp;amp;&amp;amp; ech
             else:
                 self.fm.select_file(fzf_file)
 &lt;/code&gt;&lt;/pre&gt;
-</content><link href="/archives/fzf/" rel="alternate"/><published>2020-08-23T17:27:00+08:06</published></entry><entry><id>/archives/unix_network/</id><title>Unix网络编程复习</title><updated>2021-07-06T07:57:09.158172+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h1&gt;LNP作业1&lt;/h1&gt;
+</content><link href="/archives/fzf/" rel="alternate"/><published>2020-08-23T17:27:00+08:06</published></entry><entry><id>/archives/unix_network/</id><title>Unix网络编程复习</title><updated>2021-07-06T08:11:35.350392+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h1&gt;LNP作业1&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;2020年2月17号 星期一 08:55&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
@@ -1139,7 +1139,7 @@ void *eventHandler_start(void *myvar) {
 &lt;h2&gt;转载&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;转载自&lt;a href="https://blog.webpro.ltd/"&gt;&lt;a href="https://blog.webpro.ltd"&gt;https://blog.webpro.ltd&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
-</content><link href="/archives/unix_network/" rel="alternate"/><published>2020-09-08T07:53:00+08:06</published></entry><entry><id>/archives/sudoers/</id><title>用户不在sudoers文件中</title><updated>2021-07-06T07:57:09.158146+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;解决方案&lt;/h2&gt;
+</content><link href="/archives/unix_network/" rel="alternate"/><published>2020-09-08T07:53:00+08:06</published></entry><entry><id>/archives/sudoers/</id><title>用户不在sudoers文件中</title><updated>2021-07-06T08:11:35.350363+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;解决方案&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;将用户添加至&lt;code&gt;sudoers&lt;/code&gt;中&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
@@ -1156,7 +1156,7 @@ vi /etc/sudoers
 
 chmod 440 /etc/sudoers
 &lt;/code&gt;&lt;/pre&gt;
-&lt;figure&gt;&lt;img loading="lazy" data-width="639" data-height="157" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/dd83680010c40c60d66486180ca0dd8f.png" alt="sudoers" /&gt;&lt;figcaption&gt;sudoers&lt;/figcaption&gt;&lt;/figure&gt;</content><link href="/archives/sudoers/" rel="alternate"/><published>2020-09-11T22:13:00+08:06</published></entry><entry><id>/archives/data_struct/</id><title>数据结构</title><updated>2021-07-06T07:57:09.158119+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h1&gt;数据结构&lt;/h1&gt;
+&lt;figure&gt;&lt;img loading="lazy" data-width="639" data-height="157" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/dd83680010c40c60d66486180ca0dd8f.png" alt="sudoers" /&gt;&lt;figcaption&gt;sudoers&lt;/figcaption&gt;&lt;/figure&gt;</content><link href="/archives/sudoers/" rel="alternate"/><published>2020-09-11T22:13:00+08:06</published></entry><entry><id>/archives/data_struct/</id><title>数据结构</title><updated>2021-07-06T08:11:35.350332+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h1&gt;数据结构&lt;/h1&gt;
 &lt;h2&gt;第一章：数据结构的&lt;/h2&gt;
 &lt;p&gt;基本概念&lt;/p&gt;&lt;h3&gt;定义&lt;/h3&gt;
 &lt;ul&gt;
@@ -2278,7 +2278,7 @@ path[]：path[i]表示从源点到顶点i之间的最短路径的前驱结点，
 &lt;li&gt;树的先序遍历等于它对应二叉树的先序遍历，后序遍历等于它对应的二叉树的中序遍历&lt;/li&gt;
 &lt;li&gt;概要: 例子&lt;/li&gt;
 &lt;/ul&gt;
-&lt;figure&gt;&lt;img loading="lazy" data-width="3619" data-height="14920" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/f6a38eaee1e4c72350171bc6275ba3bc.png" alt="picture" /&gt;&lt;figcaption&gt;picture&lt;/figcaption&gt;&lt;/figure&gt;</content><link href="/archives/data_struct/" rel="alternate"/><published>2020-10-13T22:27:00+08:06</published></entry><entry><id>/archives/dnscachepollution/</id><title>Github-DNS污染</title><updated>2021-07-06T07:57:09.158093+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;前言&lt;/h2&gt;
+&lt;figure&gt;&lt;img loading="lazy" data-width="3619" data-height="14920" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/f6a38eaee1e4c72350171bc6275ba3bc.png" alt="picture" /&gt;&lt;figcaption&gt;picture&lt;/figcaption&gt;&lt;/figure&gt;</content><link href="/archives/data_struct/" rel="alternate"/><published>2020-10-13T22:27:00+08:06</published></entry><entry><id>/archives/dnscachepollution/</id><title>Github-DNS污染</title><updated>2021-07-06T08:11:35.350303+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;前言&lt;/h2&gt;
 &lt;p&gt;一直发现有这个问题，后来才发现是DNS污染问题，ABROAD也是没用。暂时只能修改&lt;code&gt;hosts&lt;/code&gt;了&lt;/p&gt;&lt;h2&gt;解决&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;打开&lt;a href="https://www.ipaddress.com"&gt;ipaddress.com&lt;/a&gt;查询&lt;code&gt;raw.githubusercontent.com&lt;/code&gt;真实ip&lt;/li&gt;
@@ -2296,7 +2296,7 @@ path[]：path[i]表示从源点到顶点i之间的最短路径的前驱结点，
 sudo service networking restart     &lt;span class="c1"&gt;#linux刷新DNS&lt;/span&gt;
 ipconfig /flushdns     &lt;span class="c1"&gt;#windows刷新DNS&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-</content><link href="/archives/dnscachepollution/" rel="alternate"/><published>2021-01-19T17:26:00+08:06</published></entry><entry><id>/archives/git/</id><title>Git</title><updated>2021-07-06T07:57:09.158066+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;前言&lt;/h2&gt;
+</content><link href="/archives/dnscachepollution/" rel="alternate"/><published>2021-01-19T17:26:00+08:06</published></entry><entry><id>/archives/git/</id><title>Git</title><updated>2021-07-06T08:11:35.350272+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;前言&lt;/h2&gt;
 &lt;p&gt;git仓库使用的基本操作，以及生成使用ssh公钥&lt;/p&gt;&lt;h2&gt;git初始化&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git config --global user.email &lt;span class="s2"&gt;&amp;quot;youremail@domain.com&amp;quot;&lt;/span&gt;
 git config --global user.name &lt;span class="s2"&gt;&amp;quot;Your Name&amp;quot;&lt;/span&gt;
@@ -2627,7 +2627,7 @@ $ git archive
 &lt;blockquote&gt;
 &lt;p&gt;以上常用命令来自阮一峰老师的博客文章《常用 Git 命令清单》，感谢阮老师！&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2&gt;Git命令速查表&lt;/h2&gt;
-&lt;figure&gt;&lt;img loading="lazy" data-width="1081" data-height="1921" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/416e2fbb8e0d7c0505407ef55f76e93a.png" alt="" /&gt;&lt;/figure&gt;</content><link href="/archives/git/" rel="alternate"/><published>2021-04-01T17:27:00+08:06</published></entry><entry><id>/archives/redis_mac/</id><title>Mac安装配置Redis</title><updated>2021-07-06T07:57:09.158040+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;安装&lt;/h2&gt;
+&lt;figure&gt;&lt;img loading="lazy" data-width="1081" data-height="1921" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/416e2fbb8e0d7c0505407ef55f76e93a.png" alt="" /&gt;&lt;/figure&gt;</content><link href="/archives/git/" rel="alternate"/><published>2021-04-01T17:27:00+08:06</published></entry><entry><id>/archives/redis_mac/</id><title>Mac安装配置Redis</title><updated>2021-07-06T08:11:35.350242+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;安装&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;brew install redis
 &lt;/code&gt;&lt;/pre&gt;
@@ -2697,7 +2697,7 @@ launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
 brew uninstall redis
 rm ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
 &lt;/code&gt;&lt;/pre&gt;
-</content><link href="/archives/redis_mac/" rel="alternate"/><published>2021-04-12T18:17:00+08:06</published></entry><entry><id>/archives/code_name/</id><title>命名规范</title><updated>2021-07-06T07:57:09.158012+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;Java命名规范&lt;/h2&gt;
+</content><link href="/archives/redis_mac/" rel="alternate"/><published>2021-04-12T18:17:00+08:06</published></entry><entry><id>/archives/code_name/</id><title>命名规范</title><updated>2021-07-06T08:11:35.350209+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;Java命名规范&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;项目名称：全部小写&lt;/li&gt;
 &lt;li&gt;常量：都用大写。如：public static final String DBDRIVER = “…..”;&lt;/li&gt;
@@ -2720,7 +2720,7 @@ rm ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
 &lt;li&gt;私有函数：以__开头（2个下划线），小写字母，单词之间用分割 如:__get_name() ，外部访问会报错.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;函数命名查询网站&lt;/h2&gt;
-&lt;p&gt;&lt;a href="http://unbug.github.io/codelf/"&gt;&lt;a href="http://unbug.github.io/codelf/"&gt;http://unbug.github.io/codelf/&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;</content><link href="/archives/code_name/" rel="alternate"/><published>2021-04-23T19:58:00+08:06</published></entry><entry><id>/archives/fcpx_shorcut_key/</id><title>FCPX快捷键</title><updated>2021-07-06T07:57:09.157980+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;快捷键&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://unbug.github.io/codelf/"&gt;&lt;a href="http://unbug.github.io/codelf/"&gt;http://unbug.github.io/codelf/&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;</content><link href="/archives/code_name/" rel="alternate"/><published>2021-04-23T19:58:00+08:06</published></entry><entry><id>/archives/fcpx_shorcut_key/</id><title>FCPX快捷键</title><updated>2021-07-06T08:11:35.350172+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;快捷键&lt;/h2&gt;
 &lt;h3&gt;素材区&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;精确选择：&lt;/li&gt;
@@ -2793,7 +2793,7 @@ rm ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
 &lt;ul&gt;
 &lt;li&gt;导出中选择添加目的位置可存储当前真为图片格式，方便制作封面&lt;/li&gt;
 &lt;/ul&gt;
-</content><link href="/archives/fcpx_shorcut_key/" rel="alternate"/><published>2021-05-23T20:00:00+08:06</published></entry><entry><id>/archives/openssh_server_for_win/</id><title>Windows开启OpenSSH服务端</title><updated>2021-07-06T07:57:09.157927+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;安装&lt;/h2&gt;
+</content><link href="/archives/fcpx_shorcut_key/" rel="alternate"/><published>2021-05-23T20:00:00+08:06</published></entry><entry><id>/archives/openssh_server_for_win/</id><title>Windows开启OpenSSH服务端</title><updated>2021-07-06T08:11:35.350112+00:00</updated><author><name>ZGGSONG</name><email>zggsong@foxmail.com</email><uri>https://www.zggsong.cn</uri></author><content>&lt;h2&gt;安装&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;win+r&lt;/li&gt;
 &lt;li&gt;输入&lt;code&gt;fodhelper&lt;/code&gt;&lt;/li&gt;
@@ -2820,6 +2820,5 @@ Byte（字节）：Byte的缩写是B，是计算机文件大小的基本计算�
   1 GB = 1024 MB
   1TB = 1024GB
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;1Mbps = 1Mb/s = 1*1024Kb/s = 1024/8KB/s = 125KB/s
-100Mbps = 100Mb/s = 100/8MB/s = 12.5MB/s
+&lt;p&gt;1Mbps = 1Mb/s = 1*1024Kb/s = 1024/8KB/s = 125KB/s&lt;/p&gt;&lt;p&gt;100Mbps = 100Mb/s = 100/8MB/s = 12.5MB/s&lt;br /&gt;
 即100M宽带理论上最大下载速度12.5MB/s&lt;/p&gt;</content><link href="/archives/openssh_server_for_win/" rel="alternate"/><published>2021-07-06T20:00:00+08:06</published></entry></feed>
