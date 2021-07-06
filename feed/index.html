@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZGGSONG WIKI</title><link>/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/logo.png</url><title>ZGGSONG WIKI</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Tue, 06 Jul 2021 04:10:44 +0806</lastBuildDate><pubDate>Tue, 06 Jul 2021 04:10:44 +0806</pubDate><item><title>fzf安装配置</title><link>/archives/fzf/</link><description>&lt;h2&gt;安装&lt;/h2&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZGGSONG WIKI</title><link>/</link><description>简单的记录学习.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/logo.png</url><title>ZGGSONG WIKI</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Tue, 06 Jul 2021 07:57:09 +0806</lastBuildDate><pubDate>Tue, 06 Jul 2021 07:57:09 +0806</pubDate><item><title>fzf安装配置</title><link>/archives/fzf/</link><description>&lt;h2&gt;安装&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;brew install fzf
 &lt;/code&gt;&lt;/pre&gt;
@@ -2800,4 +2800,26 @@ rm ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
 &lt;li&gt;下载&lt;code&gt;openssh服务端&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;打开&lt;code&gt;服务&lt;/code&gt;，开启&lt;code&gt;openssh server服务&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;figure&gt;&lt;img loading="lazy" data-width="527" data-height="424" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/998520947d8cb0ef42b23eb84bb14451.png" alt="" /&gt;&lt;/figure&gt;&lt;figure&gt;&lt;img loading="lazy" data-width="448" data-height="185" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/8a0fc3603cc29752e87d26a44dd18da0.png" alt="" /&gt;&lt;/figure&gt;</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/openssh_server_for_win/</guid><pubDate>Tue, 06 Jul 2021 20:00:00 +0806</pubDate></item></channel></rss>
+&lt;figure&gt;&lt;img loading="lazy" data-width="527" data-height="424" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/998520947d8cb0ef42b23eb84bb14451.png" alt="" /&gt;&lt;/figure&gt;&lt;figure&gt;&lt;img loading="lazy" data-width="448" data-height="185" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/8a0fc3603cc29752e87d26a44dd18da0.png" alt="" /&gt;&lt;/figure&gt;&lt;h2&gt;拓展&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;ssh服务端安装好后即可当作SFTP服务器&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code&gt;FTP 基于TCP来传输文件，明文传输用户信息和数据。
+SFTP 基于SSH来加密传输文件，可靠性高，可断点续传。
+SCP 是基于SSH来加密拷贝文件，但要知道详细目录，不可断点续传。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;&lt;strong&gt;Mbps (bits per second)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;bit（位，又名“比特”）：bit的缩写是b，是计算机中的最小数据单位（属于二进制的范畴，其实就是0或者1）
+Byte（字节）：Byte的缩写是B，是计算机文件大小的基本计算单位。比如一个字符就是1Byte，如果是汉字，则是2Byte。换算&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  1B（字节）=8b（位）
+  1 KB = 1024 B
+  1 MB = 1024 KB
+  1 GB = 1024 MB
+  1TB = 1024GB
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;1Mbps = 1Mb/s = 1*1024Kb/s = 1024/8KB/s = 125KB/s
+100Mbps = 100Mb/s = 100/8MB/s = 12.5MB/s
+即100M宽带理论上最大下载速度12.5MB/s&lt;/p&gt;</description><author>zggsong@foxmail.com (ZGGSONG)</author><guid isPermaLink="true">/archives/openssh_server_for_win/</guid><pubDate>Tue, 06 Jul 2021 20:00:00 +0806</pubDate></item></channel></rss>

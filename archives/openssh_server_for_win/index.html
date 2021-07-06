@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/6d682eaeab1d145bd1c23a1d2b46af24.json"
+            api: "https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/a94eac241f30094a9b3038994a338ce3.json"
         }
     </script>
     <script>
@@ -140,7 +140,29 @@
 <li>下载<code>openssh服务端</code></li>
 <li>打开<code>服务</code>，开启<code>openssh server服务</code></li>
 </ul>
-<figure><img loading="lazy" data-width="527" data-height="424" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/998520947d8cb0ef42b23eb84bb14451.png" alt="" /></figure><figure><img loading="lazy" data-width="448" data-height="185" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/8a0fc3603cc29752e87d26a44dd18da0.png" alt="" /></figure></article>
+<figure><img loading="lazy" data-width="527" data-height="424" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/998520947d8cb0ef42b23eb84bb14451.png" alt="" /></figure><figure><img loading="lazy" data-width="448" data-height="185" src="https://cdn.jsdelivr.net/gh/ZGGSONG/zggsong.github.io@master/archives/assets/8a0fc3603cc29752e87d26a44dd18da0.png" alt="" /></figure><h2>拓展</h2>
+<ol>
+<li>ssh服务端安装好后即可当作SFTP服务器</li>
+</ol>
+
+<pre><code>FTP 基于TCP来传输文件，明文传输用户信息和数据。
+SFTP 基于SSH来加密传输文件，可靠性高，可断点续传。
+SCP 是基于SSH来加密拷贝文件，但要知道详细目录，不可断点续传。
+</code></pre>
+<ol start="2">
+<li><strong>Mbps (bits per second)</strong></li>
+</ol>
+<p>bit（位，又名“比特”）：bit的缩写是b，是计算机中的最小数据单位（属于二进制的范畴，其实就是0或者1）
+Byte（字节）：Byte的缩写是B，是计算机文件大小的基本计算单位。比如一个字符就是1Byte，如果是汉字，则是2Byte。换算</p>
+<pre><code>  1B（字节）=8b（位）
+  1 KB = 1024 B
+  1 MB = 1024 KB
+  1 GB = 1024 MB
+  1TB = 1024GB
+</code></pre>
+<p>1Mbps = 1Mb/s = 1*1024Kb/s = 1024/8KB/s = 125KB/s
+100Mbps = 100Mb/s = 100/8MB/s = 12.5MB/s
+即100M宽带理论上最大下载速度12.5MB/s</p></article>
     </section>
 
     
