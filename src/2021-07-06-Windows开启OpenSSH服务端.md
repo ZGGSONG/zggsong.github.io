@@ -45,6 +45,8 @@ Byte（字节）：Byte的缩写是B，是计算机文件大小的基本计算�
 ```
 
 
-1Mbps = 1Mb/s = 1*1024Kb/s = 1024/8KB/s = 125KB/s
-100Mbps = 100Mb/s = 100/8MB/s = 12.5MB/s
+1Mbps = 1Mb/s = 1*1024Kb/s = 1024/8KB/s = 125KB/s    
+
+
+100Mbps = 100Mb/s = 100/8MB/s = 12.5MB/s  
 即100M宽带理论上最大下载速度12.5MB/s
