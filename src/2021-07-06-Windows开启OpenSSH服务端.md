@@ -32,7 +32,7 @@ SFTP 基于SSH来加密传输文件，可靠性高，可断点续传。
 SCP 是基于SSH来加密拷贝文件，但要知道详细目录，不可断点续传。
 ```
 
-> 推荐链接：博客园-[***文件传输协议FTP、SFTP和SCP***](https://www.cnblogs.com/xingxia/p/system_ftp.html)
+> 推荐链接：博客园-[**文件传输协议FTP、SFTP和SCP**](https://www.cnblogs.com/xingxia/p/system_ftp.html)
 
 2. **Mbps (bits per second)**
 
